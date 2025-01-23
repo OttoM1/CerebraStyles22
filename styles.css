@@ -70,7 +70,7 @@ footer {
     padding: 1rem 0;
 }
 
-/* Responsiivisuus */
+
 @media (max-width: 768px) {
     nav ul li {
         display: block;
