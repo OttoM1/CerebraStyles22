@@ -7,7 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(127, 0, 255, 0.8) 35%, rgba(0, 0, 255, 0.6) 70%);
+    /* Tausta: gradientti purppuran, sinisen ja valkoisen sävyillä */
+    background: linear-gradient(to bottom, #ffffff 0%, #c1a0ff 40%, #4b82d4 80%);
     height: 100vh;
     background-size: cover;
     color: #333;
