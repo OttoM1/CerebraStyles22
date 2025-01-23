@@ -7,10 +7,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    /* Tausta, jossa on vaalean purppuraa, sinistä ja valkoista */
-    background: linear-gradient(to right, #ffffff, #c1a0ff, #4b82d4);
+    /* Tausta: vaalean purppuraa, sinistä ja valkoista */
+    background: linear-gradient(to bottom right, #ffffff 20%, #c1a0ff 50%, #4b82d4 90%);
     height: 100vh;
-    background-size: cover; /* Tausta kattaa koko näytön */
+    background-size: cover;
     color: #333;
 }
 
