@@ -7,69 +7,44 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom right, #ffffff 20%, #c1a0ff 50%, #4b82d4 90%);
-    height: 100%;
+    background-color: #f4f4f4;
     color: #333;
-    min-height: 100vh; /* Tämä varmistaa, että kehon korkeus täyttää koko näytön */
-    display: flex;
-    flex-direction: column;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
-    text-align: center;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding: 0;
 }
 
 nav ul li {
-    margin-right: 20px;
+    display: inline-block; /* Linkit vierekkäin */
+    margin-right: 20px; /* Väli linkkien välillä */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    background: #f4f4f4;
-    padding: 5rem 0; /* Tekee aloitusosan suuremmaksi */
-    text-align: center;
-}
-
-.hero h1 {
-    margin-bottom: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #333;
     color: white;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
+    background-color: #4b82d4; /* Tausta väri */
+    padding: 15px 25px;
+    border-radius: 50%; /* Tekee linkeistä kuplia */
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover {
-    background-color: #555;
+nav ul li a:hover {
+    background-color: #c1a0ff; /* Väri muuttuu hoverissa */
+    transform: scale(1.1); /* Pienoinen suurennus hoverissa */
 }
 
 section {
-    padding: 4rem 2rem;
+    padding: 2rem;
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-.service-card {
-    background: #f4f4f4;
-    padding: 20px;
-    margin-top: 10px;
 }
 
 footer {
@@ -77,16 +52,11 @@ footer {
     background: #333;
     color: white;
     padding: 1rem 0;
-    margin-top: auto; /* Varmistaa, että alatunniste pysyy pohjassa */
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
     nav ul li {
+        display: inline-block;
         margin-bottom: 10px;
     }
 }
