@@ -7,23 +7,11 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(45deg, #ffffff, #c1a0ff, #4b82d4);
-    background-size: 400% 400%;
-    animation: gradientAnimation 5s ease infinite; /* Taustan animaatio */
+    /* Tausta, jossa on vaalean purppuraa, sinistä ja valkoista */
+    background: linear-gradient(to right, #ffffff, #c1a0ff, #4b82d4);
     height: 100vh;
+    background-size: cover; /* Tausta kattaa koko näytön */
     color: #333;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 header {
