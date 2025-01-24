@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Particles
+    // Particle
     const particles = [];
     const colors = ['#4CAF50', '#FF5722', '#2196F3', '#FFC107', '#9C27B0'];
 
