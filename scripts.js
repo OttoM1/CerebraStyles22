@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Cool effect: Particles floating and pulsating
     const particles = [];
     const colors = ['#4CAF50', '#FF5733', '#3498DB', '#9B59B6'];
 
