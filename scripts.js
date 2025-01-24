@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', resizeCanvas);
 
     const particles = [];
-    const colors = ['#FFFFFF', '#FFFFFF', '#1ABC9C', '#D3D3D3'];
+    const colors = ['#FFFFFF', '#FFFFFF', '#D3D3D3', '#D3D3D3'];
 
     // Create particle
     for (let i = 0; i < 100; i++) {
@@ -80,7 +80,7 @@ function Particle(x, y, size, speed) {
 function createParticles() {
     let x = canvas.width / 2;
     let y = canvas.height / 2;
-    let size = Math.random() * 1 + 0.5; // Random size between 1 and 3
+    let size = Math.random() * 0.05 + 0.02; // Random size between 1 and 3
     let speed = 0.2; // Adjust speed to control particle movement
 
     let particle = new Particle(x, y, size, speed);
