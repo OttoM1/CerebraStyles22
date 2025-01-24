@@ -1,19 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Etsitään nappi, jonka on tarkoitus vierittää palvelut-osioon
-    const button = document.querySelector('button');
+    const button = document.getElementById('scroll-to-services');
+    const servicesSection = document.getElementById('services');
 
-    // Lisätään tapahtumakuuntelija napille
     button.addEventListener('click', function () {
-        // Vieritetään suoraan palvelut-osioon, kun nappia painetaan
-        scrollToSection('services');
+        // Lisää "visible" luokka palvelut-osioon ja vieritä siihen
+        servicesSection.classList.add('visible');
+        servicesSection.scrollIntoView({ behavior: 'smooth' });
     });
 });
-
-// Funktiona vierittäminen palveluosion alkuun
-function scrollToSection(id) {
-    const section = document.getElementById(id);
-    if (section) {
-        // Käytetään scrollIntoView-funktiota sujuvalla vierityksellä
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-}
