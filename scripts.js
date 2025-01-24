@@ -81,7 +81,7 @@ function createParticles() {
     let x = canvas.width / 2;
     let y = canvas.height / 2;
     let size = Math.random() * 0.05 + 0.02; // Random size between 1 and 3
-    let speed = 0.2; // Adjust speed to control particle movement
+    let speed = 0.03; // Adjust speed to control particle movement
 
     let particle = new Particle(x, y, size, speed);
     particles.push(particle);
