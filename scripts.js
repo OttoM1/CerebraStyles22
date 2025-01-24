@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('coolCanvas');
     const ctx = canvas.getContext('2d');
 
-    // Resize canvas
+    // Resize canvas dynamically
     const resizeCanvas = () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -10,65 +10,43 @@ document.addEventListener('DOMContentLoaded', () => {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Particle
+    // Cool effect: Particles floating and pulsating
     const particles = [];
-    const colors = ['#4CAF50', '#FF5722', '#2196F3', '#FFC107', '#9C27B0'];
+    const colors = ['#4CAF50', '#FF5733', '#3498DB', '#9B59B6'];
 
-    class Particle {
-        constructor(x, y, size, color, speedX, speedY) {
-            this.x = x;
-            this.y = y;
-            this.size = size;
-            this.color = color;
-            this.speedX = speedX;
-            this.speedY = speedY;
-        }
-        draw() {
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fillStyle = this.color;
-            ctx.fill();
-        }
-        update() {
-            this.x += this.speedX;
-            this.y += this.speedY;
-
-            if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-            if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
-        }
+    // Create particles
+    for (let i = 0; i < 100; i++) {
+        particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            radius: Math.random() * 5 + 2,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            speedX: (Math.random() - 0.5) * 2,
+            speedY: (Math.random() - 0.5) * 2,
+        });
     }
 
-    const initParticles = () => {
-        for (let i = 0; i < 100; i++) {
-            const size = Math.random() * 4 + 1;
-            const x = Math.random() * canvas.width;
-            const y = Math.random() * canvas.height;
-            const speedX = (Math.random() - 0.5) * 2;
-            const speedY = (Math.random() - 0.5) * 2;
-            const color = colors[Math.floor(Math.random() * colors.length)];
-            particles.push(new Particle(x, y, size, color, speedX, speedY));
-        }
-    };
-
-    const animate = () => {
+    // Animate particles
+    const animateParticles = () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach((particle) => {
-            particle.draw();
-            particle.update();
+
+        particles.forEach(p => {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+            p.x += p.speedX;
+            p.y += p.speedY;
+
+            // Bounce particles off the edges
+            if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+            if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
         });
-        requestAnimationFrame(animate);
+
+        requestAnimationFrame(animateParticles);
     };
 
-    initParticles();
-    animate();
-
-    // Smooth scroll for navigation
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth',
-            });
-        });
-    });
+    animateParticles();
 });
+
+
