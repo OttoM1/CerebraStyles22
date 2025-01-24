@@ -1,58 +1,65 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Select sections for fade-in (unchanged)
-    const sections = document.querySelectorAll('section');
-    const fadeInDuration = 1000;
-
-    sections.forEach((section) => {
-        section.classList.add('fade-in-up');
-        setTimeout(() => {
-            section.classList.add('visible');
-        }, fadeInDuration);
-    });
-
-    // Setup the wavy canvas
-    const canvas = document.getElementById("matrixCanvas"); // Reuse the same canvas element
+    // Get the canvas and its context
+    const canvas = document.getElementById("matrixCanvas");
     const ctx = canvas.getContext("2d");
 
+    // Set canvas dimensions
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    let waveAmplitude = 100; // Height of the wave
-    let waveFrequency = 0.02; // Controls the number of waves
-    let waveSpeed = 0.03; // Speed of the wave
-    let offset = 0; // For animating the wave
+    // Define layers of the northern lights
+    const layers = [
+        { color: "rgba(128, 0, 255, 0.5)", speed: 0.3, amplitude: 150, frequency: 0.01 },
+        { color: "rgba(0, 255, 255, 0.4)", speed: 0.4, amplitude: 120, frequency: 0.02 },
+        { color: "rgba(75, 0, 130, 0.3)", speed: 0.2, amplitude: 100, frequency: 0.015 }
+    ];
 
-    function drawWave() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+    let offset = 0;
 
-        ctx.beginPath();
-        ctx.moveTo(0, canvas.height / 2); // Start at the middle of the canvas
+    // Function to draw the northern lights
+    function drawNorthernLights() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        for (let x = 0; x < canvas.width; x++) {
-            const y = Math.sin(x * waveFrequency + offset) * waveAmplitude + canvas.height / 2;
-            ctx.lineTo(x, y);
-        }
+        // Draw each layer
+        layers.forEach((layer, index) => {
+            ctx.beginPath();
 
-        ctx.lineTo(canvas.width, canvas.height); // Connect to the bottom-right corner
-        ctx.lineTo(0, canvas.height); // Connect to the bottom-left corner
-        ctx.closePath();
+            // Create a gradient for smooth transitions
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, layer.color);
+            gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
 
-        // Create gradient
-        const gradient = ctx.createLinearGradient(0, canvas.height / 2 - waveAmplitude, 0, canvas.height);
-        gradient.addColorStop(0, "rgba(0, 255, 255, 0.7)");
-        gradient.addColorStop(1, "rgba(0, 0, 128, 0.7)");
+            ctx.fillStyle = gradient;
 
-        ctx.fillStyle = gradient;
-        ctx.fill();
+            // Draw a wavy path for the layer
+            for (let x = 0; x <= canvas.width; x++) {
+                const y =
+                    Math.sin(x * layer.frequency + offset * layer.speed) * layer.amplitude +
+                    canvas.height / 2 +
+                    index * 60; // Stagger layers vertically
+                if (x === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            }
 
-        offset += waveSpeed; // Move the wave
-        requestAnimationFrame(drawWave); // Animate the wave
+            // Close and fill the shape
+            ctx.lineTo(canvas.width, canvas.height);
+            ctx.lineTo(0, canvas.height);
+            ctx.closePath();
+            ctx.fill();
+        });
+
+        // Increment offset for animation
+        offset += 0.05;
+        requestAnimationFrame(drawNorthernLights);
     }
 
-    drawWave();
+    drawNorthernLights();
 
-    // Adjust canvas size on window resize
-    window.addEventListener('resize', () => {
+    // Adjust canvas size dynamically when window resizes
+    window.addEventListener("resize", () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
     });
