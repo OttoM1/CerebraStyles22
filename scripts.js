@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const button = document.getElementById('scroll-to-services');
-    const servicesSection = document.getElementById('services');
+    // Etsitään elementit
+    const button = document.getElementById('animate-button');
+    const content = document.getElementById('content');
 
+    // Nappia painamalla käynnistetään animaatio
     button.addEventListener('click', function () {
-        // Lisää "visible" luokka palvelut-osioon ja vieritä siihen
-        servicesSection.classList.add('visible');
-        servicesSection.scrollIntoView({ behavior: 'smooth' });
+        // Vaihdetaan piilotetun ja näkyvän osion luokkia
+        content.classList.toggle('hidden');
+        content.classList.toggle('visible');
     });
 });
