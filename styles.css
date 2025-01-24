@@ -89,3 +89,6 @@ span.s4 {
     font-kerning: none; 
     text-decoration: none; 
 }
+p.p13, p.p15 {
+  margin-bottom: 10px; /* Adds spacing between them */
+}
