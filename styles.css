@@ -55,23 +55,6 @@ nav ul li a:hover {
     color: #FFFFFF;
 }
 
-/* tää alue muista !!!!!!*/
-
-@keyframes floatSignature {
-
- 0% {
-        transform: rotate(0deg); 
-    }
-    40% {
-        transform: rotate(-2deg);  /* 20 ja 30alempi */
-    }
-    60% {
-        transform: rotate(2deg); 
-    }
-    100% {
-        transform: rotate(0deg); /* tas oli bugii */
-    }
-}
 
 
 
@@ -84,9 +67,8 @@ nav ul li a:hover {
 
 
 
-.signature {
-    animation: floatSignature 8s ease-in-out infinite; /* 5s */
-}
+
+
 
 @keyframes fadeUp {
     0% {
