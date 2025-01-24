@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const particles = [];
     const colors = ['#FFFFFF', '#FFFFFF', '#1ABC9C', '#D3D3D3'];
 
-    // Create particles
+    // Create particle
     for (let i = 0; i < 100; i++) {
         particles.push({
             x: Math.random() * canvas.width,
