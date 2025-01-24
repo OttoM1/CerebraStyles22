@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Dancing Script', cursive;
     line-height: 1.6;
     color: #ddd;
     background-color: #000;
-    overflow-x: hidden; /* Only horizontal overflow hidden */
+    overflow-y: auto; /* Ensures vertical scrolling works on all devices */
+    overflow-x: hidden; /* Hides horizontal overflow if present */
 }
 
 /* Canvas Styling */
@@ -48,6 +48,7 @@ header p {
 nav ul {
     list-style: none;
     margin: 1rem 0;
+    text-align: center; /* Ensures proper alignment across devices */
 }
 
 nav ul li {
@@ -95,9 +96,9 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    margin-top: 2rem; /* Adjusted to prevent overlap with content */
+    position: relative; /* Changed to prevent fixed positioning issues */
 }
 
 /* Links */
@@ -113,11 +114,20 @@ footer {
 /* Animations */
 @keyframes fadeUp {
     from {
-        transform: translateY(30px);
+        transform: translateY(50px);
         opacity: 0;
     }
     to {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
     }
 }
