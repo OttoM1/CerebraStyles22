@@ -9,7 +9,7 @@ body {
     font-family: 'Dancing Script', cursive;
     line-height: 1.6;
     color: #ddd;
-    background-color: #000;
+    background-color: #050514;
     overflow-y: auto; /* Ensures vertical scrolling works on all devices */
     overflow-x: hidden; /* Hides horizontal overflow if present */
 }
