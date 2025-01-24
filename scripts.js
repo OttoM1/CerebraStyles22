@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Select sections for fade-in (unchanged)
     const sections = document.querySelectorAll('section');
-    const fadeInDuration = 1000; 
+    const fadeInDuration = 1000;
 
-    // fadee enemman tahan 
     sections.forEach((section) => {
         section.classList.add('fade-in-up');
         setTimeout(() => {
@@ -10,33 +10,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }, fadeInDuration);
     });
 
-    const canvas = document.getElementById("matrixCanvas");
+    // Setup the wavy canvas
+    const canvas = document.getElementById("matrixCanvas"); // Reuse the same canvas element
     const ctx = canvas.getContext("2d");
-    canvas.height = window.innerHeight;
+
     canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-    const columns = canvas.width / 20;
-    const drops = Array.from({ length: columns }).map(() => 0);
+    let waveAmplitude = 100; // Height of the wave
+    let waveFrequency = 0.02; // Controls the number of waves
+    let waveSpeed = 0.03; // Speed of the wave
+    let offset = 0; // For animating the wave
 
-    function draw() {
-        ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; 
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    function drawWave() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
 
-        ctx.fillStyle = "#0F0";
-        ctx.font = "20px monospace";
+        ctx.beginPath();
+        ctx.moveTo(0, canvas.height / 2); // Start at the middle of the canvas
 
-        drops.forEach((y, x) => {
-            const text = Math.random() > 0.9 ? String.fromCharCode(Math.random() * 255) : " ";
-            ctx.fillText(text, x * 20, y * 20);
+        for (let x = 0; x < canvas.width; x++) {
+            const y = Math.sin(x * waveFrequency + offset) * waveAmplitude + canvas.height / 2;
+            ctx.lineTo(x, y);
+        }
 
-            if (y * 20 > canvas.height && Math.random() > 0.975) {
-                drops[x] = 0; 
-            }
+        ctx.lineTo(canvas.width, canvas.height); // Connect to the bottom-right corner
+        ctx.lineTo(0, canvas.height); // Connect to the bottom-left corner
+        ctx.closePath();
 
-            // Hidastetaa enemma tarvittaes
-            drops[x] += Math.random() > 0.95 ? 1 : 0.5; 
-        });
+        // Create gradient
+        const gradient = ctx.createLinearGradient(0, canvas.height / 2 - waveAmplitude, 0, canvas.height);
+        gradient.addColorStop(0, "rgba(0, 255, 255, 0.7)");
+        gradient.addColorStop(1, "rgba(0, 0, 128, 0.7)");
+
+        ctx.fillStyle = gradient;
+        ctx.fill();
+
+        offset += waveSpeed; // Move the wave
+        requestAnimationFrame(drawWave); // Animate the wave
     }
 
-    setInterval(draw, 60); 
+    drawWave();
+
+    // Adjust canvas size on window resize
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
 });
