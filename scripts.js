@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', resizeCanvas);
 
     const particles = [];
-    const colors = ['#4CAF50', '#FF5733', '#3498DB', '#9B59B6'];
+    const colors = ['#FFFFFF', '#FFFFFF', '#1ABC9C', '#FFFFFF'];
 
     // Create particles
     for (let i = 0; i < 100; i++) {
@@ -48,4 +48,79 @@ document.addEventListener('DOMContentLoaded', () => {
     animateParticles();
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let particles = [];
+
+function Particle(x, y, size, speed) {
+    this.x = x;
+    this.y = y;
+    this.size = size;   // Adjust this to control size
+    this.speed = speed; // Adjust this to control speed
+    this.velocityX = (Math.random() - 0.5) * this.speed;
+    this.velocityY = (Math.random() - 0.5) * this.speed;
+}
+
+// Create particles function
+function createParticles() {
+    let x = canvas.width / 2;
+    let y = canvas.height / 2;
+    let size = Math.random() * 1 + 0.5; // Random size between 1 and 3
+    let speed = 0.2; // Adjust speed to control particle movement
+
+    let particle = new Particle(x, y, size, speed);
+    particles.push(particle);
+}
+
+// Update particles
+function updateParticles() {
+    for (let i = 0; i < particles.length; i++) {
+        let particle = particles[i];
+        particle.x += particle.velocityX;
+        particle.y += particle.velocityY;
+
+        // Recycle particle when it moves off-screen
+        if (particle.x > canvas.width || particle.x < 0 || particle.y > canvas.height || particle.y < 0) {
+            particles.splice(i, 1);
+            i--;
+        }
+    }
+}
+
+// Draw particles
+function drawParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let particle of particles) {
+        ctx.beginPath();
+        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+        ctx.fill();
+    }
+}
+
+// Main animation loop
+function animate() {
+    createParticles(); // Create new particles
+    updateParticles(); // Update their positions
+    drawParticles();   // Draw them on canvas
+
+    requestAnimationFrame(animate); // Keep the animation going
+}
+
+animate();
 
