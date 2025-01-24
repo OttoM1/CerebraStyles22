@@ -82,3 +82,10 @@ footer {
         margin: 10px 0;
     }
 }
+
+
+
+span.s4 { 
+    font-kerning: none; 
+    text-decoration: none; 
+}
