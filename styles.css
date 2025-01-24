@@ -11,17 +11,18 @@ body {
     line-height: 1.6;
     color: #ddd;
     background-color: #000;
-    overflow: hidden;
+    overflow-x: hidden; /* Only horizontal overflow hidden */
 }
 
 /* Canvas Styling */
 canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
+    pointer-events: none; /* Prevents canvas blocking clicks */
 }
 
 /* Header Styling */
