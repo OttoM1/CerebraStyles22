@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 /* Hidden Content */
@@ -20,6 +21,9 @@ body {
   display: none;
 }
 
+.container {
+  max-width: 100%;
+} /*tassa*/
 /* Button to Reveal Content */
 #revealContainer {
   display: flex;
@@ -146,8 +150,8 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
   background: transparent;
 }
@@ -176,7 +180,8 @@ canvas {
   font-size: 24px;
   font-weight: bold;
   transition: background 0.3s ease;
-  cursor: pointer; /* Pointer cursor for better UX */
+  cursor: pointer; 
+  word-break: break-word; /*taaaaa paskaaaaaaa*/
 }
 
 .nav-links a:hover {
@@ -184,12 +189,11 @@ canvas {
 }
 
 
-/* Main Content Section */
+/* Main Content Section 
 #mainContent {
-  flex-grow: 1;  /* Allow content to grow and take available space */
+  flex-grow: 1;  
 }
 
-/* Footer Styling */
 footer {
   background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
   text-align: center;
@@ -202,7 +206,7 @@ footer {
   width: 100%;
   z-index: 10;
 }
-
+*/
 .section-content p {
   font-size: 1.6rem; /* Adjust this value to make text bigger or smaller */
   color: #ffeacf;
@@ -284,4 +288,33 @@ footer:hover {
   font-family: 'Dancing Script', cursive;
   font-size: 18px; /* Optional: Adjust font size */
   color: #a8dadc; /* Optional: Add color */
+}
+
+
+
+
+
+
+
+
+
+
+#mainContent {
+  flex-grow: 1; /* Allows main content to grow and push the footer to the bottom */
+  padding-bottom: 3rem; /* Adjust this value to match the footer's height */
+}
+
+footer {
+  background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #a8dadc;
+  overflow-x: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 3rem; /* Set a specific height for the footer */
 }
