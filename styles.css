@@ -1,136 +1,352 @@
 
-
-
-
-
-
-body, html {
-    overflow-x: hidden;  /* Prevent horizontal scrolling */
-    width: 100%;
-    height: 100%;         /* Full height of the viewport */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Cinzel', serif;
+    background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
+    color: rgba(14, 14, 14, 0.9);
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;  /* Ensure body content stays at the top */
-    margin: 0;            /* Remove default margin */
+    min-height: 100vh;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+  #revealContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  
+  
+  
+  #revealButton {
+    background: radial-gradient(ellipse, rgba(23, 23, 23, 0.4), rgba(36, 40, 42, 0.4));
+    color: #4d8766;
+    border: none;
+    padding: 100px 155px;
+    border-radius: 205px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 46px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
+   
 }
+  
+  #revealButton:hover {
+    background: rgb(168, 218, 220, 0);
 
-/* Ensuring main content area takes full height with space for footer */
-#mainContent {
-    flex-grow: 1;  /* Ensure the main content fills the available space */
-    padding-bottom: 60px;  /* Create space for the footer */
-}
-
-/* Canvas Styling */
-canvas {
+  }
+  
+  .header {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .main-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #4d8766;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 
+    -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
+    -3.3px 5.2px 10px rgba(30, 94, 92, 0.7), 
+    4.4px 6.3px 15px rgba(58, 115, 68, 0.7);
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #88cbcd;
+    margin-top: 0.5rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    list-style: none;
+    flex-wrap: wrap; 
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffeacf;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer; 
+  }
+  
+  .nav-links a:hover {
+    color: #1d1f21, #2c2f33;
+  }
+  
+  .content-section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  
+  .section-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.1rem;
+    color: rgba(36, 20, 9, 0.8), rgba(15, 8, 3, 0.8); 
+  }
+  
+  
+  
+  #contactForm {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contactForm input, #contactForm textarea, #contactForm button {
+    width: 90%;
+    max-width: 400px;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+  }
+  
+  #contactForm input, #contactForm textarea {
+    background: rgba(30, 30, 30, 0);
+    color: #ffeacf;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0 0 5px rgba(144, 198, 207, 0.6);
+  }
+  
+  #contactForm button {
+    background: rgba(168, 218, 220, 0.6);
+    color: #ffeacf;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #contactForm button:hover {
+    background: rgba(168, 218, 220, 0.9);
+  }
+  
+  
+  
+  canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;  /* Ensure canvas is behind other content */
+    z-index: -1;
     background: transparent;
-}
-
-/* Footer Styling */
-footer {
+  }
+  
+  
+  .email-link {
+    font-size: 1.9;
+    color: #4d8766;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .email-link:hover {
+    color: #ffeacf;
+  }
+  
+  
+  
+  .nav-links a {
+    display: inline-block; 
+    background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
+    opacity: 0.9;
+    box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
+    color: #4d8766;
+    padding: 15px 45px;
+    border-radius: 75px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    cursor: pointer; 
+  }
+  
+  .nav-links a:hover {
+    background: rgba(34, 128, 136, 0.1);
+  }
+  
+  
+  #mainContent {
+    flex-grow: 1;  
+  }
+  
+  footer {
+    background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #88cbcd; 
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    color: #88cbcd;
-    visibility: hidden;  /* Initially hide footer */
-    opacity: 0;
-    z-index: 10;  /* Ensure footer is on top of canvas */
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;  /* Smooth transition */
+    z-index: 10;
+  }
+  
+  .section-content p {
+    font-size: 1.6rem; 
+    color: #ffeacf;
+    line-height: 1.6;
+    text-shadow: 
+    -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
+    -3.3px 5.2px 10px rgba(162, 213, 211, 0.7),  
+    4.4px 6.3px 15px rgba(50, 50, 50, 0.7);  
 }
 
-/* Footer visible class when scrolled to bottom */
-footer.visible {
-    visibility: visible;
-    opacity: 1;
-    position: relative;  /* Change to relative so it flows naturally with the content */
+  
+  
+  
+  
+  .slowed {
+    animation: fadeIn 3.5s ease-in-out;
+  }
+  
+  p {
+    animation: fadeIn 3.5s ease-in-out; 
+  }
+  
+  h2 {
+    animation: fadeIn 2s ease-in-out;
+  }
+  h1 {
+    animation: fadeIn 3.5s ease-in-out; 
+  
+  }
+  button {
+    animation: fadeIn 2.2s ease-in-out; 
+  
+  }
+  
+  .nav-links a {
+    animation: fadeIn 5.2s ease-in-out; 
+  
+  }
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  p {
+    transition: color 0.4s ease, transform 0.4s ease;
+  }
+  p:hover {
+    color:  #f7e3e3;  
+    transform: scale(1.06); 
+  }
+  
+  h1 {
+      transition: color 0.4s ease, transform 0.4s ease;
+  }
+  
+  h1:hover {
+      color:  #ffeacf;  
+      transform: scale(1.1); 
+  } 
+  
+  button {
+    transition: color 0.4s ease, transform 0.4s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  footer {
+    transition: color 0.4s ease, transform 0.4s ease;
+  }
+  
+  footer:hover {
+    transform: scale(1.1); 
+  } 
+  
+  .tagline {
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px; 
+    color: #88cbcd; 
+  }
+  
+h2 {
+    text-shadow: 
+    1px 1px 0 rgb(190, 247, 246), 
+    -1px 1px 0 rgb(209, 253, 251),
+    1px -1px 0 rgb(129, 247, 201),
+    -1px -1px 0 rgb(127, 249, 198); 
 }
+    
 
-/* Media Query for mobile screens (max-width: 768px) */
+
+
+
+
+
+
+
+
+
+
+/* Mobile Adjustments */
 @media (max-width: 768px) {
-    /* Ensure canvas fits the screen */
-    canvas {
-        position: absolute;  /* Ensure canvas covers full screen */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    footer {
-        position: fixed;       /* Fix the footer at the bottom */
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
-        font-size: 0.9rem;
-        color: #88cbcd;
-        visibility: hidden;    /* Footer hidden by default */
-        opacity: 0;            /* Initially invisible */
-        z-index: 0;
-        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;  /* Smooth transition */
-    }
-
-    footer.visible {
-        visibility: visible;  /* Make footer visible */
-        opacity: 1;            /* Fade it in */
-        position: relative;    /* Let it act as normal content once scrolled to the bottom */
-    }
-
-    /* Main Title Adjustments */
     .main-title {
-        font-size: 1.8rem;  /* Smaller font size for mobile */
-        line-height: 1.2;    /* Adjust line-height */
+      font-size: 2.5rem; /* Smaller font for mobile */
     }
-
-    /* Tagline Styling */
+  
     .tagline {
-        font-size: 1rem;  /* Adjust tagline font size for mobile */
+      font-size: 1rem;
     }
-
-    /* Navigation Links */
+  
     .nav-links {
-        font-size: 1rem;  /* Adjust nav link font size */
-        flex-direction: column;  /* Stack links vertically */
-        align-items: center;
-        margin-top: 1rem;
+      flex-direction: column; /* Stack links vertically */
+      align-items: center;
     }
-
+  
     .nav-links li {
-        margin: 0.5rem 0;  /* Adjust margin between links */
+      margin: 0.5rem 0; /* Reduce spacing between links */
     }
-
-    /* Contact Form Adjustments */
-    #contactForm input, 
-    #contactForm textarea, 
-    #contactForm button {
-        width: 100%;       /* Make form elements full width */
-        max-width: none;   /* Remove max-width constraints */
+  
+    #contactForm input, #contactForm textarea, #contactForm button {
+      width: 100%; /* Full width for inputs */
+      max-width: none;
     }
-}
-
-/* For very small screens (max-width: 480px) */
-@media (max-width: 480px) {
-    body, html {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;  /* Ensure we don't stretch the body */
+  
+    canvas {
+      position: absolute; /* Change to absolute for mobile */
     }
-
-    .main-title {
-        font-size: 1.5rem;  /* Further reduce font size for small screens */
+  
+    footer {
+      position: relative; /* Footer flows naturally */
     }
-
-    .tagline {
-        font-size: 0.9rem;
-    }
-}
+  }
