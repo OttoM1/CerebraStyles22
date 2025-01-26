@@ -321,8 +321,6 @@
         height: 100%;
     }
      footer {
-        position: relative; /* Adjust to flow naturally on mobile */
-          position: relative; /* Change to relative or static on smaller screens */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -330,6 +328,11 @@
     padding: 1rem 0;
     font-size: 0.9rem;
     color: #88cbcd;
+        position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
     }
      .main-title {
         font-size: 2.5rem; /* Adjust font size for mobile */
