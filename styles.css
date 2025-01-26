@@ -218,6 +218,7 @@ body, html {
   #mainContent {
     flex-grow: 1;
       max-width: 100%;
+    padding-bottom: 60px;
   }
   
   footer {
@@ -334,7 +335,9 @@ body, html {
 
     footer.visible {
   visibility: visible;  /* Make the footer visible */
-  opacity: 1;            /* Fade in */
+  opacity: 1;  
+    position: fixed;
+      
 }
 
  canvas {
@@ -361,13 +364,17 @@ body, html {
     color: #88cbcd;
         position: fixed;
     bottom: 0;
+       visibility: hidden;
     left: 0;
     width: 100%;
     z-index: 0;
+         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;  /* Smooth transition */
+
     }
      .main-title {
         font-size: 1.8rem; /* Adjust font size for mobile */
-    }
+   line-height: 1.2;
+     }
 
     .tagline {
         font-size: 1rem; /* Adjust tagline font size */
@@ -398,6 +405,24 @@ body, html {
 body, html {
     overflow-x: hidden;
     width: 100%;
+}
+
+
+
+@media (max-width: 480px) {
+  body, html {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Ensure we don't stretch the body */
+  }
+
+  .main-title {
+    font-size: 1.5rem;  /* Adjust font size for even smaller screens */
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
 }
 
 
