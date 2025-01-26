@@ -309,7 +309,9 @@ h2 {
     
 
 
-
+.revealContainer footer {
+    position: hidden;
+}
 
 
 
