@@ -315,6 +315,31 @@
 
 
 @media (max-width: 768px) {
+.content-section {
+ footer {
+
+ 
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #88cbcd;
+        position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    }
+}
+
+
+
+
+
+
+
+
+
+    
     canvas {
         position: absolute; /* Change to absolute or relative on mobile */
         width: 100%;
