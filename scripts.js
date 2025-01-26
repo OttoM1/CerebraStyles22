@@ -103,20 +103,3 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 
 
 
-
-
-
-
-window.addEventListener('scroll', function() {
-    const footer = document.querySelector('footer');
-    const documentHeight = document.documentElement.scrollHeight;  // Total page height
-    const windowHeight = window.innerHeight;  // Viewport height
-    const scrollPosition = window.scrollY;   // Current scroll position
-
-    // Check if user has scrolled to the bottom of the page
-    if (scrollPosition + windowHeight >= documentHeight - 10) {
-        footer.classList.add('visible');  // Show footer
-    } else {
-        footer.classList.remove('visible');  // Hide footer
-    }
-});
