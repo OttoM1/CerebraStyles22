@@ -315,8 +315,7 @@
 
 
 @media (max-width: 768px) {
-.reveal-section {
- footer {
+.reveal-section footer {
 
  
     text-align: center;
@@ -328,7 +327,7 @@
     left: 0;
     width: 100%;
     z-index: 10;
-    }
+    
 }
 
 
