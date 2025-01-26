@@ -1,3 +1,19 @@
+body, html {
+  overflow-x: hidden;  /* Prevent horizontal scrolling */
+  width: 100%;
+  height: 100%;         /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* Space between header, content, and footer */
+}
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -315,21 +331,19 @@
 
 
 @media (max-width: 768px) {
-.reveal-section footer {
 
- 
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    color: #88cbcd;
-        position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-    
+    footer.visible {
+  visibility: visible;  /* Make the footer visible */
+  opacity: 1;            /* Fade in */
 }
 
+ canvas {
+    position: absolute;  /* Ensure canvas fills the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 
 
@@ -337,13 +351,7 @@
 
 
 
-
-    
-    canvas {
-        position: absolute; /* Change to absolute or relative on mobile */
-        width: 100%;
-        height: 100%;
-    }
+   
      footer {
 
  
