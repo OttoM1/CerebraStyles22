@@ -321,14 +321,13 @@
         height: 100%;
     }
      footer {
-    bottom: 0;
-    left: 0;
-    width: 100%;
+
+ 
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
     color: #88cbcd;
-        position: fixed;
+        position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
