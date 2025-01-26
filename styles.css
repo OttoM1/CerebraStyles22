@@ -212,7 +212,9 @@ footer {
 
 
 
-
+contactform {
+  animation: fadeIn 3.5s ease-in-out;
+}
 
 p {
   animation: fadeIn 3.5s ease-in-out; /* Set duration to 10 seconds */
