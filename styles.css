@@ -200,7 +200,8 @@
   
   
   #mainContent {
-    flex-grow: 1;  
+    flex-grow: 1;
+      max-width: 100%;
   }
   
   footer {
@@ -307,6 +308,63 @@
   
 
 
+
+
+
+
+
+
+@media (max-width: 768px) {
+    canvas {
+        position: absolute; /* Change to absolute or relative on mobile */
+        width: 100%;
+        height: 100%;
+    }
+     footer {
+        position: relative; /* Adjust to flow naturally on mobile */
+          position: relative; /* Change to relative or static on smaller screens */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #88cbcd;
+    }
+     .main-title {
+        font-size: 2.5rem; /* Adjust font size for mobile */
+    }
+
+    .tagline {
+        font-size: 1rem; /* Adjust tagline font size */
+    }
+
+    .nav-links {
+        font-size: 1rem; /* Adjust nav link font size */
+    }
+     .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0; /* Reduce margin between links */
+    }
+     #contactForm input, 
+    #contactForm textarea, 
+    #contactForm button {
+        width: 100%; /* Make form elements full width */
+        max-width: none; /* Remove max-width on mobile */
+    }
+}
+
+
+
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+}
 
 
 
