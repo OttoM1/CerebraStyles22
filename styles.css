@@ -320,7 +320,7 @@ h2 {
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
-    .revealContainer footer {
+    #revealContainer footer {
     visibility: hidden;
 }
     .main-title {
