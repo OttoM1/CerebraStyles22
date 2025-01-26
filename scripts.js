@@ -1,6 +1,4 @@
 
-
-
 const canvas = document.getElementById("coolCanvas");
 const ctx = canvas.getContext("2d");
 
