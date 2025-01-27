@@ -369,7 +369,7 @@ footer.visible {
    
   }
     footer {
-      /*  display: none; */
+        display: none; 
         position: static;
     margin-top: auto; /*
     }
@@ -405,12 +405,8 @@ body {
   .main-title, .text-3d {
     font-size: 2.5rem; /* Smaller title size */
   }
-         .nav-links a {
-    font-size: 22px; /* Smaller nav link size */
-    padding: 8px 17px; /* Adjust padding */
- gap: 10px;
-            flex-wrap: wrap;
-         }
+         
+         
          .section-content p {
          font-size: 1rem;
      }
@@ -418,9 +414,12 @@ body {
             overflow: hidden;
         }
         .nav-links a {
-    font-size: 23px; /* Smaller nav link size */
-    padding: 10px 19px; /* Adjust padding */
-  }
+    font-size: 21.1px; /* Smaller nav link size */
+    padding: 8.2px 18px; /* Adjust padding */
+  gap: 12px;
+                        flex-wrap: wrap;
+
+        }
         #revealButton {
     background: rgba(168, 218, 220, 0);
     color: #4d8766;
@@ -505,13 +504,13 @@ display: flex;
     }
 
   .nav-links a {
-    font-size: 23px; /* Smaller nav link size */
-    padding: 10px 19px; 
-      gap: 10px;
+    font-size: 21.2px; /* Smaller nav link size */
+    padding: 8.2px 18px; 
+      gap: 12px;
             flex-wrap: wrap; /* Adjust padding */
   }
     footer {
-        /*display: hidden; */
+        display: hidden;
         position: static; 
     margin-top: auto; 
     }
