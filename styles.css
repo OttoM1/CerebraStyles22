@@ -387,8 +387,11 @@ footer.visible {
         
         padding: 10px;
         background-color: rgba(1, 1, 1, 0);
-        position: static;
+        position: absolute;
     margin-top: auto; 
+        text-align: center;
+        left: 0;
+        bottom: 0;
     }
 
 #revealContainer footer {
@@ -506,10 +509,13 @@ footer.visible {
     padding: 8px 17px; 
   }
     footer {
-padding: 10px;
+  padding: 10px;
         background-color: rgba(1, 1, 1, 0);
-        position: static;
+        position: absolute;
     margin-top: auto; 
+        text-align: center;
+        left: 0;
+        bottom: 0;
     }
 
 
