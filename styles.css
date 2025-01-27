@@ -335,9 +335,9 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
         color: #88cbcd; 
-    position: fixed;
-       bottom: 0;
-    left: 0;
+   /* position: fixed; */
+      /* bottom: 0; */
+/*    left: 0; */
     width: 100%;
     z-index: 10;
   }
@@ -380,21 +380,24 @@ footer {
 
 /* Media Query: Tablet and smaller devices */
 @media (max-width: 768px) {
-
+#mainContent { flex: 1; }
  .main-title {
     font-size: 50px;
  }
+    .tagline {
+        font-size: 31.9px;
+    }
     h2 {
-    font-size: 16.5px;
+    font-size: 20.8px;
 }
     p {
-        font-size: 10.2px;
+        font-size: 15.2px;
     }
      .section-content p {
-              font-size: 10.2px;
+              font-size: 15.2px;
           }
  .section-content h2 {
-              font-size: 16.5px;
+              font-size: 20.8px;
           }
     
     #revealButton {
@@ -418,10 +421,15 @@ footer {
 
 /* Media Query: Extra-large phones and smaller */
 @media (max-width: 414px) {
+    #mainContent { flex: 1; }
+
     #revealButton {
         padding: 30px 44px;
         font-size: 16px;
         border-radius: 50%;
+    }
+    .tagline {
+        font-size: 25px;
     }
      .main-title {
     font-size: 42px;
@@ -431,22 +439,22 @@ footer {
         font-size: 16.4px;
     }
 h2 {
-    font-size: 15.9px;
+    font-size: 19.1px;
 }
     .content-section {
         padding: 9px;
     }
          p {
-             font-size: 9.1px;
+             font-size: 12.85px;
          }
           .section-content p {
-              font-size: 9.1px;
+              font-size: 12.85px;
           }
          footer {
              font-size: 4.88px;
          }
           .section-content h2 {
-              font-size: 15.9px;
+              font-size: 19.1px;
           }
 }
 
