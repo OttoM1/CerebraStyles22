@@ -109,3 +109,15 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 
 
 
+
+
+window.onload = function() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    animate();
+};
+
+
+
+
+
