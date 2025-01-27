@@ -336,7 +336,7 @@ h2 {
 
 
 
-@media (max-width: 480px) { 
+@media (max-width: 768px) and (orientation: portrait){ 
 footer.visible {
     visibility: visible;
     opacity: 1;
@@ -350,6 +350,7 @@ footer.visible {
   }
     footer {
         position: static;
+    margin-top: auto; /*
     }
 
 /* Styling for the reveal section */
@@ -386,7 +387,7 @@ header {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
   .header {
     padding: 1rem 0.5rem; /* Reduce padding */
   }
@@ -409,5 +410,6 @@ header {
   }
     footer {
         position: static;
+    margin-top: auto; /*
     }
 }
