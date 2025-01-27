@@ -362,7 +362,7 @@ footer.visible {
   margin: 0;
 }
 .tagline {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: #88cbcd;
     margin-top: 0.5rem;
     font-family: 'Montserrat', sans-serif;
@@ -413,7 +413,7 @@ body {
          
          
          .section-content p {
-         font-size: 0.1rem;
+         font-size: 0.85rem;
      }
         canvas {
             overflow: hidden;
@@ -502,7 +502,7 @@ display: flex;
    
 
      .section-content p {
-         font-size: 0.1rem;
+         font-size: 0.85rem;
      }
     canvas {
         overflow: hidden;
