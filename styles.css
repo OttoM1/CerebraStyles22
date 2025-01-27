@@ -369,7 +369,7 @@ footer.visible {
    
   }
     footer {
-        display: none;
+      /*  display: none; */
         position: static;
     margin-top: auto; /*
     }
@@ -423,6 +423,8 @@ body {
     background: rgba(168, 218, 220, 0);
     color: #4d8766;
     border: none;
+            gap: 10px;
+            flex-wrap: wrap;
 
 display: flex;
     width: 85px;  /* Equal width and height for a circle */
@@ -464,6 +466,8 @@ display: flex;
         align-items: center;
         justify-content: center;
         display: flex;
+         gap: 10px;
+            flex-wrap: wrap;
     border: none;
     width: 85px;  /* Equal width and height for a circle */
     height: 112px; 
@@ -505,7 +509,7 @@ display: flex;
     padding: 10px 19px; /* Adjust padding */
   }
     footer {
-        display: hidden;
+        /*display: hidden; */
         position: static; 
     margin-top: auto; 
     }
@@ -513,5 +517,8 @@ display: flex;
         width: 100%;
         overflow-x: hidden;  /* This prevents horizontal scroll, keep it */
   overflow-y: auto;
+        display: flex;
+        flex-direction: column;
     }
+
 }
