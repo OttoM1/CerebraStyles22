@@ -22,7 +22,7 @@ html, body {
   }
   
   .hidden {
-    display: block; /*none*/
+    display: none;
   }
   
   
