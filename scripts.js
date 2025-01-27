@@ -2,11 +2,24 @@
 const canvas = document.getElementById("coolCanvas");
 const ctx = canvas.getContext("2d"); 
 
-// Resize Canvas to Match Screen
+
+
+
+let resizeTimeout;
+function resizeCanvas() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }, 100); // Resize after 100ms delay
+}
+
+
+/*
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-}
+}*/
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 // Particles Array
@@ -91,4 +104,8 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
         revealSection(targetSection);
     });
 });
+
+
+
+
 
