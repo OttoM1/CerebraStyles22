@@ -246,7 +246,7 @@
   
   
   #mainContent {
-    display: none;
+flex-grow: 1;
   }
   
   footer {
@@ -423,6 +423,23 @@ body {
          .section-content p {
          font-size: 1rem;
      }
+        #revealButton {
+    background: rgba(168, 218, 220, 0);
+    color: #4d8766;
+    border: none;
+    padding: 40px 70px; /* Smaller padding for a more compact button */
+    border-radius: 150px; /* Adjusted to make the button more compact */
+    box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px; /* Smaller font size */
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 
+    -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
+    -3.3px 5.2px 10px rgba(30, 94, 92, 0.7), 
+    4.4px 6.3px 15px rgba(99, 209, 226, 0.7);
+    transition: background 3s linear, transform 3s linear, box-shadow 3s linear;
+}
 }
 
 
@@ -438,6 +455,23 @@ body {
   html, body {
   height: 100%;
   margin: 0;
+}
+    #revealButton {
+    background: rgba(168, 218, 220, 0);
+    color: #4d8766;
+    border: none;
+    padding: 40px 70px; /* Smaller padding for a more compact button */
+    border-radius: 150px; /* Adjusted to make the button more compact */
+    box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px; /* Smaller font size */
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 
+    -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
+    -3.3px 5.2px 10px rgba(30, 94, 92, 0.7), 
+    4.4px 6.3px 15px rgba(99, 209, 226, 0.7);
+    transition: background 3s linear, transform 3s linear, box-shadow 3s linear;
 }
 
   .main-title, .text-3d {
