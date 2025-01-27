@@ -375,7 +375,6 @@ footer.visible {
   min-height: 100%;
        height: auto;
   margin: 0;
-       overscroll-behavior: contain;
 }
     .wrapper {
   display: flex;
@@ -476,7 +475,6 @@ footer.visible {
        height: auto;
        padding: 0;
   margin: 0;
-        overscroll-behavior: contain;
 }
     #revealButton {
         background: rgba(168, 218, 220, 0);
