@@ -404,6 +404,9 @@ body {
 .hidden {
     display: none;
 }
+        footer.hidden {
+    display: none;
+}
  .header {
     padding: 1rem 0.5rem; /* Reduce padding */
   }
@@ -411,6 +414,13 @@ body {
   .main-title, .text-3d {
     font-size: 2.5rem; /* Smaller title size */
   }
+         .nav-links a {
+    font-size: 30px; /* Smaller nav link size */
+    padding: 15px 30px; /* Adjust padding */
+  }
+         .section-content p {
+         font-size: 1rem;
+     }
 }
 
 
@@ -435,14 +445,20 @@ body {
   .nav-links {
     flex-wrap: wrap; /* Stack nav links if needed */
   }
+    footer.hidden {
+    display: none;
+}
+     .section-content p {
+         font-size: 1rem;
+     }
 
   .nav-links a {
-    font-size: 20px; /* Smaller nav link size */
-    padding: 10px 20px; /* Adjust padding */
+    font-size: 30px; /* Smaller nav link size */
+    padding: 15px 30px; /* Adjust padding */
   }
     footer {
         position: static;
-    margin-top: auto; /*
+    margin-top: auto; 
     }
     body {
         overflow: hidden;
