@@ -377,6 +377,11 @@ footer.visible {
   margin: 0;
        overscroll-behavior: contain;
 }
+    .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the wrapper covers the full viewport height */
+}
 .tagline {
     font-size: 1.2rem;
     color: #88cbcd;
@@ -524,6 +529,11 @@ footer.visible {
 
     }
 
+    .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the wrapper covers the full viewport height */
+}
 
 
     
