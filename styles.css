@@ -11,11 +11,11 @@
     background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
     color: rgba(14, 14, 14, 0.9);
     overflow-x: hidden;
-    display: flex; 
+   /* display: flex; */
     flex-direction: column;
     min-height: 100vh;
       overflow-y: auto;
-     /* display: block; */
+     display: block; 
   }
   
   .hidden {
@@ -377,6 +377,7 @@ footer.visible {
    
   }
     footer {
+        display: none;
         position: static;
     margin-top: auto; /*
     }
@@ -402,9 +403,6 @@ body {
 
 /* When the reveal section is hidden, ensure space for content and footer */
 .hidden {
-    display: none;
-}
-        footer.hidden {
     display: none;
 }
  .header {
@@ -445,9 +443,8 @@ body {
   .nav-links {
     flex-wrap: wrap; /* Stack nav links if needed */
   }
-    footer.hidden {
-    display: none;
-}
+   
+
      .section-content p {
          font-size: 1rem;
      }
@@ -457,6 +454,7 @@ body {
     padding: 15px 30px; /* Adjust padding */
   }
     footer {
+        display: hidden;
         position: static;
     margin-top: auto; 
     }
