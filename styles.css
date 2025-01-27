@@ -362,7 +362,7 @@ footer.visible {
   margin: 0;
 }
 .tagline {
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     color: #88cbcd;
     margin-top: 0.5rem;
     font-family: 'Montserrat', sans-serif;
@@ -413,7 +413,7 @@ body {
          
          
          .section-content p {
-         font-size: 1rem;
+         font-size: 0.1rem;
      }
         canvas {
             overflow: hidden;
@@ -493,7 +493,7 @@ display: flex;
   }
 
   .tagline {
-    font-size: 1rem; /* Reduce tagline size */
+    font-size: 0.6rem; /* Reduce tagline size */
   }
 
   .nav-links {
@@ -502,7 +502,7 @@ display: flex;
    
 
      .section-content p {
-         font-size: 1rem;
+         font-size: 0.1rem;
      }
     canvas {
         overflow: hidden;
