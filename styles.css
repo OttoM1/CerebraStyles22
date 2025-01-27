@@ -397,8 +397,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
     width: 100%;
+    overflow-x: hidden;  /* This prevents horizontal scroll, keep it */
+  overflow-y: auto;
 }
 
 /* When the reveal section is hidden, ensure space for content and footer */
@@ -413,8 +414,8 @@ body {
     font-size: 2.5rem; /* Smaller title size */
   }
          .nav-links a {
-    font-size: 30px; /* Smaller nav link size */
-    padding: 15px 30px; /* Adjust padding */
+    font-size: 25px; /* Smaller nav link size */
+    padding: 10px 20px; /* Adjust padding */
   }
          .section-content p {
          font-size: 1rem;
@@ -450,8 +451,8 @@ body {
      }
 
   .nav-links a {
-    font-size: 30px; /* Smaller nav link size */
-    padding: 15px 30px; /* Adjust padding */
+    font-size: 25px; /* Smaller nav link size */
+    padding: 10px 20px; /* Adjust padding */
   }
     footer {
         display: hidden;
@@ -459,7 +460,8 @@ body {
     margin-top: auto; 
     }
     body {
-        overflow: hidden;
         width: 100%;
+        overflow-x: hidden;  /* This prevents horizontal scroll, keep it */
+  overflow-y: auto;
     }
 }
