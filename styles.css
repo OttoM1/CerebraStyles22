@@ -392,6 +392,9 @@ footer.visible {
         text-align: center;
         left: 0;
         bottom: 0;
+    
+  padding-bottom: 40px; /* Reserve space for the footer */
+
     }
 
 #revealContainer footer {
@@ -413,7 +416,6 @@ footer.visible {
    /* overflow-x: hidden; */
   overflow-y: auto;
                position: fixed;
-               -webkit-overflow-scrolling: auto;
 
 }
 
@@ -516,6 +518,8 @@ footer.visible {
         text-align: center;
         left: 0;
         bottom: 0;
+  padding-bottom: 40px; /* Reserve space for the footer */
+
     }
 
 
@@ -526,7 +530,6 @@ footer.visible {
         /* overflow-x: hidden;  */
   overflow-y: auto;
          position: fixed;
-         -webkit-overflow-scrolling: auto;
  
     }
 }
