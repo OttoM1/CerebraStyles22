@@ -374,7 +374,7 @@ footer.visible {
   html, body {
   height: 100%;
   margin: 0;
-       overscroll-behavior: none;
+       overscroll-behavior: contain;
 }
 .tagline {
     font-size: 1.2rem;
@@ -407,9 +407,10 @@ footer.visible {
       flex-direction: column;
     height: 100vh;
     width: 100%;
-    overflow-x: hidden; 
+   /* overflow-x: hidden; */
   overflow-y: auto;
                position: fixed;
+               -webkit-overflow-scrolling: auto;
 
 }
 
@@ -463,7 +464,7 @@ footer.visible {
   height: 100%;
        padding: 0;
   margin: 0;
-        overscroll-behavior: none;
+        overscroll-behavior: contain;
 }
     #revealButton {
         background: rgba(168, 218, 220, 0);
@@ -516,9 +517,10 @@ padding: 10px;
     
     body {
         width: 100%;
-        overflow-x: hidden;  
+        /* overflow-x: hidden;  */
   overflow-y: auto;
          position: fixed;
+         -webkit-overflow-scrolling: auto;
  
     }
 }
