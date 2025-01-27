@@ -37,8 +37,10 @@
   border-radius: 295px;
   box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
   font-family: 'Courier New', Courier, monospace;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
+  max-width: 400px; /* or any width that suits your design */
+
   cursor: pointer;
   text-shadow: 
     -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
