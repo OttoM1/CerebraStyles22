@@ -1,6 +1,6 @@
 
 const canvas = document.getElementById("coolCanvas");
-const ctx = canvas.getContext("2d");
+const ctx = canvas.getContext("2d"); 
 
 // Resize Canvas to Match Screen
 function resizeCanvas() {
@@ -13,10 +13,6 @@ window.addEventListener("resize", resizeCanvas);
 const particles = [];
 const particleCount = 150;
 const colors = ['#333333', '#333333', '#131414', '#505050'];
-
-
-
-
 
 class Particle {
     constructor() {
@@ -77,10 +73,6 @@ document.getElementById("revealButton").addEventListener("click", () => {
     revealContainer.style.display = "none"; // Ensures it is entirely removed from the layout
 });
 
-
-
-
-
 function revealSection(sectionId) {
     // Hide all sections first
     document.querySelectorAll(".content-section").forEach((section) => {
@@ -99,7 +91,4 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
         revealSection(targetSection);
     });
 });
-
-
-
 
