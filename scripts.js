@@ -1,62 +1,52 @@
-
 const canvas = document.getElementById("coolCanvas");
-   const ctx = canvas.getContext("2d"); 
-
-
+const ctx = canvas.getContext("2d");
 
 let resizeTimeout;
 function resizeCanvas() {
     clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(() => {
+    resizeTimeout = setTimeout(() => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-    }, 112); // 90ms viive alkuperane
+    }, 100); // Adjusted delay for smoother resizing
 }
 
-
-/*
-function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-}*/
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
+
 const particles = [];
- const particleCount = 172;
+const particleCount = 172;
 const colors = ['#333333', '#333333', '#131414', '#505050'];
 
 class Particle {
     constructor() {
-                this.x = Math.random() * canvas.width;
+        this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         this.radius = Math.random() * 0.5 + 1.2;
-          this.color = colors[Math.floor(Math.random() * colors.length)];
+        this.color = colors[Math.floor(Math.random() * colors.length)];
         this.speedX = (Math.random() - 0.05) * 0.6;
-         this.speedY = (Math.random() - 0.08) * 0.5;
+        this.speedY = (Math.random() - 0.08) * 0.5;
     }
 
     update() {
         this.x += this.speedX;
-         this.y += this.speedY;
+        this.y += this.speedY;
 
-         if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
         if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
     }
 
     draw() {
         ctx.beginPath();
-            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         ctx.fillStyle = this.color;
-         ctx.fill();
+        ctx.fill();
     }
 }
 
-//pallurat
 for (let i = 0; i < particleCount; i++) {
     particles.push(new Particle());
 }
 
-//taa bugaa valil
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles.forEach((particle) => {
@@ -65,48 +55,34 @@ function animate() {
     });
     requestAnimationFrame(animate);
 }
-    animate();
+animate();
 
-/*
 document.getElementById("revealButton").addEventListener("click", () => {
     document.getElementById("mainContent").classList.remove("hidden");
-    document.getElementById("revealContainer").classList.add("hidden");
-});
-*/
-document.getElementById("revealButton").addEventListener("click", () => {
-    document.getElementById("mainContent").classList.remove("hidden");
-
-          const revealContainer = document.getElementById("revealContainer");
+    const revealContainer = document.getElementById("revealContainer");
     revealContainer.classList.add("hidden");
-         revealContainer.style.display = "none"; 
+    revealContainer.style.display = "none";
 });
 
 function revealSection(sectionId) {
     document.querySelectorAll(".content-section").forEach((section) => {
-         section.classList.add("hidden");
+        section.classList.add("hidden");
     });
-
-       document.getElementById(sectionId).classList.remove("hidden");
+    document.getElementById(sectionId).classList.remove("hidden");
 }
 
-       document.querySelectorAll(".nav-links a").forEach((link) => {
+document.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", (event) => {
-        event.preventDefault(); 
-        const targetSection = event.target.getAttribute("href").substring(1); 
+        event.preventDefault();
+        const targetSection = event.target.getAttribute("href").substring(1);
         revealSection(targetSection);
     });
-                  });
+});
 
-
-
-
-
-
-window.onload = function() {
+window.onload = function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     animate();
 };
-
 
 
