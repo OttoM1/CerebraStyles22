@@ -10,7 +10,7 @@ function resizeCanvas() {
         resizeTimeout = setTimeout(() => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-    }, 100); // 90ms viive alkuperane
+    }, 112); // 90ms viive alkuperane
 }
 
 
