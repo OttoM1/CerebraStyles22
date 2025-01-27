@@ -369,6 +369,7 @@ body {
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
+    width: 100%;
 }
 
 /* When the reveal section is hidden, ensure space for content and footer */
@@ -411,5 +412,9 @@ header {
     footer {
         position: static;
     margin-top: auto; /*
+    }
+    body {
+        overflow: hidden;
+        width: 100%;
     }
 }
