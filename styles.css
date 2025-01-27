@@ -425,9 +425,9 @@ body {
     border: none;
 
 display: flex;
-    width: 80px;  /* Equal width and height for a circle */
-    height: 80px; 
-    border-radius: 50%;
+    width: 85px;  /* Equal width and height for a circle */
+    height: 95px; 
+    border-radius: 63%;
             
     box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
     font-family: 'Courier New', Courier, monospace;
@@ -465,12 +465,12 @@ display: flex;
         justify-content: center;
         display: flex;
     border: none;
-    width: 80px;  /* Equal width and height for a circle */
-    height: 80px; 
-    border-radius: 50%; /* Adjusted to make the button more compact */
+    width: 85px;  /* Equal width and height for a circle */
+    height: 95px; 
+    border-radius: 63%; /* Adjusted to make the button more compact */
     box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Smaller font size */
+    font-size: 19px; /* Smaller font size */
     font-weight: bold;
     cursor: pointer;
     text-shadow: 
