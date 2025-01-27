@@ -1,4 +1,4 @@
-/*
+
 const canvas = document.getElementById("coolCanvas");
 const ctx = canvas.getContext("2d"); 
 
@@ -101,7 +101,7 @@ window.onload = function() {
     canvas.height = window.innerHeight;
     animate();
 };
-*/
+
 
 
 
