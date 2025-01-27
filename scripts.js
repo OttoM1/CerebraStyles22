@@ -59,7 +59,6 @@ for (let i = 0; i < particleCount; i++) {
     particles.push(new Particle());
 }
 
-// Animation Loop
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles.forEach((particle) => {
@@ -77,30 +76,25 @@ document.getElementById("revealButton").addEventListener("click", () => {
 });
 */
 document.getElementById("revealButton").addEventListener("click", () => {
-    // Show the main content
     document.getElementById("mainContent").classList.remove("hidden");
 
-    // Completely hide the reveal container
     const revealContainer = document.getElementById("revealContainer");
     revealContainer.classList.add("hidden");
-    revealContainer.style.display = "none"; // Ensures it is entirely removed from the layout
+    revealContainer.style.display = "none"; 
 });
 
 function revealSection(sectionId) {
-    // Hide all sections first
     document.querySelectorAll(".content-section").forEach((section) => {
         section.classList.add("hidden");
     });
 
-    // Show the selected section
     document.getElementById(sectionId).classList.remove("hidden");
 }
 
-// Add event listeners to the nav links
 document.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevent default anchor behavior
-        const targetSection = event.target.getAttribute("href").substring(1); // Get section ID
+        event.preventDefault(); 
+        const targetSection = event.target.getAttribute("href").substring(1); 
         revealSection(targetSection);
     });
 });
