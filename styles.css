@@ -33,13 +33,13 @@
   background: rgba(168, 218, 220, 0);
   color: #4d8766;
   border: none;
-  padding: 60px 80px; /* Adjusted padding to make it more compact */
+  padding: 70px 90px; /* Adjusted padding to make it more compact */
   border-radius: 295px;
   box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
   font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: bold;
-  max-width: 400px; /* or any width that suits your design */
+  max-width: 360px; /* or any width that suits your design */
 
   cursor: pointer;
   text-shadow: 
