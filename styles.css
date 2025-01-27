@@ -370,8 +370,7 @@ footer.visible {
   }
     footer {
         display: none; 
-        position: static;
-    margin-top: auto; /*
+        visibility: hidden;
     }
 
 /* Styling for the reveal section */
@@ -383,6 +382,12 @@ footer.visible {
 #mainContent {
     margin-bottom: 100px; /* Ensure space for footer when content is scrolled */
 }
+     .nav-links a {
+    font-size: 20.8px; /* Smaller nav link size */
+    padding: 8px 16px; 
+      gap: 14px;
+            flex-wrap: wrap; /* Adjust padding */
+  }
 
 /* Prevent the footer from blocking the content */
 body {
@@ -504,15 +509,15 @@ display: flex;
     }
 
   .nav-links a {
-    font-size: 21.2px; /* Smaller nav link size */
-    padding: 8.2px 18px; 
-      gap: 12px;
+    font-size: 20.8px; /* Smaller nav link size */
+    padding: 8px 16px; 
+      gap: 14px;
             flex-wrap: wrap; /* Adjust padding */
   }
     footer {
         display: hidden;
-        position: static; 
-    margin-top: auto; 
+        visibility: hidden;
+     
     }
     body {
         width: 100%;
