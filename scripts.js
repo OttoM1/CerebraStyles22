@@ -1,4 +1,4 @@
-
+/*
 const canvas = document.getElementById("coolCanvas");
 const ctx = canvas.getContext("2d"); 
 
@@ -15,11 +15,7 @@ function resizeCanvas() {
 }
 
 
-/*
-function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-}*/
+
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 // Particles Array
@@ -69,12 +65,7 @@ function animate() {
 }
 animate();
 
-/*
-document.getElementById("revealButton").addEventListener("click", () => {
-    document.getElementById("mainContent").classList.remove("hidden");
-    document.getElementById("revealContainer").classList.add("hidden");
-});
-*/
+
 document.getElementById("revealButton").addEventListener("click", () => {
     document.getElementById("mainContent").classList.remove("hidden");
 
@@ -110,7 +101,7 @@ window.onload = function() {
     canvas.height = window.innerHeight;
     animate();
 };
-
+*/
 
 
 
