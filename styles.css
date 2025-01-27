@@ -11,9 +11,11 @@
     background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
     color: rgba(14, 14, 14, 0.9);
     overflow-x: hidden;
-    display: flex;
+   /* display: flex; */
     flex-direction: column;
     min-height: 100vh;
+      overflow-y: auto;
+      display: block;
   }
   
   .hidden {
@@ -346,6 +348,9 @@ footer.visible {
     font-family: 'Montserrat', sans-serif;
    
   }
+    footer {
+        position: static;
+    }
 
 /* Styling for the reveal section */
 #revealContainer footer {
@@ -373,4 +378,36 @@ header {
     width: 100%;
     box-sizing: border-box; /* Make sure padding is included in the width */
   }
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem 0.5rem; /* Reduce padding */
+  }
+
+  .main-title {
+    font-size: 2.5rem; /* Smaller title size */
+  }
+
+  .tagline {
+    font-size: 1rem; /* Reduce tagline size */
+  }
+
+  .nav-links {
+    flex-wrap: wrap; /* Stack nav links if needed */
+  }
+
+  .nav-links a {
+    font-size: 20px; /* Smaller nav link size */
+    padding: 10px 20px; /* Adjust padding */
+  }
+    footer {
+        position: static;
+    }
 }
