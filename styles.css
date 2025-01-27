@@ -1,4 +1,5 @@
 
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@
   }
   
   
+
   #revealContainer {
     display: flex;
     justify-content: center;
@@ -29,26 +31,41 @@
   
   
   
-  
   #revealButton {
-    background: radial-gradient(ellipse, rgba(23, 23, 23, 0.4), rgba(36, 40, 42, 0.4));
+    background: rgba(168, 218, 220, 0);
     color: #4d8766;
     border: none;
-    padding: 100px 155px;
-    border-radius: 205px;
+    padding: 80px 140px;
+    border-radius: 220px;
+    box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
     font-family: 'Courier New', Courier, monospace;
     font-size: 46px;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
-    box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
+    text-shadow: 
+    -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
+    -3.3px 5.2px 10px rgba(30, 94, 92, 0.7), 
+    4.4px 6.3px 15px rgba(99, 209, 226, 0.7);
+  
+    transition: background 3s linear, transform 3s linear, box-shadow 3s linear; /* Smooth transition for both transform and box-shadow */
+
    
 }
   
-  #revealButton:hover {
-    background: rgb(168, 218, 220, 0);
 
-  }
+#revealButton:hover {
+    background: radial-gradient(ellipse, rgba(23, 23, 23, 0), rgba(36, 40, 42, 0)); /* Background on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 0 2000px rgba(94, 134, 143, 0.2); /* Large shadow on hover */
+    transition: box-shadow 3s linear, transform 3s linear; /* Smooth transition back */
+}
+
+
+
+
+
+
+
   
   .header {
     text-align: center;
@@ -63,13 +80,14 @@
     text-shadow: 
     -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
     -3.3px 5.2px 10px rgba(30, 94, 92, 0.7), 
-    4.4px 6.3px 15px rgba(58, 115, 68, 0.7);
+    4.4px 6.3px 15px rgba(99, 209, 226, 0.7);
   }
   
   .tagline {
     font-size: 1.2rem;
     color: #88cbcd;
     margin-top: 0.5rem;
+    font-family: 'Lora', serif;
   }
   
   .nav-links {
@@ -124,6 +142,8 @@
     border: none;
     outline: none;
     border-radius: 8px;
+    transition: transform 0.8s ease;
+
   }
   
   #contactForm input, #contactForm textarea {
@@ -133,7 +153,9 @@
     outline: none;
     font-size: 1rem;
     box-shadow: 0 0 5px rgba(144, 198, 207, 0.6);
+    transition: transform 0.8s ease;
   }
+  
   
   #contactForm button {
     background: rgba(168, 218, 220, 0.6);
@@ -145,6 +167,7 @@
   
   #contactForm button:hover {
     background: rgba(168, 218, 220, 0.9);
+    transform: scale(1.1);
   }
   
   
@@ -176,15 +199,15 @@
   .nav-links a {
     display: inline-block; 
     background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
-    opacity: 0.9;
+    opacity: 0.75;
     box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
     color: #4d8766;
-    padding: 15px 45px;
+    padding: 20px 57px;
     border-radius: 75px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
-    transition: background 0.3s ease;
+    transition: background 0.4s ease;
     cursor: pointer; 
   }
   
@@ -306,50 +329,48 @@ h2 {
     1px -1px 0 rgb(129, 247, 201),
     -1px -1px 0 rgb(127, 249, 198); 
 }
-    
 
 
 
 
 
-
-
-
-
-
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-    #revealContainer footer {
-    visibility: hidden;
+@media (max-width: 480px) { 
+footer.visible {
+    visibility: visible;
+    opacity: 1;
 }
-    .main-title {
-      font-size: 2.5rem; /* Smaller font for mobile */
-    }
-  
-    .tagline {
-      font-size: 1rem;
-    }
-  
-    .nav-links {
-      flex-direction: column; /* Stack links vertically */
-      align-items: center;
-    }
-  
-    .nav-links li {
-      margin: 0.5rem 0; /* Reduce spacing between links */
-    }
-  
-    #contactForm input, #contactForm textarea, #contactForm button {
-      width: 100%; /* Full width for inputs */
-      max-width: none;
-    }
-  
-    canvas {
-      position: absolute; /* Change to absolute for mobile */
-    }
-  
-    footer {
-      position: relative; /* Footer flows naturally */
-    }
+.tagline {
+    font-size: 1.2rem;
+    color: #88cbcd;
+    margin-top: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+   
   }
+
+/* Styling for the reveal section */
+#revealContainer footer {
+    visibility: hidden; /* Ensure the footer is hidden when in reveal part */
+}
+
+/* Styling for main content when reveal part is hidden */
+#mainContent {
+    margin-bottom: 100px; /* Ensure space for footer when content is scrolled */
+}
+
+/* Prevent the footer from blocking the content */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* When the reveal section is hidden, ensure space for content and footer */
+.hidden {
+    display: none;
+}
+header {
+    width: 100%;
+    box-sizing: border-box; /* Make sure padding is included in the width */
+  }
+}
