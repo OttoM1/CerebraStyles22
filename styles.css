@@ -36,11 +36,11 @@
     background: rgba(168, 218, 220, 0);
     color: #4d8766;
     border: none;
-    padding: 80px 140px;
-    border-radius: 220px;
+    padding: 75px 130px;
+    border-radius: 205px;
     box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 46px;
+    font-size: 32px;
     font-weight: bold;
     cursor: pointer;
     text-shadow: 
