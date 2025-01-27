@@ -408,7 +408,9 @@ body {
          .nav-links a {
     font-size: 22px; /* Smaller nav link size */
     padding: 8px 17px; /* Adjust padding */
-  }
+ gap: 10px;
+            flex-wrap: wrap;
+         }
          .section-content p {
          font-size: 1rem;
      }
@@ -423,8 +425,7 @@ body {
     background: rgba(168, 218, 220, 0);
     color: #4d8766;
     border: none;
-            gap: 10px;
-            flex-wrap: wrap;
+          
 
 display: flex;
     width: 85px;  /* Equal width and height for a circle */
@@ -466,8 +467,7 @@ display: flex;
         align-items: center;
         justify-content: center;
         display: flex;
-         gap: 10px;
-            flex-wrap: wrap;
+         
     border: none;
     width: 85px;  /* Equal width and height for a circle */
     height: 112px; 
@@ -506,7 +506,9 @@ display: flex;
 
   .nav-links a {
     font-size: 23px; /* Smaller nav link size */
-    padding: 10px 19px; /* Adjust padding */
+    padding: 10px 19px; 
+      gap: 10px;
+            flex-wrap: wrap; /* Adjust padding */
   }
     footer {
         /*display: hidden; */
