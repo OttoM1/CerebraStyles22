@@ -382,58 +382,58 @@ footer {
 @media (max-width: 768px) {
 
  .main-title {
-    font-size: 26px;
+    font-size: 50px;
  }
     h2 {
-    font-size: 20px;
+    font-size: 16.2px;
 }
     p {
-        font-size: 11.2px;
+        font-size: 10px;
     }
 
     
     #revealButton {
-        padding: 36px 120px;
+        padding: 49px 82px;
         font-size: 18px;
     }
 
     .nav-links a {
-        padding: 10px 16px;
-        font-size: 18px;
+        padding: 12px 18px;
+        font-size: 21px;
     }
     footer {
-        font-size: 7px;
+        font-size: 6.33px;
     }
 
     .content-section {
-        padding: 1.5rem;
+        padding: 10px;
     }
 }
 
 /* Media Query: Extra-large phones and smaller */
 @media (max-width: 414px) {
     #revealButton {
-        padding: 20px 80px;
+        padding: 30px 44px;
         font-size: 16px;
     }
      .main-title {
-    font-size: 22px;
+    font-size: 42px;
 
     .nav-links a {
-        padding: 8px 12px;
-        font-size: 16px;
+        padding: 9px 13px;
+        font-size: 16.4px;
     }
 h2 {
-    font-size: 18px;
+    font-size: 15.9px;
 }
     .content-section {
-        padding: 1rem;
+        padding: 9px;
     }
          p {
              font-size: 9px;
          }
          footer {
-             font-size: 6.3px;
+             font-size: 4.88px;
          }
 }
 
