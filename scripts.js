@@ -24,7 +24,7 @@ resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 // Particles Array
 const particles = [];
-const particleCount = 150;
+const particleCount = 172;
 const colors = ['#333333', '#333333', '#131414', '#505050'];
 
 class Particle {
@@ -116,7 +116,6 @@ window.onload = function() {
     canvas.height = window.innerHeight;
     animate();
 };
-
 
 
 
