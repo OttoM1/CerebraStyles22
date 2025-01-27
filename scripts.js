@@ -4,7 +4,6 @@ const canvas = document.getElementById("coolCanvas");
 
 
 
-
 let resizeTimeout;
 function resizeCanvas() {
     clearTimeout(resizeTimeout);
