@@ -20,8 +20,6 @@
   .hidden {
     display: none;
   }
-  
-  
 
   #revealContainer {
     display: flex;
@@ -57,13 +55,6 @@
     box-shadow: 0 0 2000px rgba(94, 134, 143, 0.2); /* Large shadow on hover */
     transition: box-shadow 3s linear, transform 3s linear; /* Smooth transition back */
 }
-
-
-
-
-
-
-
   
   .header {
     text-align: center;
