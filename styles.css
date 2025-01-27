@@ -412,15 +412,22 @@ body {
          .section-content p {
          font-size: 1rem;
      }
+        canvas {
+            overflow: hidden;
+        }
+        .nav-links a {
+    font-size: 23px; /* Smaller nav link size */
+    padding: 10px 19px; /* Adjust padding */
+  }
         #revealButton {
     background: rgba(168, 218, 220, 0);
     color: #4d8766;
     border: none;
-    padding: 40px 70px; /* Smaller padding for a more compact button */
-    border-radius: 150px; /* Adjusted to make the button more compact */
+    padding: 32px 64px; /* Smaller padding for a more compact button */
+    border-radius: 100px; /* Adjusted to make the button more compact */
     box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px; /* Smaller font size */
+    font-size: 21px; /* Smaller font size */
     font-weight: bold;
     cursor: pointer;
     text-shadow: 
@@ -449,11 +456,11 @@ body {
     background: rgba(168, 218, 220, 0);
     color: #4d8766;
     border: none;
-    padding: 40px 70px; /* Smaller padding for a more compact button */
-    border-radius: 150px; /* Adjusted to make the button more compact */
+    padding: 32px 64px; /* Smaller padding for a more compact button */
+    border-radius: 100px; /* Adjusted to make the button more compact */
     box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px; /* Smaller font size */
+    font-size: 21px; /* Smaller font size */
     font-weight: bold;
     cursor: pointer;
     text-shadow: 
@@ -479,10 +486,13 @@ body {
      .section-content p {
          font-size: 1rem;
      }
+    canvas {
+        overflow: hidden;
+    }
 
   .nav-links a {
-    font-size: 22px; /* Smaller nav link size */
-    padding: 8px 17px; /* Adjust padding */
+    font-size: 23px; /* Smaller nav link size */
+    padding: 10px 19px; /* Adjust padding */
   }
     footer {
         display: hidden;
