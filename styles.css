@@ -33,13 +33,13 @@
   background: rgba(168, 218, 220, 0);
   color: #4d8766;
   border: none;
-  padding: 70px 90px; /* Adjusted padding to make it more compact */
-  border-radius: 295px;
+  padding: 48px 154px; /* Adjusted padding to make it more compact */
+  border-radius: 160px;
   box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
   font-family: 'Courier New', Courier, monospace;
-  font-size: 27px;
+  font-size: 22px;
   font-weight: bold;
-  max-width: 360px; /* or any width that suits your design */
+  max-width: 408px; /* or any width that suits your design */
 
   cursor: pointer;
   text-shadow: 
@@ -438,7 +438,7 @@ body {
     4.4px 6.3px 15px rgba(99, 209, 226, 0.7);
     transition: background 3s linear, transform 3s linear, box-shadow 3s linear;
 }
-}
+}}
 
 
 
