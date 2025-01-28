@@ -405,10 +405,13 @@ transition: transform 0.3s ease;
   font-size: 50px;
 }
 #translateButton {
-  padding: 10.4px 16px;
-    border-radius: 52%;
+  padding: 6.4px 12px;
+    border-radius: 51%;
     text-decoration: none;
-    font-size: 8.1px;
+    font-size: 6.1px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
   }
   .tagline {
       font-size: 18.9px;
@@ -473,10 +476,13 @@ transition: transform 0.3s ease;
   display: none;
 }
 #translateButton {
-padding: 8px 14px;
-  border-radius: 52%;
+padding: 4px 10px;
+  border-radius: 49%;
   text-decoration: none;
-  font-size: 6.1px;
+  font-size: 3.7px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
   
   #revealButton {
