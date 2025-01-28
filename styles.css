@@ -34,8 +34,8 @@ body {
     background: rgba(168, 218, 220, 0);
     color: #4d8766;
     border: none;
-    padding: 48px 154px;
-    border-radius: 160px;
+    padding: 72px 90px;
+        border-radius: 50%;
     box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
     font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
@@ -385,19 +385,19 @@ footer {
     font-size: 50px;
  }
     .tagline {
-        font-size: 31.9px;
+        font-size: 20.9px;
     }
     h2 {
-    font-size: 20.8px;
+    font-size: 28.8px;
 }
     p {
-        font-size: 15.2px;
+        font-size: 16.8px;
     }
      .section-content p {
-              font-size: 15.2px;
+              font-size: 16.8px;
           }
  .section-content h2 {
-              font-size: 20.8px;
+              font-size: 28.8px;
           }
     
     #revealButton {
@@ -411,23 +411,23 @@ footer {
         font-size: 21px;
     }
     footer {
-        font-size: 6.33px;
+        font-size: 6px;
         position: static;
     }
 
     .content-section {
         padding: 10px;
     }
-   #revealContainer:visible + footer {
-    visibility: hidden;
+  .hidden:footer {
+    display: none;
 }
 }
 
 /* Media Query: Extra-large phones and smaller */
 @media (max-width: 414px) {
     #mainContent { flex: 1; }
-#revealContainer:visible + footer {
-    visibility: hidden;
+.hidden:footer {
+    display: none;
 }
     
     #revealButton {
@@ -436,7 +436,7 @@ footer {
         border-radius: 50%;
     }
     .tagline {
-        font-size: 25px;
+        font-size: 17px;
     }
      .main-title {
     font-size: 42px;
@@ -446,23 +446,23 @@ footer {
         font-size: 16.4px;
     }
 h2 {
-    font-size: 19.1px;
+    font-size: 24.1px;
 }
     .content-section {
         padding: 9px;
     }
          p {
-             font-size: 12.85px;
+             font-size: 14px;
          }
           .section-content p {
-              font-size: 12.85px;
+              font-size: 14px;
           }
          footer {
-             font-size: 4.88px;
+             font-size: 4.6px;
              position: static;
          }
           .section-content h2 {
-              font-size: 19.1px;
+              font-size: 24.1px;
           }
 }
 
