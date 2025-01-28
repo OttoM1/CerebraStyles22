@@ -420,7 +420,7 @@ footer {
     }
     footer p {
         font-size: 9px;
-        position: static;
+        position: fixed;
     }
 
     .content-section {
@@ -476,7 +476,7 @@ h2 {
           }
          footer p {
              font-size: 7px;
-             position: static;
+             position: fixed;
          }
           .section-content h2 {
               font-size: 24.1px;
