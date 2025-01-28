@@ -9,7 +9,6 @@ function resizeCanvas() {
         canvas.height = window.innerHeight;
     }, 100); // Adjusted delay for smoother resizing
 }
-
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
