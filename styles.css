@@ -412,9 +412,13 @@ footer {
         font-size: 21px;
         position: relative; /* Or remove positioning */
     margin: 3px; 
+         display: flex;
+    flex-wrap: wrap; /* Ensures buttons wrap to the next row if they don’t fit */
+    gap: 10px; /* Adds spacing between buttons */
+    justify-content: center;
     }
     footer {
-        font-size: 6px;
+        font-size: 4px;
         position: static;
     }
 
@@ -452,6 +456,10 @@ footer {
         font-size: 16.4px;
         position: relative; /* Or remove positioning */
     margin: 3px; 
+         display: flex;
+    flex-wrap: wrap; /* Ensures buttons wrap to the next row if they don’t fit */
+    gap: 10px; /* Adds spacing between buttons */
+    justify-content: center;
     }
 h2 {
     font-size: 24.1px;
@@ -466,7 +474,7 @@ h2 {
               font-size: 14px;
           }
          footer {
-             font-size: 4.6px;
+             font-size: 3.2px;
              position: static;
          }
           .section-content h2 {
