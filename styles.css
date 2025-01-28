@@ -385,6 +385,9 @@ footer {
     height: 100%; /* Ensure full height */
     margin: 0;    /* Remove any default margin */
 }
+    main {
+        flex: 1;
+    }
    
 #mainContent { flex: 1; }
  .main-title {
@@ -456,6 +459,9 @@ footer {
 .hidden:footer {
     display: none;
 }
+    main {
+        flex: 1;
+    }
     
     #revealButton {
         padding: 32px 42px;
