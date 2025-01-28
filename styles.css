@@ -437,6 +437,7 @@ footer {
          }
     footer {
     position: absolute;
+         margin-top: 27px;
     bottom: 0;
     width: 100%;
     height: 50px; /* Adjust height as needed */
@@ -498,6 +499,7 @@ h2 {
          }
         footer {
     position: absolute;
+             margin-top: 24px;
     bottom: 0;
     width: 100%;
     height: 50px; /* Adjust height as needed */
