@@ -426,7 +426,7 @@ footer {
     gap: 10px; /* Adds spacing between buttons */
     justify-content: center;
     }
-    footer {
+    footer p {
         font-size: 4px;
         position: static;
     }
@@ -482,7 +482,7 @@ h2 {
           .section-content p {
               font-size: 14px;
           }
-         footer {
+         footer p {
              font-size: 3.2px;
              position: static;
          }
@@ -502,7 +502,6 @@ h2 {
              
          }
 }
-
 
 
 
