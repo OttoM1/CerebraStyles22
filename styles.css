@@ -407,9 +407,11 @@ footer {
           }
     
     #revealButton {
-        padding: 42px 80px;
+        padding: 56px 80px;
         font-size: 18px;
-        border-radius: 65%;
+        border-radius: 69%;
+              max-width: 272px;
+
     }
 
     .nav-links a {
@@ -437,7 +439,6 @@ footer {
          }
     footer {
     position: absolute;
-         margin-top: 32.6px;
         margin-bottom: 0px;
     bottom: 0;
     width: 100%;
@@ -457,9 +458,11 @@ footer {
 }
     
     #revealButton {
-        padding: 30px 42px;
+        padding: 32px 42px;
         font-size: 16px;
-        border-radius: 59%;
+        border-radius: 65%;
+              max-width: 203px;
+
     }
     .tagline {
         font-size: 17px;
@@ -500,7 +503,6 @@ h2 {
          }
         footer {
     position: absolute;
-             margin-top: 28px;
             margin-bottom: 0px;
     bottom: 0;
     width: 100%;
