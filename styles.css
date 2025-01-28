@@ -353,7 +353,7 @@ h2 {
     background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem !important;
+    font-size: 1.05rem !important;
     color: #88cbcd !important; 
     transition: color 0.4s ease, transform 0.4s ease;
 }
