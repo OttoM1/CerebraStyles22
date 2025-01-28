@@ -34,11 +34,12 @@ body {
     background: rgba(168, 218, 220, 0);
     color: #4d8766;
     border: none;
-    padding: 7px 92px;
-        border-radius: 63%;
+  padding: 48px 154px; 
+  border-radius: 70%;
     box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
     font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
+      max-width: 408px;
     font-weight: bold;
     cursor: pointer;
     text-shadow: 
@@ -423,6 +424,9 @@ footer {
   .hidden:footer {
     display: none;
 }
+       canvas {
+             height: 100vh;
+         }
 }
 
 /* Media Query: Extra-large phones and smaller */
@@ -468,6 +472,9 @@ h2 {
           .section-content h2 {
               font-size: 24.1px;
           }
+         canvas {
+             height: 100vh;
+         }
 }
 
 
