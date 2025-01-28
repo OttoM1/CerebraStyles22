@@ -320,7 +320,7 @@ text-align: center;
 
   .tagline {
     font-family: 'Dancing Script', cursive;
-    font-size: 18px; 
+    font-size: 14.2px; 
     color: #88cbcd; 
   }
   
@@ -402,7 +402,9 @@ h2 {
     font-size: 50px;
  }
     .tagline {
-        font-size: 20.9px;
+        font-size: 18.9px;
+            font-family: 'Cinzel', serif;
+
     }
     h2 {
     font-size: 28.8px;
@@ -471,7 +473,9 @@ h2 {
 
     }
     .tagline {
-        font-size: 17px;
+        font-size: 15.1px;
+            font-family: 'Cinzel', serif;
+
     }
      .main-title {
     font-size: 42px;
