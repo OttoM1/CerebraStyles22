@@ -426,7 +426,7 @@ footer {
     justify-content: center;
     }
     footer p {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .content-section {
@@ -438,13 +438,7 @@ footer {
        canvas {
              height: 100vh;
          }
-    footer {
-    position: absolute;
-        margin-bottom: 0px;
-    bottom: 0;
-    width: 100%;
-    height: 50px; /* Adjust height as needed */
-}
+   
 }
 
 /* Media Query: Extra-large phones and smaller */
@@ -495,7 +489,7 @@ h2 {
               font-size: 14px;
           }
          footer p {
-             font-size: 7px;
+             font-size: 8px;
          }
           .section-content h2 {
               font-size: 24.1px;
@@ -503,13 +497,7 @@ h2 {
          canvas {
              height: 100vh;
          }
-        footer {
-    position: absolute;
-            margin-bottom: 0px;
-    bottom: 0;
-    width: 100%;
-    height: 50px; /* Adjust height as needed */
-}
+      
 }
    
 
