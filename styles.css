@@ -404,15 +404,23 @@ transition: transform 0.3s ease;
 .main-title {
   font-size: 50px;
 }
+
 #translateButton {
-  padding: 6.4px 12px;
-    border-radius: 51%;
+    padding: 2px 5px; /* Smaller padding for a compact button */
+    border-radius: 50%; /* Makes it circular */
     text-decoration: none;
-    font-size: 6.1px;
-  position: absolute;
-  top: 6px;
-  right: 6px;
+    font-size: 5px; /* Adjusted font size for readability */
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(184, 242, 244, 0.8); /* Light, subtle background */
+    color: #000; /* Dark text for contrast */
+    border: 1px solid rgba(150, 212, 223, 0.8); /* Subtle border */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for a "real" feel */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
+  
   .tagline {
       font-size: 18.9px;
           font-family: 'Cinzel', serif;
@@ -476,14 +484,20 @@ transition: transform 0.3s ease;
   display: none;
 }
 #translateButton {
-padding: 4px 10px;
-  border-radius: 49%;
-  text-decoration: none;
-  font-size: 3.7px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
+    padding: 2px 5px; /* Smaller padding for a compact button */
+    border-radius: 50%; /* Makes it circular */
+    text-decoration: none;
+    font-size: 5px; /* Adjusted font size for readability */
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(184, 242, 244, 0.8); /* Light, subtle background */
+    color: #000; /* Dark text for contrast */
+    border: 1px solid rgba(150, 212, 223, 0.8); /* Subtle border */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for a "real" feel */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
   
   #revealButton {
       padding: 32px 42px;
