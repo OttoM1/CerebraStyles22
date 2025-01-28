@@ -499,19 +499,22 @@ overscroll-behavior: none;
   display: none;
 }
 #translateButton {
-    padding: 2px 5px; /* Smaller padding for a compact button */
     border-radius: 50%; /* Makes it circular */
     text-decoration: none;
     font-size: 5px; /* Adjusted font size for readability */
     position: absolute;
-    top: 5px;
-    right: 5px;
+   font-size: 3px; /* Smaller font size for mobile */
+    padding: 1px 3px; /* Reduce padding */
+    top: 3px; /* Adjust positioning */
+    right: 3px;
     background-color: rgba(184, 242, 244, 0.8); /* Light, subtle background */
     color: #000; /* Dark text for contrast */
     border: 1px solid rgba(150, 212, 223, 0.8); /* Subtle border */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for a "real" feel */
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+   width: 20px;
+    height: 20px;
   }
   
   #revealButton {
