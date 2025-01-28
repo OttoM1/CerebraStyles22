@@ -331,6 +331,7 @@ h2 {
     1px -1px 0 rgb(129, 247, 201),
     -1px -1px 0 rgb(127, 249, 198); 
 }
+/*
 .different-font {
     background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
     text-align: center;
@@ -347,8 +348,20 @@ h2 {
   transform: scale(1.1); 
   transition: transform 0.3s ease; /* Adds a smooth transition */
 }
+*/
+.section-content .different-font {
+    background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem !important;
+    color: #88cbcd !important; 
+    transition: color 0.4s ease, transform 0.4s ease;
+}
 
-
+.section-content .different-font:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; /* Adds smooth scaling */
+}
 
 
 
