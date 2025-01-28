@@ -430,7 +430,7 @@ footer {
     }
 
     .content-section {
-        padding: 10px;
+        padding: 30px;
     }
   .hidden:footer {
     display: none;
@@ -486,7 +486,7 @@ h2 {
     font-size: 24.1px;
 }
     .content-section {
-        padding: 9px;
+        padding: 24px;
     }
          p {
              font-size: 14px;
