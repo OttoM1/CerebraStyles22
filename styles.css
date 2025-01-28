@@ -402,7 +402,7 @@ transition: transform 0.3s ease;
   min-height: 100vh; /* Ensure full height */
   margin: 0;    /* Remove any default margin */
   height: -webkit-fill-available;
-
+overscroll-behavior: none;
   }
 
 #mainContent { flex: 1; }
@@ -475,6 +475,8 @@ transition: transform 0.3s ease;
      canvas {
            min-height: 100vh;
          height: -webkit-fill-available;
+       overscroll-behavior: none;
+
 
        }
  
@@ -486,6 +488,8 @@ transition: transform 0.3s ease;
   min-height: 100vh; /* Ensure full height */
   margin: 0;    /* Remove any default margin */
       height: -webkit-fill-available;
+    overscroll-behavior: none;
+
 
 }
   #mainContent { flex: 1; }
@@ -554,6 +558,8 @@ h2 {
        canvas {
           min-height: 100vh;
            height: -webkit-fill-available;
+         overscroll-behavior: none;
+
 
        }
     
