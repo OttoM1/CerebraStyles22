@@ -417,12 +417,18 @@ footer {
     .content-section {
         padding: 10px;
     }
+    #revealContainer:footer {
+        visibility: hidden;
+    }
 }
 
 /* Media Query: Extra-large phones and smaller */
 @media (max-width: 414px) {
     #mainContent { flex: 1; }
-
+ #revealContainer:footer {
+        visibility: hidden;
+    }
+    
     #revealButton {
         padding: 30px 44px;
         font-size: 16px;
