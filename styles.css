@@ -331,25 +331,22 @@ h2 {
     1px -1px 0 rgb(129, 247, 201),
     -1px -1px 0 rgb(127, 249, 198); 
 }
-footer {
+.different-font {
     background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
         color: #88cbcd; 
-   position: fixed; 
-      bottom: 0; 
-  left: 0; 
-    width: 100%;
-    z-index: 10;
+ 
   }
- footer {
+ .different-font { 
     transition: color 0.4s ease, transform 0.4s ease;
   }
 
-       footer:hover {
-    transform: scale(1.1); 
-  } 
+ .different-font:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; /* Adds a smooth transition */
+}
 
 
 
@@ -425,7 +422,7 @@ footer {
     gap: 10px; /* Adds spacing between buttons */
     justify-content: center;
     }
-    footer p {
+    .different-font {
         font-size: 11px;
     }
 
@@ -488,7 +485,7 @@ h2 {
           .section-content p {
               font-size: 14px;
           }
-         footer p {
+         .different-font {
              font-size: 8px;
          }
           .section-content h2 {
