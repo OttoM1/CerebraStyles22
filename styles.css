@@ -335,9 +335,9 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
         color: #88cbcd; 
-   /* position: fixed; */
-      /* bottom: 0; */
-/*    left: 0; */
+   position: fixed; 
+      bottom: 0; 
+  left: 0; 
     width: 100%;
     z-index: 10;
   }
@@ -412,6 +412,7 @@ footer {
     }
     footer {
         font-size: 6.33px;
+        position: static;
     }
 
     .content-section {
@@ -458,6 +459,7 @@ h2 {
           }
          footer {
              font-size: 4.88px;
+             position: static;
          }
           .section-content h2 {
               font-size: 19.1px;
