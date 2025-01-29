@@ -413,8 +413,9 @@ overscroll-behavior: none;
   }
 
 .kuva-otto img{
-width: 16vw;
-height: 25.2vh;
+width: 37.5vw; /* Ensures proper scaling */
+
+  height: 37.5vw;
 border-radius: 50%;
 cursor: pointer;
 margin-right: 2rem;
@@ -428,8 +429,9 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
 
 
 .kuva-niko img {
-  width: 16vw;
-  height: 25.1vh;
+  width: 37.5vw; /* Ensures proper scaling */
+
+  height: 37.5vw;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 2rem;
@@ -528,8 +530,9 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
        font-size: 6.9px;
      }
 .kuva-otto img{
-width: 16vw;
-height: 25.2vh;
+width: 37.5vw; /* Ensures proper scaling */
+
+  height: 37.5vw;
 border-radius: 50%;
 cursor: pointer;
 margin-right: 2rem;
@@ -540,11 +543,11 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
 
 
 
-
-
 .kuva-niko img {
-  width: 16vw;
-  height: 25.1vh;
+    width: 37.5vw; /* Ensures proper scaling */
+
+  height: 37.5vw;
+
   border-radius: 50%;
   cursor: pointer;
   margin-right: 2rem;
