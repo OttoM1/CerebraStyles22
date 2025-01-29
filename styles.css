@@ -1,8 +1,5 @@
 
 
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -47,17 +44,25 @@ border-radius: 70%;
   font-weight: bold;
   cursor: pointer;
   text-shadow: 
-  -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
-  -3.3px 5.2px 10px rgba(30, 94, 92, 0.7), 
-  4.4px 6.3px 15px rgba(99, 209, 226, 0.7);
-  transition: background 3s linear, transform 3s linear, box-shadow 3s linear;
+  -2.5px 4.2px 5px rgba(254, 254, 254, 0.2),
+  -3.3px 5.2px 10px rgba(30, 94, 92, 0.5), 
+  4.4px 6.3px 15px rgba(78, 215, 236, 0.4);
+  transition: background 0.6s linear, transform 1s linear, box-shadow 0.9s linear;
+
+
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center;
+  height: auto; /* Ensures flexibility */
+  width: auto;
 }
 
 #revealButton:hover {
-  background: radial-gradient(ellipse, rgba(23, 23, 23, 0), rgba(36, 40, 42, 0));
-  transform: scale(1.05);
-  box-shadow: 0 0 2000px rgba(94, 134, 143, 0.2);
-transition: box-shadow 3s linear, transform 3s linear;
+  background: radial-gradient(ellipse, rgba(57, 4, 57, 0), rgba(36, 40, 42, 0));
+  transform: scale(1.44);
+  box-shadow: 0 0 2000px rgba(41, 4, 37, 0.8);
+transition: box-shadow 3.5s linear, transform 4.5s linear;
 
 }
 
@@ -261,16 +266,16 @@ text-align: center;
 
 
 .slowed{
-  animation: fadeIn 3.5s ease-in-out;
+  animation: fadeIn 4.1s ease-in-out;
 }
 
 
 p {
-  animation: fadeIn 3.5s ease-in-out; 
+  animation: fadeIn 3.9s ease-in-out; 
 }
 
         h2 {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 3.2s ease-in-out;
 }
 
 
@@ -278,7 +283,7 @@ h1 {
   animation: fadeIn 3.5s ease-in-out; 
 }
         button {
-  animation: fadeIn 2.2s ease-in-out; 
+  animation: fadeIn 3.5s ease-in-out; 
 
 }
 .nav-links a {
@@ -571,6 +576,18 @@ h2 {
 }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 #translateButton {
   display: inline-block; 
   background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
@@ -596,3 +613,96 @@ h2 {
 
 
 
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+
+.Otto, .Niko {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+
+.kuva-otto img{
+width: 32vw;
+height: 50.5vh;
+border-radius: 50%;
+cursor: pointer;
+margin-right: 2rem;
+box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
+}
+
+
+
+
+
+
+
+.kuva-niko img {
+  width: 32vw;
+  height: 50.3vh;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 2rem;
+  box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
+
+}
+
+
+
+.Otto p, .Niko p {
+  border-radius: 35px;
+  /*background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313); */
+  background: radial-gradient(ellipse, rgba(13, 13, 13, 0), rgba(19, 28, 35, 0), rgba(20, 20, 20, 0), rgba(19, 19, 20, 0), rgba(19, 19, 19, 0));
+  width: 40vw;
+  height: 30vh;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  font-size: 1.3rem;
+ /* box-shadow: 0 0 4px rgba(117, 233, 210, 0.7); */
+}
+.Otto p {
+  box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
+
+}
+
+.Niko p {
+  box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
+}
+
+
+
+/*
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  margin: 0 1.5rem;
+  transition: 0.3s ease-in-out;
+  background: radial-gradient(ellipse, #e4e4e4, #ffffff, #e9e4e4, #c4c4cf, #e4dede);
+}
+.social-icons a:hover{
+box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
+scale: 1.05;
+transition: background 0.4s ease-in-out;
+}
+
+*/
