@@ -83,7 +83,7 @@ const particleCount = 172;
 const colors = ['#333333', '#333333', '#131414', '#505050'];
 
 function getSpeedFactor() {
-    return 0.032; // Almost standstill speed for all resolutions
+    return 0.088; // Almost standstill speed for all resolutions
 }
 
 class Particle {
