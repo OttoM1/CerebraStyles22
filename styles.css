@@ -412,6 +412,31 @@ transition: transform 0.3s ease;
 overscroll-behavior: none;
   }
 
+.kuva-otto img{
+width: 16vw;
+height: 25.2vh;
+border-radius: 50%;
+cursor: pointer;
+margin-right: 2rem;
+box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
+}
+
+
+
+
+
+
+
+.kuva-niko img {
+  width: 16vw;
+  height: 25.1vh;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 2rem;
+  box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
+
+}
+  
 #mainContent { flex: 1; }
 .main-title {
   font-size: 50px;
@@ -499,6 +524,36 @@ overscroll-behavior: none;
 
 
 }
+  #translateButton {
+       font-size: 6.9px;
+     }
+.kuva-otto img{
+width: 16vw;
+height: 25.2vh;
+border-radius: 50%;
+cursor: pointer;
+margin-right: 2rem;
+box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
+}
+
+
+
+
+
+
+
+.kuva-niko img {
+  width: 16vw;
+  height: 25.1vh;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 2rem;
+  box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
+
+}
+
+
+  
   #mainContent { flex: 1; }
 .hidden:footer {
   display: none;
@@ -572,6 +627,9 @@ h2 {
 
 
        }
+     #translateButton {
+       font-size: 5.8px;
+     }
     
 }
 }
