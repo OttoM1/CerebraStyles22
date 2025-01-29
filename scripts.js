@@ -16,6 +16,14 @@ const particles = [];
 const particleCount = 172;
 const colors = ['#333333', '#333333', '#131414', '#505050'];
 
+function getSpeedFactor() {
+    const width = window.innerWidth;
+    
+    if (width >= 1920) return 0.03;  // Slower on large screens (e.g., 24-inch monitors)
+    if (width >= 1280) return 0.03;  // Medium speed on desktops
+    return 0.8;                     // Faster on small screens
+}
+
 class Particle {
     constructor() {
         this.x = Math.random() * canvas.width;
