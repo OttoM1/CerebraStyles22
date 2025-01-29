@@ -119,7 +119,7 @@ const translations = {
     "• At the moment we mainly specialize in smaller projects, such as portfolios, landing pages, and personal brands, to ensure precise and refined results, completed within your timeframe.": 
     "• Tällä hetkellä erikoistumme etenkin pienempiin projekteihin, kuten portfolioihin, aloitussivuihin ja henkilöbrändeihin, varmistaaksemme tarkat ja viimeistellyt tulokset.",
     "• Our commitment to detail derives not just from client requirements but from our obsession to improve and create unique projects.": 
-    "• Emme keskity yksityiskohtiin vain asiakkaiden odotusten vuoksi, vaan siksi, että intohimomme kehitykseen ja ainutlaatuisten projektien luomiseen on rajaton.",
+    "• Emme keskity yksityiskohtiin vain asiakkaiden odotusten vuoksi, vaan siksi, että intohimomme kehitykseen ja ainutlaatuisten projektien luomiseen on suunnaton.",
     "• Every project is an opportunity for us to push our limits and ensure we deliver something better than ever before.": 
     "• Jokainen projekti on mahdollisuus meille ylittää rajamme ja toimittaa jotain parempaa kuin koskaan aiemmin.",
     "• During our partnership, our team will work closely with you in a relaxed yet focused manner, delivering thoughtful designs that meet your needs and reflect your vision.": 
@@ -142,7 +142,7 @@ const originalTexts = {
     "• Tällä hetkellä erikoistumme etenkin pienempiin projekteihin, kuten portfolioihin, aloitussivuihin ja henkilöbrändeihin, varmistaaksemme tarkat ja viimeistellyt tulokset.": 
     "• At the moment we mainly specialize in smaller projects, such as portfolios, landing pages, and personal brands, to ensure precise and refined results, completed within your timeframe.",
     "Toteutus": "Design",
-    "• Emme keskity yksityiskohtiin vain asiakkaiden odotusten vuoksi, vaan siksi, että intohimomme kehitykseen ja ainutlaatuisten projektien luomiseen on rajaton.": 
+    "• Emme keskity yksityiskohtiin vain asiakkaiden odotusten vuoksi, vaan siksi, että intohimomme kehitykseen ja ainutlaatuisten projektien luomiseen on suunnaton.": 
     "• Our commitment to detail derives not just from client requirements but from our obsession to improve and create unique projects.",
     "• Jokainen projekti on mahdollisuus meille ylittää rajamme ja toimittaa jotain parempaa kuin koskaan aiemmin.": 
     "• Every project is an opportunity for us to push our limits and ensure we deliver something better than ever before.",
@@ -196,7 +196,7 @@ let isTranslated = false;
                 document.getElementById("aboutText22").textContent = originalTexts["• Uskomme, että kestävät ja innovatiiviset verkkosivut syntyvät, kun yhdistämme nämä ominaisuudet yhteen kokonaisuuteen."];
                 document.getElementById("aboutText3").textContent = originalTexts["• Tällä hetkellä erikoistumme etenkin pienempiin projekteihin, kuten portfolioihin, aloitussivuihin ja henkilöbrändeihin, varmistaaksemme tarkat ja viimeistellyt tulokset."];
                 document.getElementById("servicesHeading").textContent = originalTexts["Toteutus"];
-                document.getElementById("servicesText1").textContent = originalTexts["• Emme keskity yksityiskohtiin vain asiakkaiden odotusten vuoksi, vaan siksi, että intohimomme kehitykseen ja ainutlaatuisten projektien luomiseen on rajaton."];
+                document.getElementById("servicesText1").textContent = originalTexts["• Emme keskity yksityiskohtiin vain asiakkaiden odotusten vuoksi, vaan siksi, että intohimomme kehitykseen ja ainutlaatuisten projektien luomiseen on suunnaton."];
                 document.getElementById("servicesText2").textContent = originalTexts["• Jokainen projekti on mahdollisuus meille ylittää rajamme ja toimittaa jotain parempaa kuin koskaan aiemmin."];
                 document.getElementById("servicesText3").textContent = originalTexts["• Kumppanuutemme aikana tiimimme työskentelee rennolla, mutta määrätietoisella otteella, tehden tiivistä yhteistyötä kanssasi, tarjoten huolellisesti suunniteltuja ratkaisuja."];
                 document.getElementById("contactHeading").textContent = originalTexts["Aloita matkasi,"];
