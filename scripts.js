@@ -1,4 +1,4 @@
-const canvas = document.getElementById("coolCanvas");
+/*const canvas = document.getElementById("coolCanvas");
 const ctx = canvas.getContext("2d");
 
 let resizeTimeout;
@@ -62,7 +62,85 @@ function animate() {
     });
     requestAnimationFrame(animate);
 }
+animate(); */
+
+const canvas = document.getElementById("coolCanvas");
+const ctx = canvas.getContext("2d");
+
+let resizeTimeout;
+function resizeCanvas() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }, 100);
+}
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+const particles = [];
+const particleCount = 172;
+const colors = ['#333333', '#333333', '#131414', '#505050'];
+
+function getSpeedFactor() {
+    return 0.01; // Almost standstill speed for all resolutions
+}
+
+class Particle {
+    constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.radius = Math.random() * 0.5 + 1.2;
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+        const speedFactor = getSpeedFactor();
+        this.speedX = (Math.random() - 0.5) * speedFactor;
+        this.speedY = (Math.random() - 0.5) * speedFactor;
+    }
+
+    update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+
+        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+    }
+
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+}
+
+// Create particles
+for (let i = 0; i < particleCount; i++) {
+    particles.push(new Particle());
+}
+
+// Animation loop
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach((particle) => {
+        particle.update();
+        particle.draw();
+    });
+    requestAnimationFrame(animate);
+}
 animate();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 document.getElementById("revealButton").addEventListener("click", () => {
     document.getElementById("mainContent").classList.remove("hidden");
