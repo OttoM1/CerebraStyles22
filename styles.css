@@ -413,9 +413,9 @@ overscroll-behavior: none;
   }
 
 .kuva-otto img{
-width: 37.5vw; /* Ensures proper scaling */
 
-  height: 37.5vw;
+   width: min(30vw, 75px); /* Larger on very small screens to stay visible */
+    height: min(30vw, 75px);
 border-radius: 50%;
 cursor: pointer;
 margin-right: 2rem;
@@ -429,9 +429,8 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
 
 
 .kuva-niko img {
-  width: 37.5vw; /* Ensures proper scaling */
-
-  height: 37.5vw;
+  width: min(30vw, 75px); /* Larger on very small screens to stay visible */
+    height: min(30vw, 75px);
   border-radius: 50%;
   cursor: pointer;
   margin-right: 2rem;
@@ -530,9 +529,8 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
        font-size: 6.9px;
      }
 .kuva-otto img{
-width: 37.5vw; /* Ensures proper scaling */
-
-  height: 37.5vw;
+width: min(30vw, 75px); /* Larger on very small screens to stay visible */
+    height: min(30vw, 75px);
 border-radius: 50%;
 cursor: pointer;
 margin-right: 2rem;
@@ -544,9 +542,8 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
 
 
 .kuva-niko img {
-    width: 37.5vw; /* Ensures proper scaling */
-
-  height: 37.5vw;
+    width: min(30vw, 75px); /* Larger on very small screens to stay visible */
+    height: min(30vw, 75px);
 
   border-radius: 50%;
   cursor: pointer;
