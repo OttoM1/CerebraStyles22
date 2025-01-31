@@ -1,15 +1,17 @@
 
-
+/*Bodyt*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Cinzel', serif;
   background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
-  color: rgba(14, 14, 14, 0.9);
+  /*color: rgba(14, 14, 14, 0.9); */
+  color: radial-gradient(ellipse,#00126e, #009bb6, #91e8fe, #ffffff);
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -20,16 +22,108 @@ body {
 
 }
 
+
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+  background: transparent;
+    height: -webkit-fill-available;
+
+}
+
 .hidden {
   display: none;
 }
 
-#revealContainer {
+
+#mainContent {
+  flex-grow: 1;
+  text-align: center;
+  }
+
+
+  /*nav a linkit / alue buttonit*/
+
+
+.nav-links {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 1rem 0;
 }
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffeacf;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  cursor: pointer; 
+}
+
+
+.nav-links a:hover {
+  color: #1d1f21, #2c2f33;
+}
+
+.nav-links a {
+  display: inline-block; 
+  background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
+  opacity: 0.75;
+  box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
+  color: #4d8766;
+  padding: 20px 57px;
+  border-radius: 75px;
+  text-decoration: none;
+  font-size: 32px;
+      font-weight: bold;
+  transition: background 0.4s ease;
+  cursor: pointer; 
+}
+
+.nav-links a:hover {
+  background: rgba(34, 128, 136, 0.1);
+}
+
+.nav-links a {
+  animation: fadeIn 5.2s ease-in-out; 
+
+}
+
+
+
+
+
+/*Taglinet*/
+
+
+.tagline {
+  font-size: 1.2rem;
+  color: #88cbcd;
+  margin-top: 0.5rem;
+  font-family: 'Lora', serif;
+}
+
+
+.tagline {
+  font-family: 'Dancing Script', cursive;
+  font-size: 14.2px; 
+  color: #88cbcd; 
+}
+
+
+
+
+/*Reveal button*/
+
 
 #revealButton {
   background: rgba(168, 218, 220, 0);
@@ -51,10 +145,10 @@ border-radius: 70%;
 
 
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
-  height: auto; /* Ensures flexibility */
+  height: auto; 
   width: auto;
 }
 
@@ -66,6 +160,61 @@ transition: box-shadow 3.5s linear, transform 4.5s linear;
 
 }
 
+button {
+  animation: fadeIn 3.5s ease-in-out; 
+
+}
+
+button {
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+
+/*Reveal containerit*/
+
+
+#revealContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/*Kääntäjä Javascript*/
+
+
+#translateButton {
+  display: inline-block; 
+  background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
+  opacity: 0.98;
+  box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
+  color: #ffffff;
+  padding: 16px 30px;
+  border-radius: 52%;
+  text-decoration: none;
+  font-size: 12.9px;
+  border: none;
+      font-weight: bold;
+  cursor: pointer; 
+  font-family: 'Courier New', Courier;
+}
+#translateButton:hover {
+  transform: scale(1.1);
+  color: rgba(118, 242, 253, 0.69);
+    transition: background 0.7s ease;
+
+}
+
+
+
+/*Tekstit/ Fontit*/
+
+
 .header {
   text-align: center;
   padding: 2rem 1rem;
@@ -73,7 +222,7 @@ transition: box-shadow 3.5s linear, transform 4.5s linear;
 .main-title {
   font-size: 4.3rem;
   font-weight: bold;
-  color: #ffeacf;
+  color: #fffbf6;
   font-family: 'Playfair Display', serif;
   text-shadow: 
   -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
@@ -96,42 +245,6 @@ transition: box-shadow 3.5s linear, transform 4.5s linear;
   1px 1px 3px rgba(149, 211, 229, 0.6), 
   2 2 5px rgba(62, 59, 59, 0.6); 
 }
-
-
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 1rem 0;
-}
-
-.nav-links li {
-  margin: 0 1rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #ffeacf;
-  font-weight: bold;
-  transition: color 0.3s ease;
-  cursor: pointer; 
-}
-.tagline {
-  font-size: 1.2rem;
-  color: #88cbcd;
-  margin-top: 0.5rem;
-  font-family: 'Lora', serif;
-}
-
-
-
-
-.nav-links a:hover {
-  color: #1d1f21, #2c2f33;
-}
-
 /*.content-section {
   padding: 3rem 1.5rem;
   text-align: center;
@@ -145,11 +258,81 @@ transition: box-shadow 3.5s linear, transform 4.5s linear;
 
 .section-content h2 {
   font-size: 2.5rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Playfair Display', serif; /*'Quicksand', sans-serif;*/
   font-weight: bold;
   margin-bottom: 1.1rem;
-  color: rgba(118, 242, 253, 1), rgba(48, 152, 95, 0.1);  }
+  color: rgba(118, 242, 253, 1), rgba(155, 255, 200, 1);  }
 
+
+
+  .section-content p {
+    font-size: 1.6rem; 
+    color: #e6ffec;
+     line-height: 1.6;
+    text-shadow: 
+    -2.5px 4.2px 5px rgba(13, 3, 17, 0.7),
+    -3.3px 5.2px 10px rgba(162, 213, 211, 0.7),  
+    4.4px 6.3px 15px rgba(50, 50, 50, 0.7);  
+  }
+
+
+
+  .email-link {
+    font-size: 1.9;
+    color: #4d8766;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .email-link:hover {
+    color: #ffeacf;
+  }
+
+  .slowed{
+    animation: fadeIn 4.1s ease-in-out;
+  }
+
+  
+p {
+  animation: fadeIn 3.9s ease-in-out; 
+}
+
+        h2 {
+  animation: fadeIn 3.2s ease-in-out;
+}
+
+h2 {
+  text-shadow: 
+  1px 1px 2px rgba(184, 242, 244, 0.5), 
+  -1px 1px 2px rgba(184, 242, 244, 0.5), 
+  1px -1px 2px rgba(184, 242, 244, 0.5), 
+  -1px -1px 2px rgba(184, 242, 244, 0.5);
+}
+
+h1 {
+  animation: fadeIn 3.5s ease-in-out; 
+}
+
+p {
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+p:hover {
+  color:  #f7e3e3;  
+  transform: scale(1.06); 
+}
+
+h1 {
+    transition: color 0.4s ease, transform 0.4s ease;
+}
+
+h1:hover {
+    color: #4d8766; 
+    transform: scale(1.1); 
+} 
+
+
+
+/*Yhteystiedot*/
 
 
 #contactForm {
@@ -198,98 +381,38 @@ transition: box-shadow 3.5s linear, transform 4.5s linear;
 }
 
 
+/*Footer*/
 
-canvas{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  z-index: -1;
-  background: transparent;
-    height: -webkit-fill-available;
-
+.section-content .different-font {
+  background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.05rem !important;
+  color: #88cbcd !important; 
+  transition: color 0.4s ease, transform 0.4s ease;
 }
 
-
-        .email-link {
-  font-size: 1.9;
-  color: #4d8766;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  color: #ffeacf;
-}
-
-
-.nav-links a {
-  display: inline-block; 
-  background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
-  opacity: 0.75;
-  box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
-  color: #4d8766;
-  padding: 20px 57px;
-  border-radius: 75px;
-  text-decoration: none;
-  font-size: 32px;
-      font-weight: bold;
-  transition: background 0.4s ease;
-  cursor: pointer; 
-}
-
-.nav-links a:hover {
-  background: rgba(34, 128, 136, 0.1);
-}
-
-
-#mainContent {
-flex-grow: 1;
-text-align: center;
-}
-
-
-
-           .section-content p {
-  font-size: 1.6rem; 
-  color: #ffeacf;
-   line-height: 1.6;
-  text-shadow: 
-  -2.5px 4.2px 5px rgba(13, 3, 17, 0.7),
-  -3.3px 5.2px 10px rgba(162, 213, 211, 0.7),  
-  4.4px 6.3px 15px rgba(50, 50, 50, 0.7);  
+.section-content .different-font:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
 }
 
 
 
 
 
-.slowed{
-  animation: fadeIn 4.1s ease-in-out;
-}
 
 
-p {
-  animation: fadeIn 3.9s ease-in-out; 
-}
-
-        h2 {
-  animation: fadeIn 3.2s ease-in-out;
-}
 
 
-h1 {
-  animation: fadeIn 3.5s ease-in-out; 
-}
-        button {
-  animation: fadeIn 3.5s ease-in-out; 
 
-}
-.nav-links a {
-  animation: fadeIn 5.2s ease-in-out; 
 
-}
+
+
+
+
+
+
 
 @keyframes fadeIn {
   0% {
@@ -303,47 +426,11 @@ h1 {
 }
 
 
-p {
-  transition: color 0.4s ease, transform 0.4s ease;
-}
-p:hover {
-  color:  #f7e3e3;  
-  transform: scale(1.06); 
-}
-
-h1 {
-    transition: color 0.4s ease, transform 0.4s ease;
-}
-
-h1:hover {
-    color: #4d8766; 
-    transform: scale(1.1); 
-} 
-
-             button {
-  transition: color 0.4s ease, transform 0.4s ease;
-}
-
-button:hover{
-  transform: scale(1.1);
-}
-
- 
 
 
-.tagline {
-  font-family: 'Dancing Script', cursive;
-  font-size: 14.2px; 
-  color: #88cbcd; 
-}
 
-h2 {
-  text-shadow: 
-  1px 1px 2px rgba(184, 242, 244, 0.5), /* soft glow in one direction */
-  -1px 1px 2px rgba(184, 242, 244, 0.5), /* soft glow in the opposite direction */
-  1px -1px 2px rgba(184, 242, 244, 0.5), /* glow above */
-  -1px -1px 2px rgba(184, 242, 244, 0.5);
-}
+
+
 /*
 .different-font {
   background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
@@ -362,60 +449,25 @@ transform: scale(1.1);
 transition: transform 0.3s ease; 
 }
 */
-.section-content .different-font {
-  background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.05rem !important;
-  color: #88cbcd !important; 
-  transition: color 0.4s ease, transform 0.4s ease;
-}
-
-.section-content .different-font:hover {
-  transform: scale(1.1); 
-  transition: transform 0.3s ease; /* Adds smooth scaling */
-}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media Query: Tablet and smaller devices */
+/*ignooraa mediat*/
+/*Iphone maxit*/
 @media (max-width: 768px) {
   html, body {
-  min-height: 100vh; /* Ensure full height */
-  margin: 0;    /* Remove any default margin */
+  min-height: 100vh; 
+  margin: 0;    
   height: -webkit-fill-available;
 overscroll-behavior: none;
   }
 
 .kuva-otto img{
-
-   width: min(30vw, 75px); /* Larger on very small screens to stay visible */
-    height: min(30vw, 75px);
+width: 16vw;
+height: 25.2vh;
 border-radius: 50%;
 cursor: pointer;
 margin-right: 2rem;
@@ -425,12 +477,9 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
 
 
 
-
-
-
 .kuva-niko img {
-  width: min(30vw, 75px); /* Larger on very small screens to stay visible */
-    height: min(30vw, 75px);
+  width: 16vw;
+  height: 25.1vh;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 2rem;
@@ -444,17 +493,17 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
 }
 
 #translateButton {
-    padding: 2px 5px; /* Smaller padding for a compact button */
-    border-radius: 50%; /* Makes it circular */
+    padding: 2px 5px; 
+    border-radius: 50%; 
     text-decoration: none;
-    font-size: 5px; /* Adjusted font size for readability */
+    font-size: 3.9px; 
     position: absolute;
     top: 5px;
     right: 5px;
-    background-color: rgba(184, 242, 244, 0.8); /* Light, subtle background */
-    color: #000; /* Dark text for contrast */
-    border: 1px solid rgba(150, 212, 223, 0.8); /* Subtle border */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for a "real" feel */
+    background-color: rgba(184, 242, 244, 0.8); 
+    color: #000; 
+    border: 1px solid rgba(150, 212, 223, 0.8); 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -488,11 +537,11 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
   .nav-links a {
       padding: 12px 18px;
       font-size: 21px;
-      position: relative; /* Or remove positioning */
+      position: relative; 
   margin: 3px; 
        display: flex;
-  flex-wrap: wrap; /* Ensures buttons wrap to the next row if they don’t fit */
-  gap: 10px; /* Adds spacing between buttons */
+  flex-wrap: wrap; 
+  gap: 10px; 
   justify-content: center;
   }
   .different-font {
@@ -515,22 +564,24 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
  
 }
 
-/* Media Query: Extra-large phones and smaller */
+
+/*normi iphonet*/
+
 @media (max-width: 414px) {
   html, body {
-  min-height: 100vh; /* Ensure full height */
-  margin: 0;    /* Remove any default margin */
+  min-height: 100vh; 
+  margin: 0;    
       height: -webkit-fill-available;
     overscroll-behavior: none;
 
 
 }
   #translateButton {
-       font-size: 6.9px;
+       font-size: 3.9px;
      }
 .kuva-otto img{
-width: min(30vw, 75px); /* Larger on very small screens to stay visible */
-    height: min(30vw, 75px);
+width: 16vw;
+height: 25.2vh;
 border-radius: 50%;
 cursor: pointer;
 margin-right: 2rem;
@@ -541,10 +592,11 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
 
 
 
-.kuva-niko img {
-    width: min(30vw, 75px); /* Larger on very small screens to stay visible */
-    height: min(30vw, 75px);
 
+
+.kuva-niko img {
+  width: 16vw;
+  height: 25.1vh;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 2rem;
@@ -559,18 +611,18 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
   display: none;
 }
 #translateButton {
-    border-radius: 50%; /* Makes it circular */
+    border-radius: 50%; 
     text-decoration: none;
-    font-size: 5px; /* Adjusted font size for readability */
+    font-size: 5px; 
     position: absolute;
-   font-size: 3px; /* Smaller font size for mobile */
-    padding: 1px 3px; /* Reduce padding */
-    top: 3px; /* Adjust positioning */
+   font-size: 3px; 
+    padding: 1px 3px; 
+    top: 3px; 
     right: 3px;
-    background-color: rgba(184, 242, 244, 0.8); /* Light, subtle background */
-    color: #000; /* Dark text for contrast */
-    border: 1px solid rgba(150, 212, 223, 0.8); /* Subtle border */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for a "real" feel */
+    background-color: rgba(184, 242, 244, 0.8); 
+    color: #000; 
+    border: 1px solid rgba(150, 212, 223, 0.8); 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
    width: 20px;
@@ -595,11 +647,11 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
   .nav-links a {
       padding: 9px 13px;
       font-size: 16.4px;
-      position: relative; /* Or remove positioning */
+      position: relative; 
   margin: 3px; 
        display: flex;
-  flex-wrap: wrap; /* Ensures buttons wrap to the next row if they don’t fit */
-  gap: 10px; /* Adds spacing between buttons */
+  flex-wrap: wrap; 
+  gap: 10px; 
   justify-content: center;
   }
 h2 {
@@ -628,7 +680,7 @@ h2 {
 
        }
      #translateButton {
-       font-size: 5.8px;
+       font-size: 3px;
      }
     
 }
@@ -646,30 +698,9 @@ h2 {
 
 
 
-#translateButton {
-  display: inline-block; 
-  background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
-  opacity: 0.98;
-  box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
-  color: #ffffff;
-  padding: 16px 30px;
-  border-radius: 52%;
-  text-decoration: none;
-  font-size: 12.9px;
-  border: none;
-      font-weight: bold;
-  cursor: pointer; 
-  font-family: sans-serif;
-}
-#translateButton:hover {
-  transform: scale(1.1);
-  color: rgba(118, 242, 253, 1);
-    transition: background 0.7s ease;
-
-}
 
 
-
+/*Crew osio*/
 
 
 .team {
@@ -697,10 +728,6 @@ cursor: pointer;
 margin-right: 2rem;
 box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
 }
-
-
-
-
 
 
 
@@ -736,6 +763,10 @@ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
 .Niko p {
   box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
 }
+
+
+
+
 
 
 
