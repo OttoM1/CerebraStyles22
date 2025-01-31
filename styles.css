@@ -526,31 +526,27 @@
   } */
    
  .kuva-otto img{
- width: 16vw;
- height: 25.2vh;
- border-radius: 50%;
- cursor: pointer;
- margin-right: 2rem;
-           aspect-ratio: 1 / 1;
+ 
 
- box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
- animation: fadeIn 3.9s ease-in-out;
+    width: 16vw; /* Define only one dimension */
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 2rem;
+    aspect-ratio: 1 / 1; /* Ensures a perfect square */
+    object-fit: cover; /* Ensures the image fills the shape properly */
+    box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
+    animation: fadeIn 3.9s ease-in-out;
+ 
  }
-
- 
- 
  
  .kuva-niko img {
-   width: 50vw;
-        height: 50vw;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 0;
-        margin-bottom: 15px;
-           aspect-ratio: 1 / 1;
-
-  cursor: pointer;
-  
+   width: 16vw; /* Define only one dimension */
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 2rem;
+    aspect-ratio: 1 / 1; /* Ensures a perfect square */
+    object-fit: cover; /* Ensures the image fills the shape properly */
+   
   box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
   animation: fadeIn 3.9s ease-in-out;
  
@@ -610,13 +606,12 @@
   } */
 
    .kuva-otto img{
-  width: 50vw;
-        height: 50vw;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 0;
-        margin-bottom: 15px;
-           aspect-ratio: 1 / 1;
+  width: 16vw; /* Only set width */
+    height: auto; /* Remove fixed height */
+    border-radius: 50%;
+    margin-right: 2rem;
+    aspect-ratio: 1 / 1; /* Ensures a square shape */
+    object-fit: cover; 
 
  cursor: pointer;
  box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
@@ -627,13 +622,14 @@
  
  
  .kuva-niko img {
-  width: 16vw;
-  height: 25.1vh;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-right: 2rem;
-  box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
-         aspect-ratio: 1 / 1;
+   width: 16vw; /* Only set width */
+    height: auto; /* Remove fixed height */
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 2rem;
+    box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
+    aspect-ratio: 1 / 1; /* Ensures a square shape */
+    object-fit: cover; /*
 
  
  }
