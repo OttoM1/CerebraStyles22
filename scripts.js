@@ -1,68 +1,3 @@
-/*const canvas = document.getElementById("coolCanvas");
-const ctx = canvas.getContext("2d");
-
-let resizeTimeout;
-function resizeCanvas() {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }, 100); // Adjusted delay for smoother resizing
-}
-resizeCanvas();
-window.addEventListener("resize", resizeCanvas);
-
-const particles = [];
-const particleCount = 172;
-const colors = ['#333333', '#333333', '#131414', '#505050'];
-
-function getSpeedFactor() {
-    const width = window.innerWidth;
-    
-    if (width >= 1920) return 0.03;  // Slower on large screens (e.g., 24-inch monitors)
-    if (width >= 1280) return 0.03;  // Medium speed on desktops
-    return 0.8;                     // Faster on small screens
-}
-
-class Particle {
-    constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.radius = Math.random() * 0.5 + 1.2;
-        this.color = colors[Math.floor(Math.random() * colors.length)];
-        this.speedX = (Math.random() - 0.05) * 0.6;
-        this.speedY = (Math.random() - 0.08) * 0.5;
-    }
-
-    update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-
-        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
-    }
-
-    draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-    }
-}
-
-for (let i = 0; i < particleCount; i++) {
-    particles.push(new Particle());
-}
-
-function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles.forEach((particle) => {
-        particle.update();
-        particle.draw();
-    });
-    requestAnimationFrame(animate);
-}
-animate(); */
 
 const canvas = document.getElementById("coolCanvas");
 const ctx = canvas.getContext("2d");
@@ -79,18 +14,18 @@ resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
 const particles = [];
-const particleCount = 172;
-const colors = ['#333333', '#333333', '#131414', '#505050'];
+const particleCount = 190;
+const colors = ['#333333','rgb(255, 255, 255)', '#131414', '#505050', '#15031c'];
 
 function getSpeedFactor() {
-    return 0.346; // Almost standstill speed for all resolutions
+    return 0.386;
 }
 
 class Particle {
     constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.radius = Math.random() * 0.5 + 1.2;
+       this.radius = (Math.random() * 0.002 + 0.005) * Math.min(canvas.width, canvas.height);
         this.color = colors[Math.floor(Math.random() * colors.length)];
         const speedFactor = getSpeedFactor();
         this.speedX = (Math.random() - 0.5) * speedFactor;
@@ -113,12 +48,10 @@ class Particle {
     }
 }
 
-// Create particles
 for (let i = 0; i < particleCount; i++) {
     particles.push(new Particle());
 }
 
-// Animation loop
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles.forEach((particle) => {
@@ -162,18 +95,13 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
         const targetSection = event.target.getAttribute("href").substring(1);
         revealSection(targetSection);
     });
-});
+}); 
 
 window.onload = function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     animate();
 };
-
-
-
-
-
 
 
 
@@ -202,8 +130,9 @@ const translations = {
     "• Jokainen projekti on mahdollisuus meille ylittää rajamme ja toimittaa jotain parempaa kuin koskaan aiemmin.",
     "• During our partnership, our team will work closely with you in a relaxed yet focused manner, delivering thoughtful designs that meet your needs and reflect your vision.": 
     "• Kumppanuutemme aikana tiimimme työskentelee rennolla mutta määrätietoisella otteella, tehden tiivistä yhteistyötä kanssasi ja tarjoten harkittuja suunnitteluratkaisuja, jotka vastaavat tarpeitasi ja heijastavat visiotasi.",
+   "Designers": "Suunnittelijat",
     "Start Your Journey,": "Aloita matkasi,"
-};
+}; 
 
 const originalTexts = {
     "CerebraStyles": "CerebraStyles",
@@ -226,6 +155,7 @@ const originalTexts = {
     "• Every project is an opportunity for us to push our limits and ensure we deliver something better than ever before.",
     "• Kumppanuutemme aikana tiimimme työskentelee rennolla, mutta määrätietoisella otteella, tehden tiivistä yhteistyötä kanssasi, tarjoten huolellisesti suunniteltuja ratkaisuja.": 
     "• During our partnership, our team will work closely with you in a relaxed yet focused manner, delivering thoughtful designs that meet your needs and reflect your vision.",
+    "Suunnittelijat": "Designers",
     "Aloita matkasi,": "Start Your Journey,"
 
 };
@@ -236,7 +166,6 @@ let isTranslated = false;
 
         document.getElementById("translateButton").addEventListener("click", () => {
             if (!isTranslated) {
-                // Translate to Finnish
                 document.getElementById("mainTitle").textContent = translations["CerebraStyles"];
                 document.getElementById("tagline").textContent = translations["-Your Digital Vision, Tailored to Reality"];
                 document.getElementById("navAbout").textContent = translations["Us"];
@@ -254,12 +183,15 @@ let isTranslated = false;
                 document.getElementById("servicesText1").textContent = translations["• Our commitment to detail derives not just from client requirements but from our obsession to improve and create unique projects."];
                 document.getElementById("servicesText2").textContent = translations["• Every project is an opportunity for us to push our limits and ensure we deliver something better than ever before."];
                 document.getElementById("servicesText3").textContent = translations["• During our partnership, our team will work closely with you in a relaxed yet focused manner, delivering thoughtful designs that meet your needs and reflect your vision."];
+                document.getElementById("navCrew").textContent = translations["Crew"];
+
+                document.getElementById("WCrew").textContent = translations["Designers"];
+
                 document.getElementById("contactHeading").textContent = translations["Start Your Journey,"];
         
                 isTranslated = true;
                 document.getElementById("translateButton").textContent = "English";
             } else {
-                // Translate back to English
                 document.getElementById("mainTitle").textContent = originalTexts["CerebraStyles"];
                 document.getElementById("tagline").textContent = originalTexts["-Digitaalinen visiosi, räätälöity todellisuuteen"];
                 document.getElementById("navAbout").textContent = originalTexts["Meistä"];
@@ -277,8 +209,12 @@ let isTranslated = false;
                 document.getElementById("servicesText1").textContent = originalTexts["• Emme keskity yksityiskohtiin vain asiakkaiden odotusten vuoksi, vaan siksi, että intohimomme kehitykseen ja ainutlaatuisten projektien luomiseen on suunnaton."];
                 document.getElementById("servicesText2").textContent = originalTexts["• Jokainen projekti on mahdollisuus meille ylittää rajamme ja toimittaa jotain parempaa kuin koskaan aiemmin."];
                 document.getElementById("servicesText3").textContent = originalTexts["• Kumppanuutemme aikana tiimimme työskentelee rennolla, mutta määrätietoisella otteella, tehden tiivistä yhteistyötä kanssasi, tarjoten huolellisesti suunniteltuja ratkaisuja."];
-                document.getElementById("contactHeading").textContent = originalTexts["Aloita matkasi,"];
                 document.getElementById("navCrew").textContent = originalTexts["Tiimi"];
+                document.getElementById("WCrew").textContent = translations["Suunnittelijat"];
+
+                document.getElementById("contactHeading").textContent = originalTexts["Aloita matkasi,"];
+
+               /* document.getElementById("navCrew").textContent = originalTexts["Tiimi"]; */
 
         
                 isTranslated = false;
@@ -287,7 +223,7 @@ let isTranslated = false;
         
         
         
-        
+
         
             document.getElementById("navTeam").addEventListener("click", (event) => {
                 event.preventDefault();
@@ -297,4 +233,6 @@ let isTranslated = false;
                 document.getElementById("team").classList.remove("hidden");
             });
         });
+
+
 
