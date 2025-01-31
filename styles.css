@@ -519,11 +519,42 @@
       flex-direction: column;
       align-items: center;
   }
-  
+  /*
   .kuva-otto img, .kuva-niko img {
       width: 50vw;
       height: auto;
-  }
+  } */
+   
+ .kuva-otto img{
+ width: 16vw;
+ height: 25.2vh;
+ border-radius: 50%;
+ cursor: pointer;
+ margin-right: 2rem;
+           aspect-ratio: 1 / 1;
+
+ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
+ animation: fadeIn 3.9s ease-in-out;
+ }
+
+ 
+ 
+ 
+ .kuva-niko img {
+   width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 0;
+        margin-bottom: 15px;
+           aspect-ratio: 1 / 1;
+
+  cursor: pointer;
+  
+  box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
+  animation: fadeIn 3.9s ease-in-out;
+ 
+ }
   
   .card-otto, .card-niko {
       width: 90%;
@@ -565,7 +596,7 @@
       width: 100%;
       max-width: 300px;
   }
-  
+  /*
   .Otto, .Niko {
       flex-direction: column;
       align-items: center;
@@ -576,7 +607,36 @@
       height: auto;
       margin-right: 0;
       margin-bottom: 15px;
-  }
+  } */
+
+   .kuva-otto img{
+  width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 0;
+        margin-bottom: 15px;
+           aspect-ratio: 1 / 1;
+
+ cursor: pointer;
+ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
+ }
+
+ 
+ 
+ 
+ 
+ .kuva-niko img {
+  width: 16vw;
+  height: 25.1vh;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 2rem;
+  box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
+         aspect-ratio: 1 / 1;
+
+ 
+ }
   
   .card-otto, .card-niko {
       width: 95%;
@@ -600,7 +660,6 @@
  /*
  
  
- /*ignooraa mediat*/
  @media (max-width: 768px) {
   html, body {
   min-height: 100vh;
@@ -616,16 +675,11 @@
  border-radius: 50%;
  cursor: pointer;
  margin-right: 2rem;
+           aspect-ratio: 1 / 1;
+
  box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
  animation: fadeIn 3.9s ease-in-out;
  }
- 
- 
- 
- 
- 
- 
- 
 
  
  
@@ -637,7 +691,8 @@
         object-fit: cover;
         margin-right: 0;
         margin-bottom: 15px;
-   
+           aspect-ratio: 1 / 1;
+
   cursor: pointer;
   
   box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
@@ -749,19 +804,12 @@
         object-fit: cover;
         margin-right: 0;
         margin-bottom: 15px;
+           aspect-ratio: 1 / 1;
+
  cursor: pointer;
  box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
  }
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  
  
@@ -773,7 +821,8 @@
   cursor: pointer;
   margin-right: 2rem;
   box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
- 
+         aspect-ratio: 1 / 1;
+
  
  }
  
