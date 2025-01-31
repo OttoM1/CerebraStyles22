@@ -235,4 +235,3 @@ let isTranslated = false;
         });
 
 
-
