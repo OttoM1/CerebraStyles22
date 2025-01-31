@@ -626,19 +626,20 @@
  
  
  
- 
- 
- 
- 
+
  
  
  
  .kuva-niko img {
-  width: 16vw;
-  height: 25.1vh;
-  border-radius: 50%;
+   width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 0;
+        margin-bottom: 15px;
+   
   cursor: pointer;
-  margin-right: 2rem;
+  
   box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
   animation: fadeIn 3.9s ease-in-out;
  
@@ -742,14 +743,16 @@
        font-size: 3.9px;
      }
  .kuva-otto img{
- width: 16vw;
- height: 25.2vh;
- border-radius: 50%;
+  width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 0;
+        margin-bottom: 15px;
  cursor: pointer;
- margin-right: 2rem;
  box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
  }
- 
+
  
  
  
