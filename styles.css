@@ -19,7 +19,7 @@
  
  
  }
- 
+
  
  .hidden {
   display: none;
@@ -629,8 +629,8 @@
     margin-right: 2rem;
     box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
     aspect-ratio: 1 / 1; /* Ensures a square shape */
-    object-fit: cover; /*
-
+    object-fit: cover; 
+   
  
  }
   
