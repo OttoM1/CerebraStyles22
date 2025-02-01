@@ -537,8 +537,29 @@
  
  
  
+
+.Otto, .Niko {
+ display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  padding: 20px; 
+ 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
  .Otto h4, .Niko h4 {
-  border-radius: 35px;
+  border-radius: 40px;
   /*background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313); */
   background: radial-gradient(ellipse, rgba(13, 13, 13, 0), rgba(19, 28, 35, 0), rgba(20, 20, 20, 0), rgba(19, 19, 20, 0), rgba(19, 19, 19, 0));
   width: 40vw;
@@ -546,20 +567,24 @@
   cursor: pointer;
   text-align: center;
   margin-top: 30%;
-  font-size: 2rem;
- /* box-shadow: 0 0 4px rgba(117, 233, 210, 0.7); */
+  font-size: 1.64rem;
+  /* box-shadow: 0 0 4px rgba(117, 233, 210, 0.7); */
 
-
+ 
 }
 
 
 .Niko p {
-  color: rgba(244, 218, 128, 0.63);
-  
-} 
-.Otto p{
-color: rgba(239, 239, 239, 0.83);
+  color: rgba(255, 238, 177, 0.93);
+  font-size: 1.32rem;
+
 }
+.Otto p{
+   color: rgba(239, 239, 239, 0.93);
+   font-size: 1.32rem;
+}
+
+
 
 
 
