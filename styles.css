@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +21,7 @@
  
  
  }
-
+ 
  
  .hidden {
   display: none;
@@ -150,11 +152,6 @@
   color: #1d1f21, #2c2f33;
  }
  
- 
- /*.content-section {
-  padding: 3rem 1.5rem;
-  text-align: center;
- } */
  
  
  .content-section {
@@ -410,26 +407,7 @@
   1px -1px 2px rgba(184, 242, 244, 0.5),
   -1px -1px 2px rgba(184, 242, 244, 0.5);
  }
- /*
- .different-font {
-  background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-      color: #88cbcd;
- 
- 
- }
- .different-font {
-  transition: color 0.4s ease, transform 0.4s ease;
- }
- 
- 
- .different-font:hover {
- transform: scale(1.1);
- transition: transform 0.3s ease;
- }
- */
+
  .section-content .different-font {
   background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
   text-align: center;
@@ -444,479 +422,6 @@
   transform: scale(1.1);
   transition: transform 0.3s ease;
  }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- @media (max-width: 768px) {
-  .main-title {
-      font-size: 3.5rem;
-  }
-  
-  .nav-links a {
-      font-size: 28px;
-      padding: 15px 45px;
-  }
-  
-  .section-content h2 {
-      font-size: 2rem;
-  }
-  
-  .section-content p {
-      font-size: 1.4rem;
-  }
-  
-  #contactForm input, #contactForm textarea, #contactForm button {
-      max-width: 350px;
-  }
-  
-  .Otto, .Niko {
-      flex-direction: column;
-      align-items: center;
-  }
-  /*
-  .kuva-otto img, .kuva-niko img {
-      width: 50vw;
-      height: auto;
-  } */
-   
- .kuva-otto img{
- 
-
-    width: 16vw; /* Define only one dimension */
-    border-radius: 50%;
-    cursor: pointer;
-    margin-right: 2rem;
-    aspect-ratio: 1 / 1; /* Ensures a perfect square */
-    object-fit: cover; /* Ensures the image fills the shape properly */
-    box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
-    animation: fadeIn 3.9s ease-in-out;
- 
- }
- 
- .kuva-niko img {
-   width: 16vw; /* Define only one dimension */
-    border-radius: 50%;
-    cursor: pointer;
-    margin-right: 2rem;
-    aspect-ratio: 1 / 1; /* Ensures a perfect square */
-    object-fit: cover; /* Ensures the image fills the shape properly */
-   
-  box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
-  animation: fadeIn 3.9s ease-in-out;
- 
- }
-  
-  .card-otto, .card-niko {
-      width: 90%;
-      height: auto;
-  }
-  
-  #revealButton {
-      font-size: 24px;
-      padding: 40px 120px;
-  }
-}
-
-/* Adjustments for 414px screens (Mobile Phones) */
-@media (max-width: 414px) {
-  .main-title {
-      font-size: 2.5rem;
-  }
-  
-  .nav-links {
-      flex-direction: column;
-      align-items: center;
-  }
-  
-  .nav-links a {
-      font-size: 24px;
-      padding: 12px 35px;
-      margin: 5px 0;
-  }
-  
-  .section-content h2 {
-      font-size: 1.8rem;
-  }
-  
-  .section-content p {
-      font-size: 1.2rem;
-  }
-  
-  #contactForm input, #contactForm textarea, #contactForm button {
-      width: 100%;
-      max-width: 300px;
-  }
-  /*
-  .Otto, .Niko {
-      flex-direction: column;
-      align-items: center;
-  }
-  
-  .kuva-otto img, .kuva-niko img {
-      width: 65vw;
-      height: auto;
-      margin-right: 0;
-      margin-bottom: 15px;
-  } */
-
-   .kuva-otto img{
-  width: 16vw; /* Only set width */
-    height: auto; /* Remove fixed height */
-    border-radius: 50%;
-    margin-right: 2rem;
-    aspect-ratio: 1 / 1; /* Ensures a square shape */
-    object-fit: cover; 
-
- cursor: pointer;
- box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
- }
-
- 
- 
- 
- 
- .kuva-niko img {
-   width: 16vw; /* Only set width */
-    height: auto; /* Remove fixed height */
-    border-radius: 50%;
-    cursor: pointer;
-    margin-right: 2rem;
-    box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
-    aspect-ratio: 1 / 1; /* Ensures a square shape */
-    object-fit: cover; 
-   
- 
- }
-  
-  .card-otto, .card-niko {
-      width: 95%;
-      height: auto;
-  }
-  
-  #revealButton {
-      font-size: 20px;
-      padding: 30px 90px;
-  }
-  
-  #translateButton {
-      font-size: 12px;
-      padding: 12px 20px;
-  }
-}
-
- 
- 
- 
- /*
- 
- 
- @media (max-width: 768px) {
-  html, body {
-  min-height: 100vh;
-  margin: 0;  
-  height: -webkit-fill-available;
- overscroll-behavior: none;
-  }
- 
- 
- .kuva-otto img{
- width: 16vw;
- height: 25.2vh;
- border-radius: 50%;
- cursor: pointer;
- margin-right: 2rem;
-           aspect-ratio: 1 / 1;
-
- box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
- animation: fadeIn 3.9s ease-in-out;
- }
-
- 
- 
- 
- .kuva-niko img {
-   width: 50vw;
-        height: 50vw;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 0;
-        margin-bottom: 15px;
-           aspect-ratio: 1 / 1;
-
-  cursor: pointer;
-  
-  box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
-  animation: fadeIn 3.9s ease-in-out;
- 
- }
-  #mainContent { flex: 1; }
- .main-title {
-  font-size: 50px;
- }
- 
- 
- #translateButton {
-    padding: 2px 5px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 3.9px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: rgba(184, 242, 244, 0.8);
-    color: #000;
-    border: 1px solid rgba(150, 212, 223, 0.8);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-   .tagline {
-      font-size: 18.9px;
-          font-family: 'Cinzel', serif;
- 
- 
-  }
-  h2 {
-  font-size: 28.8px;
- }
-  p {
-      font-size: 16.8px;
-  }
-   .section-content p {
-            font-size: 16.8px;
-        }
- .section-content h2 {
-            font-size: 28.8px;
-        }
-   #revealButton {
-      padding: 56px 80px;
-      font-size: 18px;
-      border-radius: 69%;
-            max-width: 272px;
- 
- 
-  }
- 
- 
-  .nav-links a {
-      padding: 12px 18px;
-      font-size: 21px;
-      position: relative;
-  margin: 3px;
-       display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  }
-  .different-font {
-      font-size: 11px;
-  }
- 
- 
-  .content-section {
-      padding: 30px;
-  }
- .hidden:footer {
-  display: none;
- }
-     canvas {
-           min-height: 100vh;
-         height: -webkit-fill-available;
-       overscroll-behavior: none;
- 
- 
- 
- 
-       }
- }
- 
- 
- 
- 
- @media (max-width: 414px) {
-  html, body {
-  min-height: 100vh;
-  margin: 0;  
-      height: -webkit-fill-available;
-    overscroll-behavior: none;
- 
- 
- 
- 
- }
-  #translateButton {
-       font-size: 3.9px;
-     }
- .kuva-otto img{
-  width: 50vw;
-        height: 50vw;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 0;
-        margin-bottom: 15px;
-           aspect-ratio: 1 / 1;
-
- cursor: pointer;
- box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
- }
-
- 
- 
- 
- 
- .kuva-niko img {
-  width: 16vw;
-  height: 25.1vh;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-right: 2rem;
-  box-shadow: 2px 0 14px rgba(244, 218, 128, 0.63);
-         aspect-ratio: 1 / 1;
-
- 
- }
- 
- 
- 
- 
-   #mainContent { flex: 1; }
- .hidden:footer {
-  display: none;
- }
- #translateButton {
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 5px;
-    position: absolute;
-   font-size: 3px;
-    padding: 1px 3px;
-    top: 3px;
-    right: 3px;
-    background-color: rgba(184, 242, 244, 0.8);
-    color: #000;
-    border: 1px solid rgba(150, 212, 223, 0.8);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-   width: 20px;
-    height: 20px;
-  }
-   #revealButton {
-      padding: 32px 42px;
-      font-size: 16px;
-      border-radius: 65%;
-            max-width: 203px;
- 
- 
-  }
-  .tagline {
-      font-size: 15.1px;
-          font-family: 'Cinzel', serif;
- 
- 
-  }
-   .main-title {
-  font-size: 42px;
- 
- 
-  .nav-links a {
-      padding: 9px 13px;
-      font-size: 16.4px;
-      position: relative;
-  margin: 3px;
-       display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  }
- h2 {
-  font-size: 24.1px;
- }
-  .content-section {
-      padding: 24px;
-  }
-       p {
-           font-size: 14px;
-       }
-        .section-content p {
-            font-size: 14px;
-        }
-       .different-font {
-           font-size: 8px;
-       }
-        .section-content h2 {
-            font-size: 24.1px;
-        }
-       canvas {
-          min-height: 100vh;
-           height: -webkit-fill-available;
-         overscroll-behavior: none;
- 
- 
- 
- 
-       }
-     #translateButton {
-       font-size: 3px;
-     }
-   
- }
- }
- 
- */
- 
- 
- 
- 
- 
- 
- 
  
  
  
@@ -979,22 +484,17 @@
  }
  
  
- /*
+ 
  
  .Otto, .Niko {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
  
- } */
-  .Otto, .Niko {
- display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-
-  padding: 20px; 
+ }
  
-}
+ 
+ 
  
  .kuva-otto img{
  width: 32vw;
@@ -1036,13 +536,9 @@
  
  
  
-
-
-
- 
  
  .Otto h4, .Niko h4 {
-  border-radius: 40px;
+  border-radius: 35px;
   /*background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313); */
   background: radial-gradient(ellipse, rgba(13, 13, 13, 0), rgba(19, 28, 35, 0), rgba(20, 20, 20, 0), rgba(19, 19, 20, 0), rgba(19, 19, 19, 0));
   width: 40vw;
@@ -1050,40 +546,26 @@
   cursor: pointer;
   text-align: center;
   margin-top: 30%;
-  font-size: 1.64rem;
-  /* box-shadow: 0 0 4px rgba(117, 233, 210, 0.7); */
+  font-size: 2rem;
+ /* box-shadow: 0 0 4px rgba(117, 233, 210, 0.7); */
 
- 
+
 }
 
 
-.Niko p {
-  color: rgba(255, 238, 177, 0.93);
-  font-size: 1.32rem;
+.Niko p, .Otto p{
+   color: #4d8766;
+}
 
-}
-.Otto p{
-   color: rgba(239, 239, 239, 0.93);
-   font-size: 1.32rem;
-}
- /* Sukunimen väri emt
- 
- .Otto span{
-  color: ;
- }
- .Niko span{
-  color: ;
- }
-*/
 
 
 .card-otto {
-  width: 660px;
-  height: 315px;
+  width: 600px;
+  height: 300px;
   position: relative;
-  border-radius: 15px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-
 }
 
 
@@ -1133,7 +615,7 @@
   line-height: 1.5;
   border-radius: 5px;
   pointer-events: none;
-  transform: translateX(-99%); /*taal*/
+  transform: translateX(-96%);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -1161,11 +643,11 @@
 
 
 .card-niko {
-  width: 650px;
-  height: 310px;
+  width: 600px;
+  height: 300px;
   position: relative;
-  border-radius: 15px;
-
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
@@ -1216,7 +698,7 @@
   line-height: 1.5;
   border-radius: 5px;
   pointer-events: none;
-  transform: translateX(-99%);
+  transform: translateX(-96%);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -1240,3 +722,4 @@
 .card2:hover .front-content2 p {
   opacity: 0;
 }
+
