@@ -553,8 +553,12 @@
 }
 
 
-.Niko p, .Otto p{
-   color: #4d8766;
+.Niko p {
+  color: rgba(244, 218, 128, 0.63);
+  
+} 
+.Otto p{
+color: rgba(239, 239, 239, 0.83);
 }
 
 
@@ -564,7 +568,7 @@
   height: 300px;
   position: relative;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -647,7 +651,7 @@
   height: 300px;
   position: relative;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -723,3 +727,177 @@
   opacity: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Screens (max-width: 414px) */
+@media (max-width: 414px) {
+    body {
+        font-size: 95%;
+    }
+
+    #revealButton {
+        padding: 30px 100px;
+        font-size: 20px;
+        max-width: 80%;
+    }
+    
+    .main-title {
+        font-size: 3rem;
+    }
+    
+    .text-3d {
+        font-size: 2.8rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links a {
+        font-size: 24px;
+        padding: 15px 40px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .content-section {
+        padding: 1.5rem;
+    }
+    
+    .section-content h2 {
+        font-size: 2rem;
+    }
+    
+    .section-content p {
+        font-size: 1.2rem;
+    }
+    
+    #contactForm input, #contactForm textarea, #contactForm button {
+        width: 95%;
+    }
+    
+    .team {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Otto, .Niko {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .kuva-otto img, .kuva-niko img {
+        width: 60vw;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .card-otto, .card-niko {
+        width: 90%;
+    }
+    
+    .card1 .front-content1 p, .card2 .front-content2 p {
+        font-size: 24px;
+    }
+    
+    .content-kortti1, .content-kortti2 {
+        padding: 10px;
+    }
+}
+
+/* Tablet Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 100%;
+    }
+    
+    #revealButton {
+        padding: 40px 130px;
+        font-size: 24px;
+        max-width: 70%;
+    }
+    
+    .main-title {
+        font-size: 3.5rem;
+    }
+    
+    .text-3d {
+        font-size: 3.2rem;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .nav-links a {
+        font-size: 28px;
+        padding: 18px 50px;
+        border-radius: 60px;
+    }
+    
+    .content-section {
+        padding: 2rem;
+    }
+    
+    .section-content h2 {
+        font-size: 2.3rem;
+    }
+    
+    .section-content p {
+        font-size: 1.4rem;
+    }
+    
+    #contactForm input, #contactForm textarea, #contactForm button {
+        width: 90%;
+    }
+    
+    .team {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Otto, .Niko {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .kuva-otto img, .kuva-niko img {
+        width: 50vw;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .card-otto, .card-niko {
+        width: 80%;
+    }
+    
+    .card1 .front-content1 p, .card2 .front-content2 p {
+        font-size: 28px;
+    }
+    
+    .content-kortti1, .content-kortti2 {
+        padding: 15px;
+    }
+}
