@@ -239,14 +239,22 @@ let isTranslated = false;
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 768) { // Apply only on mobile
-        document.querySelectorAll(".card1 .content-kortti1, .card2 .content-kortti2").forEach(content => {
-            content.addEventListener("click", function () {
-                this.classList.toggle("visible");
+        let cards = document.querySelectorAll(".card1, .card2");
+
+        cards.forEach(card => {
+            card.addEventListener("click", function () {
+                // Hide all other cards and show only the clicked one
+                cards.forEach(c => {
+                    if (c !== card) {
+                        c.classList.remove("visible");
+                    }
+                });
+
+                // Toggle visibility on the clicked card
+                card.classList.toggle("visible");
             });
         });
     }
 });
-
