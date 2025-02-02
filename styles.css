@@ -785,47 +785,49 @@ canvas {
 /* Mobile Screens (max-width: 414px) */
 @media (max-width: 414px) {
 
- 
-.card-otto, .card-niko {
-        width: 95%;
-        max-width: 420px; /* Prevent it from getting too narrow */
-        margin: 10px auto; /* Center the cards */
+ .card-otto, .card-niko {
+        width: 95vw; /* Make it full width */
+        max-width: 450px; /* Prevent too much stretching */
+        margin: 10px auto; /* Center the box */
+        height: auto; /* Allow content to expand */
     }
 
+    /* Ensure the text box is always visible */
     .content-kortti1,
     .content-kortti2 {
-        min-width: 280px; /* Ensures content doesn’t get too skinny */
-        max-width: 95%; /* Prevents excessive stretching */
-        min-height: 150px; /* Adjust height */
-        padding: 10px 20px; /* Increase horizontal padding */
-        font-size: 12px; /* Ensure readability */
-        text-align: center;
-        white-space: nowrap; /* Prevents text from breaking */
-        overflow-x: auto; /* Allows horizontal scrolling if needed */
-        display: flex;
+        position: static; /* Remove absolute positioning */
+        width: 95%; /* Full width */
+        min-height: 150px; /* Ensure enough space */
+        padding: 15px; /* Padding for better spacing */
+        font-size: 11px; /* Ensure readable text */
+        text-align: center; /* Center the text */
+        background: rgba(13, 13, 13, 0.7); /* Keep the background */
+        display: flex; /* Keep content aligned */
         justify-content: center;
         align-items: center;
+        border-radius: 10px; /* Slight rounded corners */
     }
 
+    /* Make sure the text is readable */
     .content-kortti1 p,
     .content-kortti2 p {
-        font-size: 12px; /* Bigger text for readability */
-        padding: 8px 10px;
-        display: inline-block; /* Keeps text in one row */
-        text-align: center;
-        white-space: nowrap; /* Prevents wrapping */
+        font-size: 11px; /* Larger text */
+        padding: 6px; /* Spacing inside */
+        line-height: 1; /* Better readability */
+        display: block; /* Ensure it takes full space */
+        white-space: normal; /* Allow text to wrap */
     }
 
+    /* Remove any hover effects that hide content */
     .card1:hover .content-kortti1,
     .card2:hover .content-kortti2 {
-        transform: translateX(0); /* Fix hover issue */
+        transform: translateX(0); /* Ensure it's always visible */
     }
 
     .card1:hover .front-content1,
     .card2:hover .front-content2 {
-        transform: translateX(-5%);
+        opacity: 1; /* Ensure text is not fading */
     }
-
 
 
 
@@ -1103,43 +1105,48 @@ html, body {
     } */
 
 .card-otto, .card-niko {
-        width: 95%;
-        max-width: 420px; /* Prevent it from getting too narrow */
-        margin: 10px auto; /* Center the cards */
+        width: 95vw; /* Make it full width */
+        max-width: 450px; /* Prevent too much stretching */
+        margin: 10px auto; /* Center the box */
+        height: auto; /* Allow content to expand */
     }
 
+    /* Ensure the text box is always visible */
     .content-kortti1,
     .content-kortti2 {
-        min-width: 280px; /* Ensures content doesn’t get too skinny */
-        max-width: 95%; /* Prevents excessive stretching */
-        min-height: 150px; /* Adjust height */
-        padding: 10px 20px; /* Increase horizontal padding */
-        font-size: 12px; /* Ensure readability */
-        text-align: center;
-        white-space: nowrap; /* Prevents text from breaking */
-        overflow-x: auto; /* Allows horizontal scrolling if needed */
-        display: flex;
+        position: static; /* Remove absolute positioning */
+        width: 95%; /* Full width */
+        min-height: 150px; /* Ensure enough space */
+        padding: 15px; /* Padding for better spacing */
+        font-size: 11px; /* Ensure readable text */
+        text-align: center; /* Center the text */
+        background: rgba(13, 13, 13, 0.7); /* Keep the background */
+        display: flex; /* Keep content aligned */
         justify-content: center;
         align-items: center;
+        border-radius: 10px; /* Slight rounded corners */
     }
 
+    /* Make sure the text is readable */
     .content-kortti1 p,
     .content-kortti2 p {
-        font-size: 12px; /* Bigger text for readability */
-        padding: 8px 10px;
-        display: inline-block; /* Keeps text in one row */
-        text-align: center;
-        white-space: nowrap; /* Prevents wrapping */
+        font-size: 11px; /* Larger text */
+        padding: 6px; /* Spacing inside */
+        line-height: 1; /* Better readability */
+        display: block; /* Ensure it takes full space */
+        white-space: normal; /* Allow text to wrap */
     }
 
+    /* Remove any hover effects that hide content */
     .card1:hover .content-kortti1,
     .card2:hover .content-kortti2 {
-        transform: translateX(0); /* Fix hover issue */
+        transform: translateX(0); /* Ensure it's always visible */
     }
 
     .card1:hover .front-content1,
     .card2:hover .front-content2 {
-        transform: translateX(-5%);
+        opacity: 1; /* Ensure text is not fading */
     }
+    
 }
 
