@@ -785,27 +785,35 @@ canvas {
 /* Mobile Screens (max-width: 414px) */
 @media (max-width: 414px) {
 
- .card-otto, .card-niko {
-        width: 90%;
-        max-width: 400px; /* Prevent excessive width */
+ 
+.card-otto, .card-niko {
+        width: 95%;
+        max-width: 420px; /* Prevent it from getting too narrow */
         margin: 10px auto; /* Center the cards */
     }
 
     .content-kortti1,
     .content-kortti2 {
-        min-height: 150px; /* Increase height for better content display */
-        width: 100%; /* Ensure it scales properly */
-        padding: 11px; /* Increase padding for spacing */
-        font-size: 9px; /* Make text readable */
+        min-width: 280px; /* Ensures content doesn’t get too skinny */
+        max-width: 95%; /* Prevents excessive stretching */
+        min-height: 150px; /* Adjust height */
+        padding: 10px 20px; /* Increase horizontal padding */
+        font-size: 12px; /* Ensure readability */
         text-align: center;
-        transform: translateX(0); /* Ensure it remains visible */
+        white-space: nowrap; /* Prevents text from breaking */
+        overflow-x: auto; /* Allows horizontal scrolling if needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .content-kortti1 p,
     .content-kortti2 p {
-        font-size: 11px; /* Larger text for readability */
-        padding: 10px;
-        line-height: 1.4;
+        font-size: 12px; /* Bigger text for readability */
+        padding: 8px 10px;
+        display: inline-block; /* Keeps text in one row */
+        text-align: center;
+        white-space: nowrap; /* Prevents wrapping */
     }
 
     .card1:hover .content-kortti1,
@@ -815,9 +823,9 @@ canvas {
 
     .card1:hover .front-content1,
     .card2:hover .front-content2 {
-        transform: translateX(-10%);
+        transform: translateX(-5%);
     }
-}
+
 
 
 
@@ -1094,28 +1102,34 @@ html, body {
         padding: 15px;
     } */
 
-  
- .card-otto, .card-niko {
-        width: 90%;
-        max-width: 400px; /* Prevent excessive width */
+.card-otto, .card-niko {
+        width: 95%;
+        max-width: 420px; /* Prevent it from getting too narrow */
         margin: 10px auto; /* Center the cards */
     }
 
     .content-kortti1,
     .content-kortti2 {
-        min-height: 150px; /* Increase height for better content display */
-        width: 100%; /* Ensure it scales properly */
-        padding: 11px; /* Increase padding for spacing */
-        font-size: 9px; /* Make text readable */
+        min-width: 280px; /* Ensures content doesn’t get too skinny */
+        max-width: 95%; /* Prevents excessive stretching */
+        min-height: 150px; /* Adjust height */
+        padding: 10px 20px; /* Increase horizontal padding */
+        font-size: 12px; /* Ensure readability */
         text-align: center;
-        transform: translateX(0); /* Ensure it remains visible */
+        white-space: nowrap; /* Prevents text from breaking */
+        overflow-x: auto; /* Allows horizontal scrolling if needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .content-kortti1 p,
     .content-kortti2 p {
-        font-size: 11px; /* Larger text for readability */
-        padding: 10px;
-        line-height: 1.4;
+        font-size: 12px; /* Bigger text for readability */
+        padding: 8px 10px;
+        display: inline-block; /* Keeps text in one row */
+        text-align: center;
+        white-space: nowrap; /* Prevents wrapping */
     }
 
     .card1:hover .content-kortti1,
@@ -1125,10 +1139,7 @@ html, body {
 
     .card1:hover .front-content1,
     .card2:hover .front-content2 {
-        transform: translateX(-10%);
+        transform: translateX(-5%);
     }
 }
 
-
-
-}
