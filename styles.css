@@ -794,6 +794,7 @@ canvas {
     .card2 .content-kortti2 {
         transform: translateX(0) !important; /* Always visible */
         pointer-events: all;
+      font-size: 8px;
     }
 
     .card1 .front-content1 p,
