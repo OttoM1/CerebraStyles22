@@ -247,6 +247,8 @@ canvas {
     top: 0;
     left: 0;
     z-index: -1;
+    background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
+
 }
  
  
@@ -278,7 +280,7 @@ canvas {
   text-decoration: none;
   font-size: 32px;
       font-weight: bold;
-  transition: background 0.4s ease;
+  transition: background 0.6s ease;
   cursor: pointer;
  }
  
@@ -327,27 +329,27 @@ canvas {
  
  
  p {
-  animation: fadeIn 3.9s ease-in-out;
+  animation: fadeIn 4.3s ease-in-out;
  }
  
  
         h2 {
-  animation: fadeIn 3.2s ease-in-out;
+  animation: fadeIn 3.8s ease-in-out;
  }
  
  
  
  
  h1 {
-  animation: fadeIn 3.5s ease-in-out;
+  animation: fadeIn 3.9s ease-in-out;
  }
         button {
-  animation: fadeIn 3.5s ease-in-out;
+  animation: fadeIn 3.9s ease-in-out;
  
  
  }
  .nav-links a {
-  animation: fadeIn 5.2s ease-in-out;
+  animation: fadeIn 5.4s ease-in-out;
  
  
  }
@@ -368,7 +370,7 @@ canvas {
  
  
  p {
-  transition: color 0.4s ease, transform 0.4s ease;
+  transition: color 0.6s ease, transform 0.6s ease;
  }
  p:hover {
   color:  #f7e3e3;
@@ -377,7 +379,7 @@ canvas {
  
  
  h1 {
-    transition: color 0.4s ease, transform 0.4s ease;
+    transition: color 0.6s ease, transform 0.6s ease;
  }
  
  
