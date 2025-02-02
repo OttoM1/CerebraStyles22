@@ -776,7 +776,11 @@
 @media (max-width: 414px) {
     body {
         font-size: 95%;
+      overflow-x: hidden;
     }
+  html, body {
+  overflow-x: hidden;
+}
 
     #revealButton {
         padding: 30px 100px;
@@ -854,8 +858,12 @@
 @media (max-width: 768px) {
     body {
         font-size: 100%;
+      overflow-x: hidden;
     }
-    
+html, body {
+  overflow-x: hidden;
+}
+  
     #revealButton {
         padding: 40px 130px;
         font-size: 24px;
