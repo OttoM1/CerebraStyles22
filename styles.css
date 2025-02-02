@@ -788,6 +788,19 @@ canvas {
         font-size: 95%;
       overflow-x: hidden;
     }
+
+   
+    .card1 .content-kortti1,
+    .card2 .content-kortti2 {
+        transform: translateX(0) !important; /* Always visible */
+        pointer-events: all;
+    }
+
+    .card1 .front-content1 p,
+    .card2 .front-content2 p {
+        opacity: 0; /* Hide front content text on mobile */
+    }
+
   
   html, body {
   overflow-x: hidden;
@@ -896,6 +909,17 @@ html, body {
         padding: 40px 130px;
         font-size: 24px;
         max-width: 70%;
+    }
+
+  .card1 .content-kortti1,
+    .card2 .content-kortti2 {
+        transform: translateX(0) !important; /* Always visible */
+        pointer-events: all;
+    }
+
+    .card1 .front-content1 p,
+    .card2 .front-content2 p {
+        opacity: 0; /* Hide front content text on mobile */
     }
     
     .main-title {
