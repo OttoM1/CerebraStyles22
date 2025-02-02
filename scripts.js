@@ -245,15 +245,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         cards.forEach(card => {
             card.addEventListener("click", function () {
-                // Hide all other cards and show only the clicked one
-                cards.forEach(c => {
-                    if (c !== card) {
-                        c.classList.remove("visible");
-                    }
-                });
+                let isActive = this.classList.contains("visible");
 
-                // Toggle visibility on the clicked card
-                card.classList.toggle("visible");
+                // Hide all cards
+                cards.forEach(c => c.classList.remove("visible"));
+
+                // Toggle only if it wasn't already visible
+                if (!isActive) {
+                    this.classList.add("visible");
+                }
             });
         });
     }
