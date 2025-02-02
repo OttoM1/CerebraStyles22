@@ -786,12 +786,6 @@ canvas {
 @media (max-width: 414px) {
 
   
-.card-otto, .card-niko {
-        width: 360px; /* Make it full width */
-        max-width: 360px; /* Prevent too much stretching */
-        margin: 10px auto; /* Center the box */
-        height: auto; /* Allow content to expand */
-    }
 
   .content-kortti1,
     .content-kortti2 {
@@ -804,18 +798,6 @@ canvas {
         text-align: center; /* Center the text */
         background: rgba(13, 13, 13, 0.7); /* Keep the background */
         border-radius: 10px; /* Softer edges */
-    }
-
-    /* Remove hover effects on mobile */
-    .card1 .front-content1,
-    .card2 .front-content2 {
-        display: none; /* Hide front content */
-    }
-
-    .card1:hover .content-kortti1,
-    .card2:hover .content-kortti2 {
-        transform: none; /* No animation on mobile */
-        opacity: 1;
     }
 
 
@@ -1106,25 +1088,5 @@ html, body {
         border-radius: 10px; /* Softer edges */
     }
 
-    /* Remove hover effects on mobile */
-    .card1 .front-content1,
-    .card2 .front-content2 {
-        display: none; /* Hide front content */
-    }
-
-    .card1:hover .content-kortti1,
-    .card2:hover .content-kortti2 {
-        transform: none; /* No animation on mobile */
-        opacity: 1;
-    }
-  
-.card-otto, .card-niko {
-        width: 360px; /* Make it full width */
-        max-width: 360px; /* Prevent too much stretching */
-        margin: 10px auto; /* Center the box */
-        height: auto; /* Allow content to expand */
-    }
-
-    
 }
 
