@@ -788,6 +788,12 @@ canvas {
         font-size: 95%;
       overflow-x: hidden;
     }
+     #translateButton {
+        padding: 8px 16px;
+        font-size: 8px;
+        top: 5px;
+        right: 5px;
+    }
   html, body {
   overflow-x: hidden;
      min-height: 100%;
@@ -959,5 +965,11 @@ html, body {
     
     .content-kortti1, .content-kortti2 {
         padding: 15px;
+    }
+   #translateButton {
+        padding: 10px 20px;
+        font-size: 9px;
+        top: 8px;
+        right: 8px;
     }
 }
