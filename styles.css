@@ -790,16 +790,17 @@ canvas {
     }
 
    
-    .card1 .content-kortti1,
+     .card1 .content-kortti1,
     .card2 .content-kortti2 {
-        transform: translateX(0) !important; /* Always visible */
-        pointer-events: all;
-      font-size: 8px;
+        transform: translateX(-99%); /* Initially hidden */
+        transition: transform 0.6s ease-in-out;
+      font-size: 4px;
     }
 
-    .card1 .front-content1 p,
-    .card2 .front-content2 p {
-        opacity: 0; /* Hide front content text on mobile */
+    .card1.visible .content-kortti1,
+    .card2.visible .content-kortti2 {
+        transform: translateX(0); /* Show the selected card */
+      font-size: 4px;
     }
 
   
@@ -912,15 +913,17 @@ html, body {
         max-width: 70%;
     }
 
-  .card1 .content-kortti1,
+    .card1 .content-kortti1,
     .card2 .content-kortti2 {
-        transform: translateX(0) !important; /* Always visible */
-        pointer-events: all;
+        transform: translateX(-99%); /* Initially hidden */
+        transition: transform 0.6s ease-in-out;
+      font-size: 4px;
     }
 
-    .card1 .front-content1 p,
-    .card2 .front-content2 p {
-        opacity: 0; /* Hide front content text on mobile */
+    .card1.visible .content-kortti1,
+    .card2.visible .content-kortti2 {
+        transform: translateX(0); /* Show the selected card */
+      font-size: 4px;
     }
     
     .main-title {
