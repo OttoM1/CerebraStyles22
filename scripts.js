@@ -236,5 +236,27 @@ let isTranslated = false;
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 768) { // Apply only on mobile
+        let textBoxes = document.querySelectorAll(".content-kortti1, .content-kortti2");
+
+        textBoxes.forEach(box => {
+            let texts = box.querySelectorAll(".toggle-text"); // Select all toggleable text elements
+            let index = 0;
+
+            box.addEventListener("click", function () {
+                // Hide all texts
+                texts.forEach(text => text.style.display = "none");
+
+                // Show the next text
+                index = (index + 1) % texts.length; // Cycle through text options
+                texts[index].style.display = "block";
+            });
+        });
+    }
+});
+
+
+
 
 
