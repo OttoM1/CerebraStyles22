@@ -789,10 +789,9 @@ canvas {
       overflow-x: hidden;
     }
      #translateButton {
-        padding: 8px 16px;
-        font-size: 8px;
-        top: 5px;
-        right: 5px;
+        
+        top: 3.2px;
+        right: 3.2px;
     }
   html, body {
   overflow-x: hidden;
@@ -967,9 +966,8 @@ html, body {
         padding: 15px;
     }
    #translateButton {
-        padding: 10px 20px;
-        font-size: 9px;
-        top: 8px;
-        right: 8px;
+      
+        top: 3.2px;
+        right: 3.2px;
     }
 }
