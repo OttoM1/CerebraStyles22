@@ -238,23 +238,3 @@ let isTranslated = false;
 
 
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth <= 768) { // Apply only on mobile
-        let cards = document.querySelectorAll(".card1, .card2");
-
-        cards.forEach(card => {
-            card.addEventListener("click", function () {
-                let isActive = this.classList.contains("visible");
-
-                // Hide all cards
-                cards.forEach(c => c.classList.remove("visible"));
-
-                // Toggle only if it wasn't already visible
-                if (!isActive) {
-                    this.classList.add("visible");
-                }
-            });
-        });
-    }
-});
