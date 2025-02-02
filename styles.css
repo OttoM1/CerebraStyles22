@@ -793,41 +793,29 @@ canvas {
         height: auto; /* Allow content to expand */
     }
 
-    /* Ensure the text box is always visible */
-    .content-kortti1,
+  .content-kortti1,
     .content-kortti2 {
+        display: block; /* Always visible */
         position: static; /* Remove absolute positioning */
-        width: 360px; /* Full width */
+        width: 100%; /* Make it take full space */
         min-height: 240px; /* Ensure enough space */
-        padding: 8px; /* Padding for better spacing */
-        font-size: 11px; /* Ensure readable text */
+        padding: 10px; /* Adjust padding */
+        font-size: 8px; /* Ensure readable text */
         text-align: center; /* Center the text */
         background: rgba(13, 13, 13, 0.7); /* Keep the background */
-        display: flex; /* Keep content aligned */
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px; /* Slight rounded corners */
+        border-radius: 10px; /* Softer edges */
     }
 
-    /* Make sure the text is readable */
-    .content-kortti1 p,
-    .content-kortti2 p {
-        font-size: 11px; /* Larger text */
-        padding: 6px; /* Spacing inside */
-        line-height: 1; /* Better readability */
-        display: block; /* Ensure it takes full space */
-        white-space: normal; /* Allow text to wrap */
+    /* Remove hover effects on mobile */
+    .card1 .front-content1,
+    .card2 .front-content2 {
+        display: none; /* Hide front content */
     }
 
-    /* Remove any hover effects that hide content */
     .card1:hover .content-kortti1,
     .card2:hover .content-kortti2 {
-        transform: translateX(0); /* Ensure it's always visible */
-    }
-
-    .card1:hover .front-content1,
-    .card2:hover .front-content2 {
-        opacity: 1; /* Ensure text is not fading */
+        transform: none; /* No animation on mobile */
+        opacity: 1;
     }
 
 
@@ -1105,6 +1093,31 @@ html, body {
         padding: 15px;
     } */
 
+  .content-kortti1,
+    .content-kortti2 {
+        display: block; /* Always visible */
+        position: static; /* Remove absolute positioning */
+        width: 100%; /* Make it take full space */
+        min-height: 240px; /* Ensure enough space */
+        padding: 10px; /* Adjust padding */
+        font-size: 8px; /* Ensure readable text */
+        text-align: center; /* Center the text */
+        background: rgba(13, 13, 13, 0.7); /* Keep the background */
+        border-radius: 10px; /* Softer edges */
+    }
+
+    /* Remove hover effects on mobile */
+    .card1 .front-content1,
+    .card2 .front-content2 {
+        display: none; /* Hide front content */
+    }
+
+    .card1:hover .content-kortti1,
+    .card2:hover .content-kortti2 {
+        transform: none; /* No animation on mobile */
+        opacity: 1;
+    }
+  
 .card-otto, .card-niko {
         width: 360px; /* Make it full width */
         max-width: 360px; /* Prevent too much stretching */
@@ -1112,42 +1125,6 @@ html, body {
         height: auto; /* Allow content to expand */
     }
 
-    /* Ensure the text box is always visible */
-    .content-kortti1,
-    .content-kortti2 {
-        position: static; /* Remove absolute positioning */
-        width: 360px; /* Full width */
-        min-height: 240px; /* Ensure enough space */
-        padding: 8px; /* Padding for better spacing */
-        font-size: 11px; /* Ensure readable text */
-        text-align: center; /* Center the text */
-        background: rgba(13, 13, 13, 0.7); /* Keep the background */
-        display: flex; /* Keep content aligned */
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px; /* Slight rounded corners */
-    }
-
-    /* Make sure the text is readable */
-    .content-kortti1 p,
-    .content-kortti2 p {
-        font-size: 11px; /* Larger text */
-        padding: 6px; /* Spacing inside */
-        line-height: 1; /* Better readability */
-        display: block; /* Ensure it takes full space */
-        white-space: normal; /* Allow text to wrap */
-    }
-
-    /* Remove any hover effects that hide content */
-    .card1:hover .content-kortti1,
-    .card2:hover .content-kortti2 {
-        transform: translateX(0); /* Ensure it's always visible */
-    }
-
-    .card1:hover .front-content1,
-    .card2:hover .front-content2 {
-        opacity: 1; /* Ensure text is not fading */
-    }
     
 }
 
