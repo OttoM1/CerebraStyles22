@@ -235,3 +235,18 @@ let isTranslated = false;
         });
 
 
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 768) { // Apply only on mobile
+        document.querySelectorAll(".card1 .content-kortti1, .card2 .content-kortti2").forEach(content => {
+            content.addEventListener("click", function () {
+                this.classList.toggle("visible");
+            });
+        });
+    }
+});
+
