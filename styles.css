@@ -798,9 +798,20 @@ canvas {
         text-align: center; /* Center the text */
         background: rgba(13, 13, 13, 0.7); /* Keep the background */
         border-radius: 10px; /* Softer edges */
+        line-height: 1;
     }
 
 
+ .content-kortti1 .toggle-text,
+    .content-kortti2 .toggle-text {
+        display: none; /* Hide all text by default */
+    }
+
+    /* Show the first text by default */
+    .content-kortti1 .toggle-text:first-child,
+    .content-kortti2 .toggle-text:first-child {
+        display: block;
+    }
 
 
 
@@ -1086,7 +1097,22 @@ html, body {
         text-align: center; /* Center the text */
         background: rgba(13, 13, 13, 0.7); /* Keep the background */
         border-radius: 10px; /* Softer edges */
+              line-height: 1;
+
     }
+
+   .content-kortti1 .toggle-text,
+    .content-kortti2 .toggle-text {
+        display: none; /* Hide all text by default */
+    }
+
+    /* Show the first text by default */
+    .content-kortti1 .toggle-text:first-child,
+    .content-kortti2 .toggle-text:first-child {
+        display: block;
+    }
+
+    
 
 }
 
