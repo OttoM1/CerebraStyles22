@@ -784,7 +784,6 @@ canvas {
 @media (max-width: 414px) {
     body {
         font-size: 95%;
-      overflow: hidden;
       overflow-x: hidden;
     }
   html, body {
@@ -879,7 +878,6 @@ html, body {
   */
   body {
         font-size: 95%;
-      overflow: hidden;
       overflow-x: hidden;
     }
   html, body {
