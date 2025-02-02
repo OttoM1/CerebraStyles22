@@ -789,6 +789,13 @@ canvas {
       overflow-x: hidden;
     }
 
+.Niko p {
+  font-size: 8px;
+
+}
+.Otto p{
+   font-size: 8px;
+}
    
      .card-otto, .card-niko {
         width: 90%;
@@ -932,6 +939,14 @@ html, body {
     height: 100%;
         overscroll-behavior: contain;
 
+}
+
+  .Niko p {
+  font-size: 8px;
+
+}
+.Otto p{
+   font-size: 8px;
 }
 
   
