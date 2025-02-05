@@ -1,5 +1,4 @@
 
-
 /*bodyt/naytot/canvas*/
 
 * {
@@ -18,12 +17,12 @@
  
  body {
   background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
-
+  color: rgba(135, 177, 187, 0.9);
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  height: -webkit-fill-available;
+  height: -webkit-fill-available; 
   margin: 0;
   overscroll-behavior: none;
  
@@ -91,14 +90,23 @@ canvas {
   text-align: center;
   flex-grow: 1;
  }
+ h2 {
+  text-shadow: 
+  1px 1px 2px rgba(44, 44, 44, 0.5), 
+  -1px 1px 2px rgba(22, 22, 22, 0.5), 
+  1px -1px 2px rgba(29, 29, 29, 0.5), 
+  -1px -1px 2px rgba(60, 60, 60, 0.5);
+}
+
  
- 
+
+
  .section-content h2 {
   font-size: 2.5rem;
   font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
+   font-weight: bold; 
   margin-bottom: 1.1rem;
-  color: rgba(20, 39, 117, 0.8), rgba(52, 23, 111, 0.45);  } 
+  color: rgba(135, 177, 187, 0.9);  } 
  
   .tagline {
     font-size: 1.2rem;
@@ -181,16 +189,6 @@ canvas {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*Linkit/Buttonit*/
 
 
@@ -201,6 +199,8 @@ canvas {
   height: 100vh;
 
  }
+
+
  
  
  #revealButton {
@@ -508,7 +508,6 @@ canvas {
  
  
  
- 
  /*Trans*/
  
  
@@ -777,8 +776,6 @@ canvas {
 
 
 
-
-
 @media (max-width: 414px) {
 
 
@@ -800,30 +797,28 @@ canvas {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
-
   
 
   .content-kortti1,
     .content-kortti2 {
-        display: block; /* Always visible */
-        position: static; /* Remove absolute positioning */
-        width: 100%; /* Make it take full space */
-        min-height: 240px; /* Ensure enough space */
-        padding: 10px; /* Adjust padding */
-        font-size: 8px; /* Ensure readable text */
-        text-align: center; /* Center the text */
-        background: rgba(13, 13, 13, 0.7); /* Keep the background */
-        border-radius: 10px; /* Softer edges */
+        display: block; 
+        position: static; 
+        width: 100%; 
+        min-height: 240px; 
+        padding: 10px;
+        font-size: 8px; 
+        text-align: center; 
+        background: rgba(13, 13, 13, 0.7);
+        border-radius: 10px; 
         line-height: 1;
     }
 
 
  .content-kortti1 .toggle-text,
     .content-kortti2 .toggle-text {
-        display: none; /* Hide all text by default */
+        display: none; 
     }
 
-    /* Show the first text by default */
     .content-kortti1 .toggle-text:first-child,
     .content-kortti2 .toggle-text:first-child {
         display: block;
@@ -849,39 +844,6 @@ canvas {
    
 
 
-    /* 
-    .card1 .content-kortti1,
-    .card2 .content-kortti2 {
-        transform: translateX(-99%);
-        transition: transform 0.6s ease-in-out;
-        padding: 12px; 
-        font-size:  7px; 
-        line-height: 1.4;
-        width: 100%; 
-        height: auto;
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .content-kortti1,
-    .content-kortti2 {
-        min-height: 120px; 
-        width: 100%; 
-        border-radius: 10px; 
-        padding: 15px;
-    }
-
-    .content-kortti1 p,
-    .content-kortti2 p {
-        font-size: 8px;
-        padding: 3px;
-    }
-
-   
-    .card1.visible .content-kortti1,
-    .card2.visible .content-kortti2 {
-        transform: translateX(0);
-    } */
   
   html, body {
   overflow-x: hidden;
@@ -949,30 +911,17 @@ canvas {
         margin-right: 0;
         margin-bottom: 1rem;
     }
-    /*
-    .card-otto, .card-niko {
-        width: 90%;
-    }
-    
-    .card1 .front-content1 p, .card2 .front-content2 p {
-        font-size: 24px;
-    }
-    
-    .content-kortti1, .content-kortti2 {
-        padding: 10px;
-    } */
+   
 }
 
-/* Tablet Screens (max-width: 768px) */
+
+
+
+
+
+/* (768px) */
 @media (max-width: 768px) {
-  /*  body {
-        font-size: 100%;
-      overflow-x: hidden;
-    }
-html, body {
-  overflow-x: hidden;
-}
-  */
+  
   body {
         font-size: 95%;
       overflow-x: hidden;
@@ -985,7 +934,7 @@ html, body {
 
 }
 
-  
+
 
 #translateButton {
   display: inline-block;
@@ -1018,44 +967,7 @@ html, body {
         font-size: 24px;
         max-width: 70%;
     }
-/*
-   .card-otto, .card-niko {
-        width: 90%;
-        max-width: 400px; 
-        margin: 10px auto;
-    }
 
-    .card1 .content-kortti1,
-    .card2 .content-kortti2 {
-        transform: translateX(-99%);
-        transition: transform 0.6s ease-in-out;
-        padding: 12px; 
-        font-size:  7px; 
-        line-height: 1.4;
-        width: 100%; 
-        height: auto;
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .content-kortti1,
-    .content-kortti2 {
-        min-height: 120px; 
-        width: 100%; 
-        border-radius: 10px; 
-        padding: 15px;
-    }
-
-    .content-kortti1 p,
-    .content-kortti2 p {
-        font-size: 14px;
-        padding: 5px;
-    }
-
-    .card1.visible .content-kortti1,
-    .card2.visible .content-kortti2 {
-        transform: translateX(0);
-    } */
     
     .main-title {
         font-size: 3.5rem;
@@ -1108,40 +1020,28 @@ html, body {
         margin-right: 0;
         margin-bottom: 1rem;
     }
-    /*
-    .card-otto, .card-niko {
-        width: 80%;
-    }
     
-    .card1 .front-content1 p, .card2 .front-content2 p {
-        font-size: 28px;
-    }
-    
-    .content-kortti1, .content-kortti2 {
-        padding: 15px;
-    } */
 
   .content-kortti1,
     .content-kortti2 {
-        display: block; /* Always visible */
-        position: static; /* Remove absolute positioning */
-        width: 100%; /* Make it take full space */
-        min-height: 240px; /* Ensure enough space */
-        padding: 10px; /* Adjust padding */
-        font-size: 8px; /* Ensure readable text */
-        text-align: center; /* Center the text */
-        background: rgba(13, 13, 13, 0.7); /* Keep the background */
-        border-radius: 10px; /* Softer edges */
+        display: block; 
+        position: static; 
+        width: 100%; 
+        min-height: 240px;
+        padding: 10px; 
+        font-size: 8px; 
+        text-align: center;
+        background: rgba(13, 13, 13, 0.7); 
+        border-radius: 10px; 
               line-height: 1;
 
     }
 
    .content-kortti1 .toggle-text,
     .content-kortti2 .toggle-text {
-        display: none; /* Hide all text by default */
+        display: none; 
     }
 
-    /* Show the first text by default */
     .content-kortti1 .toggle-text:first-child,
     .content-kortti2 .toggle-text:first-child {
         display: block;
