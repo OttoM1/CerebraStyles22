@@ -1,5 +1,7 @@
 
 
+/*bodyt/naytot/canvas*/
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +9,16 @@
  }
  
  
+ 
+ #mainContent {
+  flex-grow: 1;
+  text-align: center;
+  }
+  
+ 
  body {
-  font-family: 'Cinzel', serif;
   background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
-  color: rgba(14, 14, 14, 0.9);
+
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -21,18 +29,177 @@
  
  
  }
+
  
  
  .hidden {
   display: none;
  }
  
+canvas {
+  height: 100%;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
+
+}
  
+
+
+
+/*Tekstit*/
+
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+ }
+ .main-title {
+  font-size: 4.3rem;
+  font-weight: bold;
+  color: #fff9f1;
+  font-family: 'Playfair Display', serif;
+  text-shadow:
+  -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
+  -3.3px 5.2px 10px rgba(30, 94, 92, 0.7),
+  4.4px 6.3px 15px rgba(99, 209, 226, 0.7);
+ }
+ 
+ 
+ .text-3d {
+        font-size: 4rem;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.1em;
+      position: relative;
+      display: inline-block;
+      background: rgba(15, 15, 15, 0);
+      color: #fffcf8;
+      filter: blur(0px);
+      text-shadow:
+      1.5px 1.3px 2.1px rgba(168, 231, 178, 0.6),
+  1px 1px 3px rgba(149, 211, 229, 0.6),
+  2 2 5px rgba(62, 59, 59, 0.6);
+ }
+
+
+ .content-section {
+  padding: 2rem;
+  text-align: center;
+  flex-grow: 1;
+ }
+ 
+ 
+ .section-content h2 {
+  font-size: 2.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.1rem;
+  color: rgba(20, 39, 117, 0.8), rgba(52, 23, 111, 0.45);  } 
+ 
+  .tagline {
+    font-size: 1.2rem;
+    color: #88cbcd;
+    margin-top: 0.5rem;
+    font-family: 'Lora', serif;
+   }
+   
+
+   .email-link {
+    font-size: 1.9;
+    color: #4d8766;
+    font-weight: bold;
+    text-decoration: none;
+   }
+   
+   
+   .email-link:hover {
+    color: #ffeacf;
+   }
+
+
+   .servicehead {
+    color: rgba(118, 235, 174, 0.59);
+    font-weight: bold;
+   }
+   
+   
+   
+             .section-content p {
+    font-size: 1.6rem;
+    color: #6c6c6c;
+     line-height: 1.6;
+    text-shadow:
+    -2.5px 4.2px 5px rgba(13, 3, 17, 0.7),
+    -3.3px 5.2px 10px rgba(0, 0, 0, 0.7),
+    4.4px 6.3px 15px rgba(1, 10, 16, 0.7);
+   }
+   
+
+   .tagline {
+    font-family: 'Dancing Script', cursive;
+    font-size: 14.2px;
+    color: #88cbcd;
+   }
+   
+   
+   .section-content .different-font {
+    background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.05rem !important;
+    color: #88cbcd !important;
+    transition: color 0.4s ease, transform 0.4s ease;
+   }
+
+
+
+
+
+   .Niko p {
+    color: rgba(255, 238, 177, 0.93);
+    font-size: 1.32rem;
+  
+  }
+  .Otto p{
+     color: rgba(239, 239, 239, 0.93);
+     font-size: 1.32rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Linkit/Buttonit*/
+
+
  #revealContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
  }
  
  
@@ -43,7 +210,7 @@
  padding: 48px 154px;
  border-radius: 70%;
   box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
-  font-family: 'Courier New', Courier;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 28px;
     max-width: 408px;
   font-weight: bold;
@@ -64,53 +231,6 @@
   height: auto;
   width: auto;
  }
- 
- 
- #revealButton:hover {
-  background: radial-gradient(ellipse, rgba(57, 4, 57, 0), rgba(36, 40, 42, 0));
-  transform: scale(1.44);
-  box-shadow: 0 0 2000px rgba(41, 4, 37, 0.8);
- transition: box-shadow 3.5s linear, transform 4.5s linear;
- 
- 
- }
- 
- 
- .header {
-  text-align: center;
-  padding: 2rem 1rem;
- }
- .main-title {
-  font-size: 4.3rem;
-  font-weight: bold;
-  color: #ffeacf;
-  font-family: 'Playfair Display', serif;
-  text-shadow:
-  -2.5px 4.2px 5px rgba(25, 24, 24, 0.7),
-  -3.3px 5.2px 10px rgba(30, 94, 92, 0.7),
-  4.4px 6.3px 15px rgba(99, 209, 226, 0.7);
- }
- 
- 
- .text-3d {
-        font-size: 4rem;
-      font-weight: bold;
-      font-family: 'Playfair Display', serif;
-      letter-spacing: 0.1em;
-      position: relative;
-      display: inline-block;
-      background: rgba(15, 15, 15, 0);
-      color: #ffeacf;
-      filter: blur(0px);
-      text-shadow:
-      1.5px 1.3px 2.1px rgba(168, 231, 178, 0.6),
-  1px 1px 3px rgba(149, 211, 229, 0.6),
-  2 2 5px rgba(62, 59, 59, 0.6);
- }
- 
- 
- 
- 
  
  
  .nav-links {
@@ -134,11 +254,22 @@
   transition: color 0.3s ease;
   cursor: pointer;
  }
- .tagline {
-  font-size: 1.2rem;
-  color: #88cbcd;
-  margin-top: 0.5rem;
-  font-family: 'Lora', serif;
+
+ 
+ 
+ .nav-links a {
+  display: inline-block;
+  background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
+  opacity: 0.75;
+  box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
+  color: #4d8766;
+  padding: 20px 57px;
+  border-radius: 75px;
+  text-decoration: none;
+  font-size: 32px;
+      font-weight: bold;
+  transition: background 0.6s ease;
+  cursor: pointer;
  }
  
  
@@ -147,31 +278,94 @@
  
  
  
+ /*Hoverit*/
  
+
+ #revealButton:hover {
+  background: radial-gradient(ellipse, rgba(57, 4, 57, 0), rgba(36, 40, 42, 0));
+  transform: scale(1.44);
+  box-shadow: 0 0 2000px rgba(41, 4, 37, 0.8);
+ transition: box-shadow 3.5s linear, transform 4.5s linear;
+ 
+ 
+ }
+
+
  .nav-links a:hover {
   color: #1d1f21, #2c2f33;
  }
  
  
  
- .content-section {
-  padding: 2rem;
-  text-align: center;
-  flex-grow: 1;
+ #contactForm button:hover{
+  background: rgba(168, 218, 220, 0.9);
+  transform: scale(1.1);
  }
  
  
- .section-content h2 {
-  font-size: 2.5rem;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-  margin-bottom: 1.1rem;
-  color: rgba(118, 242, 253, 1), rgba(48, 152, 95, 0.1);  }
+ #contactForm input:hover, #contactForm textarea:hover, #contactForm button:hover {
+  box-shadow: 0 0 5px rgba(150, 212, 223, 0.8);
+ }
+
+
+ .nav-links a:hover {
+  background: rgba(34, 128, 136, 0.1);
+ }
+ 
+ button:hover{
+  transform: scale(1.1);
+ }
+ 
+ h1:hover {
+  color: #4d8766;
+  transform: scale(1.1);
+}
+ 
+
+.section-content .different-font:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+ }
  
  
  
- 
- 
+.card1:hover .content-kortti1 {
+  transform: translateY(0);
+}
+
+
+.card1:hover .front-content1 {
+  transform: translateX(-30%);
+}
+
+
+.card1:hover .front-content1 p {
+  opacity: 0;
+}
+
+
+
+.card2:hover .content-kortti2 {
+  transform: translateY(0);
+}
+
+
+.card2:hover .front-content2 {
+  transform: translateX(-30%);
+}
+
+
+.card2:hover .front-content2 p {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+ /*Contacts*/
  
  #contactForm {
   margin-top: 2rem;
@@ -190,9 +384,6 @@
   outline: none;
   border-radius: 8px;
       transition: transform 0.8s ease;
- }
- #contactForm input:hover, #contactForm textarea:hover, #contactForm button:hover {
-  box-shadow: 0 0 5px rgba(150, 212, 223, 0.8);
  }
  #contactForm input, #contactForm textarea {
   background: rgba(30, 30, 30, 0);
@@ -218,99 +409,6 @@
  }
  
  
- #contactForm button:hover{
-  background: rgba(168, 218, 220, 0.9);
-  transform: scale(1.1);
- }
- 
- 
- 
- 
- /*
- 
- canvas{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  z-index: -1;
-  background: transparent;
-    height: -webkit-fill-available;
- 
- } */
-
-canvas {
-   height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
-
-}
- 
- 
- 
- 
-        .email-link {
-  font-size: 1.9;
-  color: #4d8766;
-  font-weight: bold;
-  text-decoration: none;
- }
- 
- 
- .email-link:hover {
-  color: #ffeacf;
- }
- 
- 
- 
- 
- .nav-links a {
-  display: inline-block;
-  background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
-  opacity: 0.75;
-  box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
-  color: #4d8766;
-  padding: 20px 57px;
-  border-radius: 75px;
-  text-decoration: none;
-  font-size: 32px;
-      font-weight: bold;
-  transition: background 0.6s ease;
-  cursor: pointer;
- }
- 
- 
- .nav-links a:hover {
-  background: rgba(34, 128, 136, 0.1);
- }
- 
- 
- 
- 
- #mainContent {
- flex-grow: 1;
- text-align: center;
- }
- 
- 
- 
- 
- 
- 
-           .section-content p {
-  font-size: 1.6rem;
-  color: #ffeacf;
-   line-height: 1.6;
-  text-shadow:
-  -2.5px 4.2px 5px rgba(13, 3, 17, 0.7),
-  -3.3px 5.2px 10px rgba(162, 213, 211, 0.7),
-  4.4px 6.3px 15px rgba(50, 50, 50, 0.7);
- }
  
  
  
@@ -319,6 +417,19 @@ canvas {
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*Animaatiot*/
  
  
  .slowed{
@@ -383,10 +494,6 @@ canvas {
  }
  
  
- h1:hover {
-    color: #4d8766;
-    transform: scale(1.1);
- }
  
  
              button {
@@ -394,44 +501,6 @@ canvas {
  }
  
  
- button:hover{
-  transform: scale(1.1);
- }
- 
- 
- 
- 
- 
- 
- .tagline {
-  font-family: 'Dancing Script', cursive;
-  font-size: 14.2px;
-  color: #88cbcd;
- }
- 
- 
- h2 {
-  text-shadow:
-  1px 1px 2px rgba(184, 242, 244, 0.5),
-  -1px 1px 2px rgba(184, 242, 244, 0.5),
-  1px -1px 2px rgba(184, 242, 244, 0.5),
-  -1px -1px 2px rgba(184, 242, 244, 0.5);
- }
-
- .section-content .different-font {
-  background: linear-gradient(rgba(29, 31, 33, 0), rgba(44, 47, 51, 0));
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.05rem !important;
-  color: #88cbcd !important;
-  transition: color 0.4s ease, transform 0.4s ease;
- }
- 
- 
- .section-content .different-font:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
- }
  
  
  
@@ -440,13 +509,7 @@ canvas {
  
  
  
- 
- 
- 
- 
- 
- 
- 
+ /*Trans*/
  
  
  #translateButton {
@@ -462,8 +525,9 @@ canvas {
   border: none;
       font-weight: bold;
   cursor: pointer;
-  font-family: sans-serif;
- }
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
  #translateButton:hover {
   transform: scale(1.1);
   color: rgba(118, 242, 253, 1);
@@ -479,7 +543,7 @@ canvas {
  
  
  
- 
+ /*Crew*/
  
  .team {
   display: flex;
@@ -518,18 +582,6 @@ canvas {
  }
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  .kuva-niko img {
   width: 32vw;
   height: 50.3vh;
@@ -542,11 +594,6 @@ canvas {
  
  }
  
- 
- 
- 
- 
- 
 
 .Otto, .Niko {
  display: flex;
@@ -558,19 +605,8 @@ canvas {
 }
  
  
- 
- 
- 
- 
- 
-
-
-
- 
- 
  .Otto h4, .Niko h4 {
   border-radius: 40px;
-  /*background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313); */
   background: radial-gradient(ellipse, rgba(13, 13, 13, 0), rgba(19, 28, 35, 0), rgba(20, 20, 20, 0), rgba(19, 19, 20, 0), rgba(19, 19, 19, 0));
   width: 40vw;
   height: 30vh;
@@ -578,29 +614,16 @@ canvas {
   text-align: center;
   margin-top: 30%;
   font-size: 1.64rem;
-  /* box-shadow: 0 0 4px rgba(117, 233, 210, 0.7); */
 
  
 }
 
 
-.Niko p {
-  color: rgba(255, 238, 177, 0.93);
-  font-size: 1.32rem;
-
-}
-.Otto p{
-   color: rgba(239, 239, 239, 0.93);
-   font-size: 1.32rem;
-}
-
-
-
 
 
 .card-otto {
-  width: 600px;
-  height: 300px;
+  width: 620px;
+  height: 310px;
   position: relative;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
@@ -665,19 +688,6 @@ canvas {
 }
 
 
-.card1:hover .content-kortti1 {
-  transform: translateY(0);
-}
-
-
-.card1:hover .front-content1 {
-  transform: translateX(-30%);
-}
-
-
-.card1:hover .front-content1 p {
-  opacity: 0;
-}
  
 
 
@@ -748,19 +758,6 @@ canvas {
 }
 
 
-.card2:hover .content-kortti2 {
-  transform: translateY(0);
-}
-
-
-.card2:hover .front-content2 {
-  transform: translateX(-30%);
-}
-
-
-.card2:hover .front-content2 p {
-  opacity: 0;
-}
 
 
 
@@ -782,7 +779,6 @@ canvas {
 
 
 
-/* Mobile Screens (max-width: 414px) */
 @media (max-width: 414px) {
 
   
@@ -1115,4 +1111,3 @@ html, body {
     
 
 }
-
