@@ -1,4 +1,10 @@
+#ottopuh {
+  display: none;
+}
 
+#nikopuh {
+  display: none;
+}
 
 /*bodyt/naytot/canvas*/
 
@@ -830,6 +836,19 @@ canvas {
 
 
 @media (max-width: 414px) {
+  .front-content1 {
+        display: none;
+    }
+  .front-content2 {
+        display: none;
+    }
+  #ottopuh {
+  display: visible;
+}
+
+#nikopuh {
+  display: visible;
+}
 
   
 
@@ -984,8 +1003,20 @@ canvas {
 
 /* (768px) */
 @media (max-width: 768px) {
+  .front-content1 {
+        display: none;
+    }
+  .front-content2 {
+        display: none;
+    }
 
+#ottopuh {
+  display: visible;
+}
 
+#nikopuh {
+  display: visible;
+}
   
   body {
         font-size: 95%;
