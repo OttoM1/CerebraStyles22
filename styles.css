@@ -836,11 +836,15 @@ canvas {
 
 
 @media (max-width: 414px) {
+
+  #ottot, #nikot {
+  font-size: 7px;
+}
   .front-content1 {
-        display: none;
+        visibility: hidden;
     }
   .front-content2 {
-        display: none;
+        visibility: hidden;
     }
   #ottopuh {
   display: visible;
@@ -977,7 +981,8 @@ canvas {
         position: relative; /* Adjust position if needed */
         width: 90%; /* Ensure it fits on screen */
         max-width: 500px; /* Set a max width to avoid stretching */
-        margin-bottom: 1rem; /* Add space between cards */
+        height: 110px;
+      margin-bottom: 1rem; /* Add space between cards */
         opacity: 1; /* Ensure visibility */
     }
 
@@ -1003,11 +1008,11 @@ canvas {
 
 /* (768px) */
 @media (max-width: 768px) {
-  .front-content1 {
-        display: none;
+    .front-content1 {
+        visibility: hidden;
     }
   .front-content2 {
-        display: none;
+        visibility: hidden;
     }
 
 #ottopuh {
@@ -1055,6 +1060,10 @@ canvas {
 
 }
 
+#ottot, #nikot {
+  font-size: 7px;
+}
+  
   .Niko p {
   font-size: 8px;
 
@@ -1135,7 +1144,9 @@ canvas {
         position: relative; /* Adjust position if needed */
         width: 90%; /* Ensure it fits on screen */
         max-width: 500px; /* Set a max width to avoid stretching */
-        margin-bottom: 1rem; /* Add space between cards */
+              height: 110px;
+  
+      margin-bottom: 1rem; /* Add space between cards */
         opacity: 1; /* Ensure visibility */
     }
 
