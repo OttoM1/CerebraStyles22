@@ -373,6 +373,10 @@ document.getElementById("serviceText8").textContent = originalTexts["Koska teemm
 
 
 
+
+
+
+/*
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 768) { 
         let textBoxes = document.querySelectorAll(".content-kortti1, .content-kortti2");
@@ -389,6 +393,45 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
+});
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".card1, .card2");
+
+    cards.forEach(card => {
+        card.addEventListener("click", function () {
+            // Only enable click functionality on mobile screens
+            if (window.innerWidth <= 768) {
+                // Close other open cards
+                cards.forEach(c => {
+                    if (c !== card) {
+                        c.querySelector(".content-kortti1, .content-kortti2").style.transform = "translateX(-99%)";
+                    }
+                });
+
+                // Toggle this card's content
+                const content = card.querySelector(".content-kortti1, .content-kortti2");
+                if (content.style.transform === "translateX(0%)") {
+                    content.style.transform = "translateX(-99%)";
+                } else {
+                    content.style.transform = "translateX(0%)";
+                }
+            }
+        });
+    });
+
+    // Close all open cards when clicking outside
+    document.addEventListener("click", function (event) {
+        if (window.innerWidth <= 768) {
+            let isCard = event.target.closest(".card1, .card2");
+            if (!isCard) {
+                cards.forEach(card => {
+                    card.querySelector(".content-kortti1, .content-kortti2").style.transform = "translateX(-99%)";
+                });
+            }
+        }
+    });
 });
 
 
