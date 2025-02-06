@@ -975,7 +975,7 @@ canvas {
         align-items: center;
     }
     
-   .kuva-otto img, .kuva-niko img {
+   .kuva-niko img {
         width: 60vw;
         height: auto;
         margin-right: 0;
@@ -991,9 +991,10 @@ canvas {
  cursor: pointer;
  box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
  animation: fadeIn 3.9s ease-in-out;
-
-   width: 44vw;
-    height: 44vw; /* Set height equal to width for a square-like look */
+ margin-right: 0;
+        margin-bottom: 1rem;
+   width: 47vw;
+    height: 47vw; /* Set height equal to width for a square-like look */
     object-fit: cover; /* Ensures images fill the space while keeping proportions */
    
     }
@@ -1137,9 +1138,10 @@ visibility: hidden;
  margin-right: 2rem;
  box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
  animation: fadeIn 3.9s ease-in-out;
-
-   width: 44vw;
-    height: 44vw; /* Set height equal to width for a square-like look */
+margin-right: 0;
+        margin-bottom: 1rem;
+   width: 47vw;
+    height: 47vw; /* Set height equal to width for a square-like look */
     object-fit: cover; /* Ensures images fill the space while keeping proportions */
    
     }
