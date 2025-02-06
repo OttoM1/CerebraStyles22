@@ -838,7 +838,11 @@ canvas {
 @media (max-width: 414px) {
 
   #ottot, #nikot {
-  font-size: 7px;
+    justify-content: center; /* Centers text */
+        align-items: center;
+        text-align: center;
+    
+  font-size: 10px;
 }
   .front-content1 {
         visibility: hidden;
@@ -846,14 +850,12 @@ canvas {
   .front-content2 {
         visibility: hidden;
     }
-  #ottopuh {
-  display: visible;
-}
-
-#nikopuh {
-  display: visible;
-}
-
+  #ottopuh, #nikopuh {
+   display: flex;
+        justify-content: center; /* Centers text */
+        align-items: center;
+        text-align: center;
+  }
   
 
 #translateButton {
@@ -1015,12 +1017,11 @@ canvas {
         visibility: hidden;
     }
 
-#ottopuh {
-  display: visible;
-}
-
-#nikopuh {
-  display: visible;
+#ottopuh, #nikopuh {
+justify-content: center; /* Centers text */
+        align-items: center;
+        text-align: center;
+  display: flex;
 }
   
   body {
@@ -1061,7 +1062,10 @@ canvas {
 }
 
 #ottot, #nikot {
-  font-size: 7px;
+  font-size: 10px;
+  justify-content: center; /* Centers text */
+        align-items: center;
+        text-align: center;
 }
   
   .Niko p {
