@@ -930,11 +930,20 @@ canvas {
     }
     
     .nav-links a {
-        font-size: 24px;
-        padding: 15px 40px;
+        font-size: 22px;
+        padding: 13px 35px;
         border-radius: 50px;
         margin-bottom: 10px;
     }
+
+
+  .nav-links li {
+    margin: 10px 0; /* Add more vertical spacing */
+  }
+
+
+
+  
     
     .content-section {
         padding: 1.5rem;
@@ -1070,11 +1079,18 @@ visibility: hidden;
     }
     
     .nav-links a {
-        font-size: 28px;
-        padding: 18px 50px;
-        border-radius: 60px;
+        font-size: 24px;
+        padding: 14px 41px;
+        border-radius: 58px;
     }
-    
+
+
+
+  .nav-links li {
+    margin: 10px 0; /* Add more vertical spacing */
+  }
+
+  
     .content-section {
         padding: 2rem;
     }
