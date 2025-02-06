@@ -402,39 +402,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cards.forEach(card => {
         card.addEventListener("click", function (event) {
-            // Only enable click functionality on mobile screens
-            if (window.innerWidth <= 768) {
-                event.stopPropagation(); // Prevent closing immediately
+            if (window.innerWidth <= 768) { // Only apply toggle for mobile
+                event.stopPropagation(); // Prevent immediate closing
 
-                // Close other open cards first
-                cards.forEach(c => {
-                    if (c !== card) {
-                        let content = c.querySelector(".content-kortti1, .content-kortti2");
-                        if (content) content.style.transform = "translateX(-99%)";
-                    }
-                });
+                // Get the right front and back content for the clicked card
+                let front = card.querySelector(".front-content1, .front-content2");
+                let back = card.querySelector(".content-kortti1, .content-kortti2");
 
-                // Toggle current card content
-                let content = card.querySelector(".content-kortti1, .content-kortti2");
-                if (content) {
-                    if (content.style.transform === "translateX(0%)") {
-                        content.style.transform = "translateX(-99%)";
+                if (front && back) {
+                    if (back.style.transform === "translateX(0%)") {
+                        back.style.transform = "translateX(-99%)";
+                        front.style.opacity = "1"; // Show front
                     } else {
-                        content.style.transform = "translateX(0%)";
+                        back.style.transform = "translateX(0%)";
+                        front.style.opacity = "0"; // Hide front
                     }
                 }
             }
         });
     });
 
-    // Close all open cards when clicking outside
+    // Close all cards when clicking outside (only on mobile)
     document.addEventListener("click", function (event) {
         if (window.innerWidth <= 768) {
             let isCard = event.target.closest(".card1, .card2");
             if (!isCard) {
                 cards.forEach(card => {
-                    let content = card.querySelector(".content-kortti1, .content-kortti2");
-                    if (content) content.style.transform = "translateX(-99%)";
+                    let front = card.querySelector(".front-content1, .front-content2");
+                    let back = card.querySelector(".content-kortti1, .content-kortti2");
+                    if (front && back) {
+                        back.style.transform = "translateX(-99%)";
+                        front.style.opacity = "1"; // Reset front content visibility
+                    }
                 });
             }
         }
