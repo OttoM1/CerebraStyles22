@@ -396,26 +396,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 */
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".card1, .card2");
 
     cards.forEach(card => {
-        card.addEventListener("click", function () {
+        card.addEventListener("click", function (event) {
             // Only enable click functionality on mobile screens
             if (window.innerWidth <= 768) {
-                // Close other open cards
+                event.stopPropagation(); // Prevent closing immediately
+
+                // Close other open cards first
                 cards.forEach(c => {
                     if (c !== card) {
-                        c.querySelector(".content-kortti1, .content-kortti2").style.transform = "translateX(-99%)";
+                        let content = c.querySelector(".content-kortti1, .content-kortti2");
+                        if (content) content.style.transform = "translateX(-99%)";
                     }
                 });
 
-                // Toggle this card's content
-                const content = card.querySelector(".content-kortti1, .content-kortti2");
-                if (content.style.transform === "translateX(0%)") {
-                    content.style.transform = "translateX(-99%)";
-                } else {
-                    content.style.transform = "translateX(0%)";
+                // Toggle current card content
+                let content = card.querySelector(".content-kortti1, .content-kortti2");
+                if (content) {
+                    if (content.style.transform === "translateX(0%)") {
+                        content.style.transform = "translateX(-99%)";
+                    } else {
+                        content.style.transform = "translateX(0%)";
+                    }
                 }
             }
         });
@@ -427,13 +433,10 @@ document.addEventListener("DOMContentLoaded", function () {
             let isCard = event.target.closest(".card1, .card2");
             if (!isCard) {
                 cards.forEach(card => {
-                    card.querySelector(".content-kortti1, .content-kortti2").style.transform = "translateX(-99%)";
+                    let content = card.querySelector(".content-kortti1, .content-kortti2");
+                    if (content) content.style.transform = "translateX(-99%)";
                 });
             }
         }
     });
 });
-
-
-
-
