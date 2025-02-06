@@ -837,6 +837,20 @@ canvas {
 
 @media (max-width: 414px) {
 
+  #ottot, #nikot, #ottopuh, #nikopuh, .Otto p, .Niko p {
+    position: absolute; /* Allows proper centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfect centering */
+    justify-content: center; /* Centers flex content */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 12.2px;
+    width: 100%; /* Ensures no overlap */
+    z-index: 10; /* Keeps text above other elements */
+  }
+
   #ottot, #nikot {
     justify-content: center; /* Centers text */
         align-items: center;
@@ -1018,6 +1032,20 @@ canvas {
 
 /* (768px) */
 @media (max-width: 768px) {
+
+  #ottot, #nikot, #ottopuh, #nikopuh, .Otto p, .Niko p {
+    position: absolute; /* Allows proper centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfect centering */
+    justify-content: center; /* Centers flex content */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 12.2px;
+    width: 100%; /* Ensures no overlap */
+    z-index: 10; /* Keeps text above other elements */
+  }
     .front-content1 {
         visibility: hidden;
     }
