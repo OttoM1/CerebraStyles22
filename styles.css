@@ -836,6 +836,10 @@ canvas {
 
 
 @media (max-width: 414px) {
+  .container {
+    width: 100vw; /* Ensures it takes full viewport width */
+    max-width: 100%;
+}
 
   
 
@@ -963,12 +967,6 @@ canvas {
         margin-bottom: 1rem;
     }
 
-.kuva-otto img { 
-  max-height: 40vh; /* Prevent it from getting too tall */
-    object-fit: cover; 
-      transform: scaleX(1.1); /* Stretch slightly wider */
-
-  }
    .Otto, .Niko {
         flex-direction: column; /* Stack Otto & Niko vertically */
         align-items: center; /* Center them */
@@ -987,6 +985,11 @@ canvas {
 /* (768px) */
 @media (max-width: 768px) {
 
+  .container {
+    width: 100vw; /* Ensures it takes full viewport width */
+    max-width: 100%;
+}
+
 
 #ottopuh, #nikopuh {
 visibility: hidden;
@@ -1004,12 +1007,6 @@ visibility: hidden;
 
 }
 
-.kuva-otto img { 
-  max-height: 40vh; /* Prevent it from getting too tall */
-    object-fit: cover; 
-      transform: scaleX(1.1); /* Stretch slightly wider */
-
-  }
 
 
 #translateButton {
