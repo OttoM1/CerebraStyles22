@@ -10,6 +10,7 @@ function resizeCanvas() {
         canvas.height = window.innerHeight;
     }, 100);
 }
+
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
