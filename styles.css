@@ -837,38 +837,14 @@ canvas {
 
 @media (max-width: 414px) {
 
-  #ottot, #nikot, #ottopuh, #nikopuh, .Otto p, .Niko p {
-    position: absolute; /* Allows proper centering */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Perfect centering */
-    justify-content: center; /* Centers flex content */
-    align-items: center;
-    text-align: center;
-    display: flex;
-    font-size: 12.2px;
-    width: 100%; /* Ensures no overlap */
-    z-index: 10; /* Keeps text above other elements */
-  }
+  
 
   #ottot, #nikot {
-    justify-content: center; /* Centers text */
-        align-items: center;
-        text-align: center;
-    display: flex;
-  font-size: 12.2px;
+  visibility: hidden;
 }
-  .front-content1 {
-        visibility: hidden;
-    }
-  .front-content2 {
-        visibility: hidden;
-    }
+ 
   #ottopuh, #nikopuh {
-   display: flex;
-        justify-content: center; /* Centers text */
-        align-items: center;
-        text-align: center;
+  visibility: hidden;
   }
   
 
@@ -999,29 +975,7 @@ canvas {
     }
 
 
-    /* Always show the card content */
-    .content-kortti1, .content-kortti2 {
-        transform: translateX(0%) !important; /* Force it to be visible */
-        position: relative; /* Adjust position if needed */
-        width: 90%; /* Ensure it fits on screen */
-        max-width: 500px; /* Set a max width to avoid stretching */
-        height: 110px;
-      margin-bottom: 1rem; /* Add space between cards */
-        opacity: 1; /* Ensure visibility */
-    }
 
-    /* Disable hover effect on mobile */
-    .card1:hover .content-kortti1,
-    .card2:hover .content-kortti2 {
-        transform: translateX(0%) !important; /* No hover effect */
-    }
-
-    /* Ensure text is visible */
-    .content-kortti1 .toggle-text,
-    .content-kortti2 .toggle-text {
-        display: block; /* Make sure all text inside is visible */
-    }
-}
  
 }
 
@@ -1033,31 +987,9 @@ canvas {
 /* (768px) */
 @media (max-width: 768px) {
 
-  #ottot, #nikot, #ottopuh, #nikopuh, .Otto p, .Niko p {
-    position: absolute; /* Allows proper centering */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Perfect centering */
-    justify-content: center; /* Centers flex content */
-    align-items: center;
-    text-align: center;
-    display: flex;
-    font-size: 12.2px;
-    width: 100%; /* Ensures no overlap */
-    z-index: 10; /* Keeps text above other elements */
-  }
-    .front-content1 {
-        visibility: hidden;
-    }
-  .front-content2 {
-        visibility: hidden;
-    }
 
 #ottopuh, #nikopuh {
-justify-content: center; /* Centers text */
-        align-items: center;
-        text-align: center;
-  display: flex;
+visibility: hidden;
 }
   
   body {
@@ -1098,11 +1030,7 @@ justify-content: center; /* Centers text */
 }
 
 #ottot, #nikot {
-  font-size: 12.2px;
-  justify-content: center; /* Centers text */
-        align-items: center;
-        text-align: center;
-  display: flex;
+visibility: hidden;
 }
   
   .Niko p {
@@ -1186,30 +1114,6 @@ justify-content: center; /* Centers text */
         align-items: center; /* Center them */
     }
 
-
-    /* Always show the card content */
-    .content-kortti1, .content-kortti2 {
-        transform: translateX(0%) !important; /* Force it to be visible */
-        position: relative; /* Adjust position if needed */
-        width: 90%; /* Ensure it fits on screen */
-        max-width: 500px; /* Set a max width to avoid stretching */
-              height: 110px;
-  
-      margin-bottom: 1rem; /* Add space between cards */
-        opacity: 1; /* Ensure visibility */
-    }
-
-    /* Disable hover effect on mobile */
-    .card1:hover .content-kortti1,
-    .card2:hover .content-kortti2 {
-        transform: translateX(0%) !important; /* No hover effect */
-    }
-
-    /* Ensure text is visible */
-    .content-kortti1 .toggle-text,
-    .content-kortti2 .toggle-text {
-        display: block; /* Make sure all text inside is visible */
-    }
 
 
     
