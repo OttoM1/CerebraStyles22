@@ -376,7 +376,7 @@ document.getElementById("serviceText8").textContent = originalTexts["Koska teemm
 
 
 
-/*
+
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 768) { 
         let textBoxes = document.querySelectorAll(".content-kortti1, .content-kortti2");
@@ -394,48 +394,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-*/
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".card1, .card2");
-
-    cards.forEach(card => {
-        card.addEventListener("click", function (event) {
-            if (window.innerWidth <= 768) { // Only apply toggle for mobile
-                event.stopPropagation(); // Prevent immediate closing
-
-                // Get the right front and back content for the clicked card
-                let front = card.querySelector(".front-content1, .front-content2");
-                let back = card.querySelector(".content-kortti1, .content-kortti2");
-
-                if (front && back) {
-                    if (back.style.transform === "translateX(0%)") {
-                        back.style.transform = "translateX(-99%)";
-                        front.style.opacity = "1"; // Show front
-                    } else {
-                        back.style.transform = "translateX(0%)";
-                        front.style.opacity = "0"; // Hide front
-                    }
-                }
-            }
-        });
-    });
-
-    // Close all cards when clicking outside (only on mobile)
-    document.addEventListener("click", function (event) {
-        if (window.innerWidth <= 768) {
-            let isCard = event.target.closest(".card1, .card2");
-            if (!isCard) {
-                cards.forEach(card => {
-                    let front = card.querySelector(".front-content1, .front-content2");
-                    let back = card.querySelector(".content-kortti1, .content-kortti2");
-                    if (front && back) {
-                        back.style.transform = "translateX(-99%)";
-                        front.style.opacity = "1"; // Reset front content visibility
-                    }
-                });
-            }
-        }
-    });
-});
