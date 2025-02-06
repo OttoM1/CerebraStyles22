@@ -961,13 +961,21 @@ canvas {
         align-items: center;
     }
     
-    .kuva-otto img, .kuva-niko img {
+   .kuva-otto img, .kuva-niko img {
         width: 60vw;
         height: auto;
         margin-right: 0;
         margin-bottom: 1rem;
     }
-   
+
+.kuva-otto img { 
+  max-height: 40vh; /* Prevent it from getting too tall */
+    object-fit: cover; 
+  }
+  .content-kortti1 .toggle-text,
+.content-kortti2 .toggle-text {
+    display: block; /* Make sure all text inside is visible */
+}
 }
 
 
@@ -996,7 +1004,15 @@ canvas {
 
 }
 
+.kuva-otto img { 
+  max-height: 40vh; /* Prevent it from getting too tall */
+    object-fit: cover; 
+  }
 
+  .content-kortti1 .toggle-text,
+.content-kortti2 .toggle-text {
+    display: block; /* Make sure all text inside is visible */
+}
 
 #translateButton {
   display: inline-block;
