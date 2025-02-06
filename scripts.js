@@ -18,7 +18,7 @@ const particleCount = 162;
 const colors = ['#333333','rgb(255, 255, 255)', '#131414', '#505050', '#15031c'];
 
 function getSpeedFactor() {
-    return 0.286;
+    return 0.196;
 }
 
 class Particle {
@@ -142,20 +142,24 @@ const translations = {
 "Affordable & Efficient- Our services are accessible, especially for young professionals, students, and new entrepreneurs looking to establish a strong online presence. Pricing starts at 90€ for simple websites and can go up to 150€ depending on the complexity. Portfolios are typically delivered in one week, while business websites take around two/three weeks.":
 "Edullinen ja Tehokas- Palvelumme sopivat erityisesti opiskelijoille, nuorille ammattilaisille ja aloitteleville yrittäjille, jotka haluavat tehdä vahvan digitaalisen vaikutuksen. Hinnat alk. 90€ yksinkertaisille sivustoille ja voivat nousta 150€ riippuen monimutkaisuudesta. Portfolio valmistuu noin viikossa, kun taas yrityssivusto vie kahdesta kolmeen viikkoa.",
 "Scrum-Inspired Collaboration- Our workflow is dynamic yet relaxed, following an iterative approach to ensure our work meets and exceeds expectations. We maintain close communication with our clients throughout the process, ensuring all the adjustments needed.":
-"Rento ja Tehokas Yhteistyö- Työskentelemme iteraatioissa, varmistaen, että lopputulos vastaa odotuksia ja jopa ylittää ne. Pidämme yhteyttä asiakkaisiin projektin aikana ja teemme tarvittavia hienosäätöjä.",
+"Rento ja Tehokas- Työskentelemme iteraatioissa, varmistaen, että lopputulos vastaa odotuksia ja jopa ylittää ne. Pidämme yhteyttä asiakkaisiin projektin aikana ja teemme tarvittavia hienosäätöjä.",
 "Maintenance & Updates- We offer ongoing maintenance for an additional fee, ensuring that your website stays up to date. However, major design overhauls or structural changes fall outside of regular maintenance services.":
 "Ylläpito ja Päivitykset- Tarjoamme jatkuvaa ylläpitoa lisämaksusta, jotta sivustosi pysyy ajan tasalla. Suuret rakenteelliset tai tyyli-muutokset eivät sisälly ylläpitopalveluun.",
-"Free Website Deployment Guide- Additionally, we offer a guide, mainly for customers who ordered a portfolio, to deploy their domain through GitHub, which is completely free to publish. If you feel that a custom domain is unnecessary for your portfolio, we will help you publish it through GitHub.":
-"Verkkosivun ilmainen julkaisuopas- Tarjoamme oppaan erityisesti portfolio-asiakkaillemme, jossa neuvomme, kuinka verkkosivu on mahdollista julkaista GitHubin kautta täysin ilmaiseksi. Jos oma verkkotunnus tuntuu turhalta portfolioon, autamme sinua julkaisemaan sen GitHubin avulla.",
+"Website Deployment Guide- Additionally, if you feel that a custom domain is unnecessary for your portfolio for example, we offer a guide on how to publish and update your domain through GitHub, which is completely free. However, while the publishing process itself is free, our guide is available for a fee of 20€.":
+"Verkkosivun julkaisuopas- Jos koet henkilökohtaisen verkkotunnuksen olevan tarpeeton portfoliosi kannalta, tarjoamme oppaan verkkotunnuksesi julkaisemiseen sekä päivittämiseen GitHubin kautta täysin ilmaiseksi. Julkaisuprosessi itsessään on maksuton käyttäjälle, mutta oppaamme on saatavilla hintaan 20€.",
 "Why CerebraStyles?":
 "Miksi CerebraStyles?",
 "Elegant & Distinctive Designs- Goal for every website should be a reflection of its owner, which is why we focus on unique styling and attention to detail. Our approach ensures that no two projects look the same.":
 "Elegantti ja Yksilöllinen- Jokaisen verkkosivun tulisi heijastaa sen omistajaa, joten keskitymme ainutlaatuiseen tyyliin ja pieniin yksityiskohtiin. Yksikään projekti ei tule näyttämään samanlaiselta.",
-"Affordable & Friendly Service- As we primarily do this as a hobby, we manage to keep our pricing reasonable while still delivering quality results. Our craft is professional yet relaxed, making collaboration enjoyable.":
+"Affordable & Friendly- As we primarily do this as a hobby, we manage to keep our pricing reasonable while still delivering quality results. Our craft is professional yet relaxed, making collaboration enjoyable.":
 "Edullinen ja Mutkaton- Koska teemme tätä ensisijaisesti harrastuksena, voimme pitää hinnoittelun kohtuullisena ja silti tuottaa laadukkaita sivuja. Yhteistyömme on ammattimainen mutta rento, mikä tekee siitä sujuvaa sekä viihtyisää.",
    
     "Designers": "Suunnittelijat",
-    "Start Your Journey,": "Aloita matkasi,"
+    "CEO & Developer": "TJ & Kehittäjä",
+    "Ciao! I am Otto, a 22-year-old Computer Science student from Oulu, Finland. To keep it concise, Niko and I really enjoy creating clean, responsive, and unique websites, so why not turn that passion into something meaningful? That is exactly why we ended up on this path, to craft web experiences for those who need them. When I am not coding, you will probably find me rolling on the mat or hitting the golf course during the summer. Nice having you here!": 
+    "Moi! Olen Otto, 22-vuotias tietojenkäsittelytieteen opiskelija Oulun yliopistosta. Nikon kanssa meitä yhdistää intohimo selkeisiin, responsiivisiin ja erottuviin verkkosivuihin, joten miksi emme hyödyntäisi sitä luomalla laadukkaita verkkokokemuksia niitä tarvitseville? Juuri tästä syystä päädyimme tälle polulle. Kun en koodaa, vietän todennäköisesti aikaa tatamilla tai kesäisin golfkentällä. Kiva, että olet täällä!",
+    "A first year Computer Science Student at the University of Oulu, with a passion for new design mixed with technology. Eager to learn more and find sustainable solutions for a better tomorrow.": "Moi",
+    "Let's Create Your Website Blueprint,": "Aloita matkasi,"
 }; 
 
 const originalTexts = {
@@ -185,14 +189,14 @@ const originalTexts = {
     "Edullinen ja Tehokas- Palvelumme sopivat erityisesti opiskelijoille, nuorille ammattilaisille ja aloitteleville yrittäjille, jotka haluavat tehdä vahvan digitaalisen vaikutuksen. Hinnat alk. 90€ yksinkertaisille sivustoille ja voivat nousta 150€ riippuen monimutkaisuudesta. Portfolio valmistuu noin viikossa, kun taas yrityssivusto vie kahdesta kolmeen viikkoa.":
     "Affordable & Efficient- Our services are accessible, especially for young professionals, students, and new entrepreneurs looking to establish a strong online presence. Pricing starts at 90€ for simple websites and can go up to 150€ depending on the complexity. Portfolios are typically delivered in one week, while business websites take around two/three weeks.",
 
-    "Rento ja Tehokas Yhteistyö- Työskentelemme iteraatioissa, varmistaen, että lopputulos vastaa odotuksia ja jopa ylittää ne. Pidämme yhteyttä asiakkaisiin projektin aikana ja teemme tarvittavia hienosäätöjä.":
+    "Rento ja Tehokas- Työskentelemme iteraatioissa, varmistaen, että lopputulos vastaa odotuksia ja jopa ylittää ne. Pidämme yhteyttä asiakkaisiin projektin aikana ja teemme tarvittavia hienosäätöjä.":
     "Scrum-Inspired Collaboration- Our workflow is dynamic yet relaxed, following an iterative approach to ensure our work meets and exceeds expectations. We maintain close communication with our clients throughout the process, ensuring all the adjustments needed.",
 
     "Ylläpito ja Päivitykset- Tarjoamme jatkuvaa ylläpitoa lisämaksusta, jotta sivustosi pysyy ajan tasalla. Suuret rakenteelliset tai tyyli-muutokset eivät sisälly ylläpitopalveluun.":
     "Maintenance & Updates- We offer ongoing maintenance for an additional fee, ensuring that your website stays up to date. However, major design overhauls or structural changes fall outside of regular maintenance services.",
 
-    "Verkkosivun ilmainen julkaisuopas- Tarjoamme oppaan erityisesti portfolio-asiakkaillemme, jossa neuvomme, kuinka verkkosivu on mahdollista julkaista GitHubin kautta täysin ilmaiseksi. Jos oma verkkotunnus tuntuu turhalta portfolioon, autamme sinua julkaisemaan sen GitHubin avulla.":
-    "Free Website Deployment Guide- Additionally, we offer a guide, mainly for customers who ordered a portfolio, to deploy their domain through GitHub, which is completely free to publish. If you feel that a custom domain is unnecessary for your portfolio, we will help you publish it through GitHub.",
+    "Verkkosivun julkaisuopas- Jos koet henkilökohtaisen verkkotunnuksen olevan tarpeeton portfoliosi kannalta, tarjoamme oppaan verkkotunnuksesi julkaisemiseen sekä päivittämiseen GitHubin kautta täysin ilmaiseksi. Julkaisuprosessi itsessään on maksuton käyttäjälle, mutta oppaamme on saatavilla hintaan 20€.":
+    "Website Deployment Guide- Additionally, if you feel that a custom domain is unnecessary for your portfolio for example, we offer a guide on how to publish and update your domain through GitHub, which is completely free. However, while the publishing process itself is free, our guide is available for a fee of 20€.",
 
     "Miksi CerebraStyles?":
     "Why CerebraStyles?",
@@ -201,12 +205,15 @@ const originalTexts = {
     "Elegant & Distinctive Designs- Goal for every website should be a reflection of its owner, which is why we focus on unique styling and attention to detail. Our approach ensures that no two projects look the same.",
 
     "Edullinen ja Mutkaton- Koska teemme tätä ensisijaisesti harrastuksena, voimme pitää hinnoittelun kohtuullisena ja silti tuottaa laadukkaita sivuja. Yhteistyömme on ammattimainen mutta rento, mikä tekee siitä sujuvaa sekä viihtyisää.":
-    "Affordable & Friendly Service- As we primarily do this as a hobby, we manage to keep our pricing reasonable while still delivering quality results. Our craft is professional yet relaxed, making collaboration enjoyable.",
+    "Affordable & Friendly- As we primarily do this as a hobby, we manage to keep our pricing reasonable while still delivering quality results. Our craft is professional yet relaxed, making collaboration enjoyable.",
 
     
     
     "Suunnittelijat": "Designers",
-    "Aloita matkasi,": "Start Your Journey,"
+    "TJ & Kehittäjä": "CEO & Developer",
+    "Moi! Olen Otto, 22-vuotias tietojenkäsittelytieteen opiskelija Oulun yliopistosta. Nikon kanssa meitä yhdistää intohimo selkeisiin, responsiivisiin ja erottuviin verkkosivuihin, joten miksi emme hyödyntäisi sitä luomalla laadukkaita verkkokokemuksia niitä tarvitseville? Juuri tästä syystä päädyimme tälle polulle. Kun en koodaa, vietän todennäköisesti aikaa tatamilla tai kesäisin golfkentällä. Kiva, että olet täällä!": "Ciao! I am Otto, a 22-year-old Computer Science student from Oulu, Finland. To keep it concise, Niko and I really enjoy creating clean, responsive, and unique websites, so why not turn that passion into something meaningful? That is exactly why we ended up on this path, to craft web experiences for those who need them. When I am not coding, you will probably find me rolling on the mat or hitting the golf course during the summer. Nice having you here!",
+    "Moi": "A first year Computer Science Student at the University of Oulu, with a passion for new design mixed with technology. Eager to learn more and find sustainable solutions for a better tomorrow.",
+    "Aloita matkasi,": "Let's Create Your Website Blueprint,"
 
 };
 
@@ -234,21 +241,31 @@ let isTranslated = false;
                 document.getElementById("aboutText6").textContent = translations["• During our partnership, our team will work closely with you in a relaxed yet focused manner, delivering thoughtful designs that meet your needs and reflect your vision."];
                 
                 document.getElementById("servicesHeading").textContent = translations["Services"];
-                document.getElementById("serviceText1").textContent = translations["Custom Website Development- Portfolios, landing pages, and business websites, developed with HTML, CSS, and JavaScript. While we don't offer full backend development, we ensure enjoyable front-end experiences."]
-                document.getElementById("serviceText2").textContent = translations["Affordable & Efficient- Our services are accessible, especially for young professionals, students, and new entrepreneurs looking to establish a strong online presence. Pricing starts at 90€ for simple websites and can go up to 150€ depending on the complexity. Portfolios are typically delivered in one week, while business websites take around two/three weeks."]
-                document.getElementById("serviceText3").textContent = translations["Scrum-Inspired Collaboration- Our workflow is dynamic yet relaxed, following an iterative approach to ensure our work meets and exceeds expectations. We maintain close communication with our clients throughout the process, ensuring all the adjustments needed."]
-                document.getElementById("serviceText4").textContent = translations["Maintenance & Updates- We offer ongoing maintenance for an additional fee, ensuring that your website stays up to date. However, major design overhauls or structural changes fall outside of regular maintenance services."]
-                document.getElementById("serviceText5").textContent = translations["Free Website Deployment Guide- Additionally, we offer a guide, mainly for customers who ordered a portfolio, to deploy their domain through GitHub, which is completely free to publish. If you feel that a custom domain is unnecessary for your portfolio, we will help you publish it through GitHub."]
+                document.getElementById("serviceText1").textContent = translations["Custom Website Development- Portfolios, landing pages, and business websites, developed with HTML, CSS, and JavaScript. While we don't offer full backend development, we ensure enjoyable front-end experiences."];
+                
+                
+                
+                
+                 document.getElementById("serviceText2").textContent = translations["Affordable & Efficient- Our services are accessible, especially for young professionals, students, and new entrepreneurs looking to establish a strong online presence. Pricing starts at 90€ for simple websites and can go up to 150€ depending on the complexity. Portfolios are typically delivered in one week, while business websites take around two/three weeks."];
+                document.getElementById("serviceText3").textContent = translations["Scrum-Inspired Collaboration- Our workflow is dynamic yet relaxed, following an iterative approach to ensure our work meets and exceeds expectations. We maintain close communication with our clients throughout the process, ensuring all the adjustments needed."];
+                document.getElementById("serviceText4").textContent = translations["Maintenance & Updates- We offer ongoing maintenance for an additional fee, ensuring that your website stays up to date. However, major design overhauls or structural changes fall outside of regular maintenance services."];
+                document.getElementById("serviceText5").textContent = translations["Website Deployment Guide- Additionally, if you feel that a custom domain is unnecessary for your portfolio for example, we offer a guide on how to publish and update your domain through GitHub, which is completely free. However, while the publishing process itself is free, our guide is available for a fee of 20€."];
                 document.getElementById("serviceText6").textContent = translations["Why CerebraStyles?"]
-                document.getElementById("serviceText7").textContent = translations["Elegant & Distinctive Designs- Goal for every website should be a reflection of its owner, which is why we focus on unique styling and attention to detail. Our approach ensures that no two projects look the same."]
-                document.getElementById("serviceText8").textContent = translations["Affordable & Friendly Service- As we primarily do this as a hobby, we manage to keep our pricing reasonable while still delivering quality results. Our craft is professional yet relaxed, making collaboration enjoyable."]
+                document.getElementById("serviceText7").textContent = translations["Elegant & Distinctive Designs- Goal for every website should be a reflection of its owner, which is why we focus on unique styling and attention to detail. Our approach ensures that no two projects look the same."];
+                document.getElementById("serviceText8").textContent = translations["Affordable & Friendly- As we primarily do this as a hobby, we manage to keep our pricing reasonable while still delivering quality results. Our craft is professional yet relaxed, making collaboration enjoyable."];
 
 
                 document.getElementById("navCrew").textContent = translations["Crew"];
 
                 document.getElementById("WCrew").textContent = translations["Designers"];
+                document.getElementById("ottoh").textContent = translations["CEO & Developer"];
 
-                document.getElementById("contactHeading").textContent = translations["Start Your Journey,"];
+                document.getElementById("ottot").textContent = translations["Ciao! I am Otto, a 22-year-old Computer Science student from Oulu, Finland. To keep it concise, Niko and I really enjoy creating clean, responsive, and unique websites, so why not turn that passion into something meaningful? That is exactly why we ended up on this path, to craft web experiences for those who need them. When I am not coding, you will probably find me rolling on the mat or hitting the golf course during the summer. Nice having you here!"];
+                document.getElementById("nikot").textContent = translations["A first year Computer Science Student at the University of Oulu, with a passion for new design mixed with technology. Eager to learn more and find sustainable solutions for a better tomorrow."];
+
+                
+
+                document.getElementById("contactHeading").textContent = translations["Let's Create Your Website Blueprint,"];
         
                 isTranslated = true;
                 document.getElementById("translateButton").textContent = "🇬🇧";
@@ -271,17 +288,24 @@ let isTranslated = false;
                 document.getElementById("aboutText6").textContent = originalTexts["• Kumppanuutemme aikana tiimimme työskentelee rennolla, mutta määrätietoisella otteella, tehden tiivistä yhteistyötä kanssasi, tarjoten huolellisesti suunniteltuja ratkaisuja."];
                 document.getElementById("servicesHeading").textContent = originalTexts["Palvelut"];
                 document.getElementById("serviceText1").textContent = originalTexts["Räätälöidyt Verkkosivut- Portfoliot, laskeutumissivut sekä yrityssivustot käyttäen HTML, CSS ja JavaScript. Emme tarjoa täyttä backend-kehitystä, mutta takaamme sujuvan ja käyttäjäystävällisen etusivukokemuksen."];
-document.getElementById("serviceText2").textContent = originalTexts["Edullinen ja Tehokas- Palvelumme sopivat erityisesti opiskelijoille, nuorille ammattilaisille ja aloitteleville yrittäjille, jotka haluavat tehdä vahvan digitaalisen vaikutuksen. Hinnat alk. 90€ yksinkertaisille sivustoille ja voivat nousta 150€ riippuen monimutkaisuudesta. Portfolio valmistuu noin viikossa, kun taas yrityssivusto vie kahdesta kolmeen viikkoa."];
-document.getElementById("serviceText3").textContent = originalTexts["Rento ja Tehokas Yhteistyö- Työskentelemme iteraatioissa, varmistaen, että lopputulos vastaa odotuksia ja jopa ylittää ne. Pidämme yhteyttä asiakkaisiin projektin aikana ja teemme tarvittavia hienosäätöjä."];
+document.getElementById("serviceText2").textContent = originalTexts["Edullinen ja Tehokas- Palvelumme sopivat erityisesti opiskelijoille, nuorille ammattilaisille ja aloitteleville yrittäjille, jotka haluavat tehdä vahvan digitaalisen vaikutuksen. Hinnat alk. 90€ yksinkertaisille sivustoille ja voivat nousta 150€ riippuen monimutkaisuudesta. Portfolio valmistuu noin viikossa, kun taas yrityssivusto vie kahdesta kolmeen viikkoa."]; 
+
+
+document.getElementById("serviceText3").textContent = originalTexts["Rento ja Tehokas- Työskentelemme iteraatioissa, varmistaen, että lopputulos vastaa odotuksia ja jopa ylittää ne. Pidämme yhteyttä asiakkaisiin projektin aikana ja teemme tarvittavia hienosäätöjä."];
 document.getElementById("serviceText4").textContent = originalTexts["Ylläpito ja Päivitykset- Tarjoamme jatkuvaa ylläpitoa lisämaksusta, jotta sivustosi pysyy ajan tasalla. Suuret rakenteelliset tai tyyli-muutokset eivät sisälly ylläpitopalveluun."];
-document.getElementById("serviceText5").textContent = originalTexts["Verkkosivun ilmainen julkaisuopas- Tarjoamme oppaan erityisesti portfolio-asiakkaillemme, jossa neuvomme, kuinka verkkosivu on mahdollista julkaista GitHubin kautta täysin ilmaiseksi. Jos oma verkkotunnus tuntuu turhalta portfolioon, autamme sinua julkaisemaan sen GitHubin avulla."];
+document.getElementById("serviceText5").textContent = originalTexts["Verkkosivun julkaisuopas- Jos koet henkilökohtaisen verkkotunnuksen olevan tarpeeton portfoliosi kannalta, tarjoamme oppaan verkkotunnuksesi julkaisemiseen sekä päivittämiseen GitHubin kautta täysin ilmaiseksi. Julkaisuprosessi itsessään on maksuton käyttäjälle, mutta oppaamme on saatavilla hintaan 20€."];
 document.getElementById("serviceText6").textContent = originalTexts["Miksi CerebraStyles?"];
-document.getElementById("serviceText7").textContent = originalTexts["Elegantti ja Yksilöllinen- Jokaisen verkkosivun tulisi heijastaa sen omistajaa, joten keskitymme ainutlaatuiseen tyyliin ja pieniin yksityiskohtiin. Yksikään projekti ei tule näyttämään samanlaiselta."]
-document.getElementById("serviceText8").textContent = originalTexts["Edullinen ja Mutkaton- Koska teemme tätä ensisijaisesti harrastuksena, voimme pitää hinnoittelun kohtuullisena ja silti tuottaa laadukkaita sivuja. Yhteistyömme on ammattimainen mutta rento, mikä tekee siitä sujuvaa sekä viihtyisää."]
+document.getElementById("serviceText7").textContent = originalTexts["Elegantti ja Yksilöllinen- Jokaisen verkkosivun tulisi heijastaa sen omistajaa, joten keskitymme ainutlaatuiseen tyyliin ja pieniin yksityiskohtiin. Yksikään projekti ei tule näyttämään samanlaiselta."];
+document.getElementById("serviceText8").textContent = originalTexts["Edullinen ja Mutkaton- Koska teemme tätä ensisijaisesti harrastuksena, voimme pitää hinnoittelun kohtuullisena ja silti tuottaa laadukkaita sivuja. Yhteistyömme on ammattimainen mutta rento, mikä tekee siitä sujuvaa sekä viihtyisää."];
 
 
                 document.getElementById("navCrew").textContent = originalTexts["Tiimi"];
-                document.getElementById("WCrew").textContent = translations["Suunnittelijat"];
+                document.getElementById("WCrew").textContent = originalTexts["Suunnittelijat"];
+                document.getElementById("ottoh").textContent = originalTexts["TJ & Kehittäjä"];
+
+                document.getElementById("ottot").textContent = originalTexts["Moi! Olen Otto, 22-vuotias tietojenkäsittelytieteen opiskelija Oulun yliopistosta. Nikon kanssa meitä yhdistää intohimo selkeisiin, responsiivisiin ja erottuviin verkkosivuihin, joten miksi emme hyödyntäisi sitä luomalla laadukkaita verkkokokemuksia niitä tarvitseville? Juuri tästä syystä päädyimme tälle polulle. Kun en koodaa, vietän todennäköisesti aikaa tatamilla tai kesäisin golfkentällä. Kiva, että olet täällä!"];
+                document.getElementById("nikot").textContent = originalTexts["Moi"];
+
 
                 document.getElementById("contactHeading").textContent = originalTexts["Aloita matkasi,"];
 
@@ -293,7 +317,7 @@ document.getElementById("serviceText8").textContent = originalTexts["Edullinen j
         
             
         
-
+ /*
         
             document.getElementById("navTeam").addEventListener("click", (event) => {
                 event.preventDefault();
@@ -301,8 +325,8 @@ document.getElementById("serviceText8").textContent = originalTexts["Edullinen j
                     section.classList.add("hidden"); 
                 });
                 document.getElementById("team").classList.remove("hidden");
-            });
-        });
+            }); */
+        }); 
 
 
 
@@ -323,8 +347,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-
 
 
 
