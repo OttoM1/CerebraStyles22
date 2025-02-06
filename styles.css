@@ -620,20 +620,16 @@ canvas {
  
  
  .kuva-otto img{
- 
+ width: 32vw;
+ height: 50.5vh;
  border-radius: 50%;
  cursor: pointer;
  margin-right: 2rem;
  box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
  animation: fadeIn 3.9s ease-in-out;
-
-   width: 38vw;
-    height: 38vw; 
-    object-fit: cover; 
-   
  
- } 
-
+ }
+/*
 
     .kuva-otto img, .kuva-niko img {
         width: 60vw;
@@ -641,7 +637,7 @@ canvas {
         margin-right: 0;
         margin-bottom: 1rem;
     }
- 
+ */
  
  .kuva-niko img {
   width: 32vw;
