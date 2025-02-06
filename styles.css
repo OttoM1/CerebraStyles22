@@ -986,7 +986,17 @@ canvas {
         flex-direction: column; /* Stack Otto & Niko vertically */
         align-items: center; /* Center them */
     }
+ .kuva-otto img {
+       border-radius: 50%;
+ cursor: pointer;
+ box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
+ animation: fadeIn 3.9s ease-in-out;
 
+   width: 44vw;
+    height: 44vw; /* Set height equal to width for a square-like look */
+    object-fit: cover; /* Ensures images fill the space while keeping proportions */
+   
+    }
 
 
  
@@ -1128,8 +1138,8 @@ visibility: hidden;
  box-shadow: 2px 0 14px rgba(239, 239, 239, 0.63);
  animation: fadeIn 3.9s ease-in-out;
 
-   width: 38vw;
-    height: 38vw; /* Set height equal to width for a square-like look */
+   width: 44vw;
+    height: 44vw; /* Set height equal to width for a square-like look */
     object-fit: cover; /* Ensures images fill the space while keeping proportions */
    
     }
