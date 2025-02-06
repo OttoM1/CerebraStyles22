@@ -841,8 +841,8 @@ canvas {
     justify-content: center; /* Centers text */
         align-items: center;
         text-align: center;
-    
-  font-size: 10px;
+    display: flex;
+  font-size: 12.2px;
 }
   .front-content1 {
         visibility: hidden;
@@ -888,11 +888,19 @@ canvas {
     }
 
 .Niko p {
-  font-size: 8px;
+  font-size: 12.2px;
+  justify-content: center; /* Centers text */
+        align-items: center;
+        text-align: center;
+  display: flex;
 
 }
 .Otto p{
-   font-size: 8px;
+   font-size: 12.2px;
+  justify-content: center; /* Centers text */
+        align-items: center;
+        text-align: center;
+  display: flex;
 }
    
 
@@ -1062,18 +1070,27 @@ justify-content: center; /* Centers text */
 }
 
 #ottot, #nikot {
-  font-size: 10px;
+  font-size: 12.2px;
   justify-content: center; /* Centers text */
         align-items: center;
         text-align: center;
+  display: flex;
 }
   
   .Niko p {
-  font-size: 8px;
+  font-size: 12.2px;
+    justify-content: center; /* Centers text */
+        align-items: center;
+        text-align: center;
+  display: flex;
 
 }
 .Otto p{
-   font-size: 8px;
+   font-size: 12.2px;
+  justify-content: center; /* Centers text */
+        align-items: center;
+        text-align: center;
+  display: flex;
 }
 
   
