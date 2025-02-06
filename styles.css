@@ -831,7 +831,10 @@ canvas {
 
 @media (max-width: 414px) {
 
-
+ .card1:hover .content-kortti1,
+    .card2:hover .content-kortti2 {
+        transform: translateX(-99%) !important; /* Disable hover effects on mobile */
+    }
   
 
 #translateButton {
@@ -974,6 +977,12 @@ canvas {
 
 /* (768px) */
 @media (max-width: 768px) {
+
+
+   .card1:hover .content-kortti1,
+    .card2:hover .content-kortti2 {
+        transform: translateX(-99%) !important; /* Disable hover effects on mobile */
+    }
   
   body {
         font-size: 95%;
