@@ -617,7 +617,7 @@ canvas {
  }
  
  
- 
+ /*
  
  .kuva-otto img{
  
@@ -628,11 +628,19 @@ canvas {
  animation: fadeIn 3.9s ease-in-out;
 
    width: 38vw;
-    height: 38vw; /* Set height equal to width for a square-like look */
-    object-fit: cover; /* Ensures images fill the space while keeping proportions */
+    height: 38vw; 
+    object-fit: cover; 
    
  
- }
+ } */
+
+
+    .kuva-otto img, .kuva-niko img {
+        width: 60vw;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
  
  
  .kuva-niko img {
