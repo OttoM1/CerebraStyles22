@@ -644,8 +644,8 @@ canvas {
  
  
  .kuva-otto img{
- width: 32vw;
- height: 50.5vh;
+ width: 38vw;
+ height: 59.5vh;
  border-radius: 50%;
  cursor: pointer;
  margin-right: 2rem;
@@ -664,8 +664,8 @@ canvas {
  */
  
  .kuva-niko img {
-  width: 32vw;
-  height: 50.3vh;
+  width: 37vw;
+  height: 58.3vh;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 2rem;
