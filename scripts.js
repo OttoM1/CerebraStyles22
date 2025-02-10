@@ -11,6 +11,7 @@ function resizeCanvas() {
     }, 100);
 }
 
+
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
@@ -416,7 +417,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const messageTextarea = document.querySelector("#Viestisi"); // Target only the message textarea
 
-    // Auto-expand the "Viestisi" textarea height dynamically
     messageTextarea.addEventListener("input", function () {
         this.style.height = "auto"; // Reset height
         this.style.height = this.scrollHeight + "px"; // Expand dynamically based on content
