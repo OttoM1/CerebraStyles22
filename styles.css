@@ -882,7 +882,7 @@ text-shadow:
 }
 
 #translateButton {
-  position: fixed; top: 15px; right: 15px
+  position: fixed; top: 13px; right: 11px
  }
   
 
@@ -904,7 +904,7 @@ text-shadow:
   padding: 12px 23px;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 8px;
   border: none;
       font-weight: bold;
   cursor: pointer;
@@ -917,8 +917,8 @@ text-shadow:
 
 
 #gitotto, #gitniko {
-  display: block; 
-  visibility: visible; 
+  display: block !important; 
+  visibility: visible !important; 
   text-align: center; 
   margin-top: 10px;
   font-size: 14px;
@@ -961,7 +961,7 @@ text-shadow:
 
     #revealButton {
         padding: 30px 100px;
-        font-size: 20px;
+        font-size: 26px;
         max-width: 80%;
     }
     
@@ -1062,7 +1062,7 @@ text-shadow:
 }
 
 #translateButton {
-  position: fixed; top: 15px; right: 15px
+  position: fixed; top: 12px; right: 11px
  }
 
 #ottopuh, #nikopuh {
@@ -1092,7 +1092,7 @@ visibility: hidden;
   padding: 12px 23px;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 8px;
   border: none;
       font-weight: bold;
   cursor: pointer;
@@ -1123,7 +1123,7 @@ visibility: hidden;
   
     #revealButton {
         padding: 40px 130px;
-        font-size: 24px;
+        font-size: 29px;
         max-width: 70%;
     }
 
@@ -1207,9 +1207,9 @@ margin-right: 0;
     }
 
     #gitotto, #gitniko {
-      display: block; 
+      display: block !important; 
       font-size: 14px;
-      visibility: visible; 
+      visibility: visible !important; 
       text-align: center; 
       margin-top: 10px;
     }
