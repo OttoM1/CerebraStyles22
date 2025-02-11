@@ -22,7 +22,8 @@
   flex-grow: 1;
   text-align: center;
   }
-  
+
+
  
  body {
   background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
@@ -916,6 +917,7 @@ text-shadow:
 .content-kortti2 {
   display: none;
   visibility: hidden;
+  pointer-events: none;
 }
 
 
@@ -1058,6 +1060,11 @@ text-shadow:
   font-size: 22px;
 
 }
+  .content-kortti1 {
+  display: none;
+  visibility: hidden;
+    pointer-events: none;
+}
 
 
  
@@ -1130,6 +1137,7 @@ visibility: hidden;
 .content-kortti2 {
   display: none;
   visibility: hidden;
+  pointer-events: none;
 }
 
 #ottot, #nikot {
@@ -1225,6 +1233,11 @@ margin-right: 0;
     object-fit: cover; 
    
     }
+  .content-kortti1 {
+  display: none;
+  visibility: hidden;
+    pointer-events: none;
+}
   
   .kuva-niko img {
         width: 50vw;
