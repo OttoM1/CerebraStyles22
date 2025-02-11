@@ -161,9 +161,13 @@ const translations = {
     
     
     "Suunnittelijat": "Designers",
+ "Otto Mulari<br><br>Klikkaamalla kuvaani saat enemmän tietoa minusta :)": "Otto Mulari<br><br>Click my photo for more info :)",
+
     "TJ & Kehittäjä": "CEO & Developer",
     "Moikka! Olen Otto, 22-vuotias tietojenkäsittelytieteen opiskelija Oulun yliopistosta. Nikon kanssa meitä yhdistää intohimo selkeisiin, responsiivisiin ja erottuviin verkkosivuihin, joten miksi emme hyödyntäisi sitä luomalla laadukkaita verkkokokemuksia niitä tarvitseville? Juuri tästä syystä päädyimme tälle polulle. Kun en koodaa, vietän todennäköisesti aikaa tatamilla tai kesäisin golfkentällä. Kiva, että olet täällä!": "Ciao! I am Otto, a 22-year-old Computer Science student from Oulu, Finland. To keep it concise, Niko and I really enjoy creating clean, responsive, and unique websites, so why not turn that passion into something meaningful? That is exactly why we ended up on this path, to craft web experiences for those who need them. When I am not coding, you will probably find me rolling on the mat or hitting the golf course during the summer. Nice having you here!",
     "Otto.Cerebrastyles@gmail.com": "Otto.Cerebrastyles@gmail.com",
+     "Niko Rantamäki<br><br>Klikkaamalla kuvaani saat enemmän tietoa minusta :)": "Niko Rantamäki<br><br>Click my photo for more info :)",
+
     "Co-Founder & Suunittelija": "Co-Founder & Developer",
     "Tietojenkäsittelytieteen opiskelija Oulun Yliopistosta. Aktiivinen ja positiivinen tyyppi, joka nauttii ongelmanratkaisusta, uuden oppimisesta ja netin tekemisestä entistä kiinnostavammaksi. Intohimona design ja ohjelmointi, aina pohtimassa uusia ideoita ja ratkaisuja.": "Computer Science student at the University of Oulu. An active and positive dude who enjoys solving problems, learning new, and making the internet a more engaging environment pixel at a time. Fueled by design, driven by code, and always on the lookout for fresh ideas and better code.",
     "Niko.Cerebrastyles@gmail.com": "Niko.Cerebrastyles@gmail.com",
@@ -221,10 +225,14 @@ const originalTexts = {
 "Koska teemme tätä ensisijaisesti harrastuksena, voimme pitää hinnoittelun kohtuullisena ja silti tuottaa laadukkaita sivuja. Yhteistyömme on ammattimainen mutta rento, mikä tekee siitä sujuvaa sekä viihtyisää.",
    
     "Designers": "Suunnittelijat",
+        "Otto Mulari<br><br>Click my photo for more info :)": "Otto Mulari<br><br>Klikkaamalla kuvaani saat enemmän tietoa minusta :)",
+
     "CEO & Developer": "TJ & Kehittäjä",
     "Ciao! I am Otto, a 22-year-old Computer Science student from Oulu, Finland. To keep it concise, Niko and I really enjoy creating clean, responsive, and unique websites, so why not turn that passion into something meaningful? That is exactly why we ended up on this path, to craft web experiences for those who need them. When I am not coding, you will probably find me rolling on the mat or hitting the golf course during the summer. Nice having you here!": 
     "Moikka! Olen Otto, 22-vuotias tietojenkäsittelytieteen opiskelija Oulun yliopistosta. Nikon kanssa meitä yhdistää intohimo selkeisiin, responsiivisiin ja erottuviin verkkosivuihin, joten miksi emme hyödyntäisi sitä luomalla laadukkaita verkkokokemuksia niitä tarvitseville? Juuri tästä syystä päädyimme tälle polulle. Kun en koodaa, vietän todennäköisesti aikaa tatamilla tai kesäisin golfkentällä. Kiva, että olet täällä!",
     "Otto.Cerebrastyles@gmail.com": "Otto.Cerebrastyles@gmail.com",
+            "Niko Rantamäki<br><br>Click my photo for more info :)": "Niko Rantamäki<br><br>Klikkaamalla kuvaani saat enemmän tietoa minusta :)",
+
     "Co-Founder & Developer": "Co-Founder & Suunittelija",
 
     "Computer Science student at the University of Oulu. An active and positive dude who enjoys solving problems, learning new, and making the internet a more engaging environment pixel at a time. Fueled by design, driven by code, and always on the lookout for fresh ideas and better code.": "Tietojenkäsittelytieteen opiskelija Oulun Yliopistosta. Aktiivinen ja positiivinen tyyppi, joka nauttii ongelmanratkaisusta, uuden oppimisesta ja netin tekemisestä entistä kiinnostavammaksi. Intohimona design ja ohjelmointi, aina pohtimassa uusia ideoita ja ratkaisuja.",
@@ -291,10 +299,14 @@ document.getElementById("serviceText8").textContent = translations["Koska teemme
 
 document.getElementById("navCrew").textContent = translations["Tiimi"];
 document.getElementById("WCrew").textContent = translations["Suunnittelijat"];
+                document.getElementById("klik").innerHTML = translations["Otto Mulari<br><br>Klikkaamalla kuvaani saat enemmän tietoa minusta :)"];
+
 document.getElementById("ottoh").textContent = translations["TJ & Kehittäjä"];
 
 document.getElementById("ottot").textContent = translations["Moikka! Olen Otto, 22-vuotias tietojenkäsittelytieteen opiskelija Oulun yliopistosta. Nikon kanssa meitä yhdistää intohimo selkeisiin, responsiivisiin ja erottuviin verkkosivuihin, joten miksi emme hyödyntäisi sitä luomalla laadukkaita verkkokokemuksia niitä tarvitseville? Juuri tästä syystä päädyimme tälle polulle. Kun en koodaa, vietän todennäköisesti aikaa tatamilla tai kesäisin golfkentällä. Kiva, että olet täällä!"];
 document.getElementById("ottospost").textContent = translations["Otto.Cerebrastyles@gmail.com"];
+                                document.getElementById("klikn").innerHTML = translations["Niko Rantamäki<br><br>Klikkaamalla kuvaani saat enemmän tietoa minusta :)"];
+
 document.getElementById("nikoh").textContent = translations["Co-Founder & Suunittelija"];
 
 document.getElementById("nikot").textContent = translations["Tietojenkäsittelytieteen opiskelija Oulun Yliopistosta. Aktiivinen ja positiivinen tyyppi, joka nauttii ongelmanratkaisusta, uuden oppimisesta ja netin tekemisestä entistä kiinnostavammaksi. Intohimona design ja ohjelmointi, aina pohtimassa uusia ideoita ja ratkaisuja."];
@@ -360,10 +372,13 @@ document.getElementById("Nimi").placeholder = translations["Nimi"];
                 document.getElementById("navCrew").textContent = originalTexts["Crew"];
 
                 document.getElementById("WCrew").textContent = originalTexts["Designers"];
+                                document.getElementById("klik").innerHTML = originalTexts["Otto Mulari<br><br>Click my photo for more info :)"];
+
                 document.getElementById("ottoh").textContent = originalTexts["CEO & Developer"];
 
                 document.getElementById("ottot").textContent = originalTexts["Ciao! I am Otto, a 22-year-old Computer Science student from Oulu, Finland. To keep it concise, Niko and I really enjoy creating clean, responsive, and unique websites, so why not turn that passion into something meaningful? That is exactly why we ended up on this path, to craft web experiences for those who need them. When I am not coding, you will probably find me rolling on the mat or hitting the golf course during the summer. Nice having you here!"];
                 document.getElementById("ottospost").textContent = originalTexts["Otto.Cerebrastyles@gmail.com"];
+                                document.getElementById("klikn").innerHTML = originalTexts["Niko Rantamäki<br><br>Click my photo for more info :)"];
 
                 document.getElementById("nikoh").textContent = originalTexts["Co-Founder & Developer"];
 
