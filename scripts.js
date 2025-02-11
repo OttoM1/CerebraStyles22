@@ -11,7 +11,6 @@ function resizeCanvas() {
     }, 100);
 }
 
-
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
@@ -305,7 +304,7 @@ document.getElementById("Nimi").placeholder = translations["Nimi"];
 
 
                 isTranslated = true;
-                document.getElementById("translateButton").textContent = "🇫🇮";
+                document.getElementById("translateButton").textContent = "🇬🇧";
             } else {
                 document.getElementById("mainTitle").textContent = originalTexts["CerebraStyles"];
                 document.getElementById("tagline").textContent = originalTexts["-Your Digital Vision, Tailored to Reality"];
@@ -379,7 +378,7 @@ document.getElementById("Nimi").placeholder = translations["Nimi"];
 
         
                 isTranslated = false;
-                document.getElementById("translateButton").textContent = "🇬🇧";
+                document.getElementById("translateButton").textContent = "🇫🇮";
             }
         
             
@@ -415,10 +414,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const messageTextarea = document.querySelector("#Viestisi"); // Target only the message textarea
+    const messageTextarea = document.querySelector("#Viestisi"); 
 
     messageTextarea.addEventListener("input", function () {
-        this.style.height = "auto"; // Reset height
-        this.style.height = this.scrollHeight + "px"; // Expand dynamically based on content
+        this.style.height = "auto"; // Resetti
+        this.style.height = this.scrollHeight + "px"; 
     });
 });
