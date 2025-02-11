@@ -882,7 +882,7 @@ text-shadow:
 }
 
 #translateButton {
-  position: fixed; bottom: 17px; right: 17px
+  position: fixed; top: 15px; right: 15px
  }
   
 
@@ -921,6 +921,8 @@ text-shadow:
   visibility: visible; 
   text-align: center; 
   margin-top: 10px;
+  font-size: 14px;
+
 }
 
 
@@ -1060,7 +1062,7 @@ text-shadow:
 }
 
 #translateButton {
-  position: fixed; bottom: 17px; right: 17px
+  position: fixed; top: 15px; right: 15px
  }
 
 #ottopuh, #nikopuh {
@@ -1206,6 +1208,7 @@ margin-right: 0;
 
     #gitotto, #gitniko {
       display: block; 
+      font-size: 14px;
       visibility: visible; 
       text-align: center; 
       margin-top: 10px;
