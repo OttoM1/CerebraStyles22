@@ -163,8 +163,10 @@ const translations = {
     "Suunnittelijat": "Designers",
     "TJ & Kehittäjä": "CEO & Developer",
     "Moikka! Olen Otto, 22-vuotias tietojenkäsittelytieteen opiskelija Oulun yliopistosta. Nikon kanssa meitä yhdistää intohimo selkeisiin, responsiivisiin ja erottuviin verkkosivuihin, joten miksi emme hyödyntäisi sitä luomalla laadukkaita verkkokokemuksia niitä tarvitseville? Juuri tästä syystä päädyimme tälle polulle. Kun en koodaa, vietän todennäköisesti aikaa tatamilla tai kesäisin golfkentällä. Kiva, että olet täällä!": "Ciao! I am Otto, a 22-year-old Computer Science student from Oulu, Finland. To keep it concise, Niko and I really enjoy creating clean, responsive, and unique websites, so why not turn that passion into something meaningful? That is exactly why we ended up on this path, to craft web experiences for those who need them. When I am not coding, you will probably find me rolling on the mat or hitting the golf course during the summer. Nice having you here!",
+    "Otto.Cerebrastyles@gmail.com": "Otto.Cerebrastyles@gmail.com",
     "Co-Founder & Suunittelija": "Co-Founder & Developer",
     "Tietojenkäsittelytieteen opiskelija Oulun Yliopistosta. Aktiivinen ja positiivinen tyyppi, joka nauttii ongelmanratkaisusta, uuden oppimisesta ja netin tekemisestä entistä kiinnostavammaksi. Intohimona design ja ohjelmointi, aina pohtimassa uusia ideoita ja ratkaisuja.": "Computer Science student at the University of Oulu. An active and positive dude who enjoys solving problems, learning new, and making the internet a more engaging environment pixel at a time. Fueled by design, driven by code, and always on the lookout for fresh ideas and better code.",
+    "Niko.Cerebrastyles@gmail.com": "Niko.Cerebrastyles@gmail.com",
     "Tehdään verkkosivustostasi totta,": "Let's Create Your Website Blueprint,",
 "Nimi": "Name", "Sähköposti": "Email", "Viestisi": "Your Message", "Lähetä": "Send"
 };
@@ -222,9 +224,11 @@ const originalTexts = {
     "CEO & Developer": "TJ & Kehittäjä",
     "Ciao! I am Otto, a 22-year-old Computer Science student from Oulu, Finland. To keep it concise, Niko and I really enjoy creating clean, responsive, and unique websites, so why not turn that passion into something meaningful? That is exactly why we ended up on this path, to craft web experiences for those who need them. When I am not coding, you will probably find me rolling on the mat or hitting the golf course during the summer. Nice having you here!": 
     "Moikka! Olen Otto, 22-vuotias tietojenkäsittelytieteen opiskelija Oulun yliopistosta. Nikon kanssa meitä yhdistää intohimo selkeisiin, responsiivisiin ja erottuviin verkkosivuihin, joten miksi emme hyödyntäisi sitä luomalla laadukkaita verkkokokemuksia niitä tarvitseville? Juuri tästä syystä päädyimme tälle polulle. Kun en koodaa, vietän todennäköisesti aikaa tatamilla tai kesäisin golfkentällä. Kiva, että olet täällä!",
+    "Otto.Cerebrastyles@gmail.com": "Otto.Cerebrastyles@gmail.com",
     "Co-Founder & Developer": "Co-Founder & Suunittelija",
 
     "Computer Science student at the University of Oulu. An active and positive dude who enjoys solving problems, learning new, and making the internet a more engaging environment pixel at a time. Fueled by design, driven by code, and always on the lookout for fresh ideas and better code.": "Tietojenkäsittelytieteen opiskelija Oulun Yliopistosta. Aktiivinen ja positiivinen tyyppi, joka nauttii ongelmanratkaisusta, uuden oppimisesta ja netin tekemisestä entistä kiinnostavammaksi. Intohimona design ja ohjelmointi, aina pohtimassa uusia ideoita ja ratkaisuja.",
+    "Niko.Cerebrastyles@gmail.com": "Niko.Cerebrastyles@gmail.com",
     "Let's Create Your Website Blueprint,": "Tehdään verkkosivustostasi totta,",
     "Name": "Nimi", "Email": "Sähköposti", "Your Message": "Viestisi", "Send": "Lähetä"
 }; 
@@ -290,10 +294,11 @@ document.getElementById("WCrew").textContent = translations["Suunnittelijat"];
 document.getElementById("ottoh").textContent = translations["TJ & Kehittäjä"];
 
 document.getElementById("ottot").textContent = translations["Moikka! Olen Otto, 22-vuotias tietojenkäsittelytieteen opiskelija Oulun yliopistosta. Nikon kanssa meitä yhdistää intohimo selkeisiin, responsiivisiin ja erottuviin verkkosivuihin, joten miksi emme hyödyntäisi sitä luomalla laadukkaita verkkokokemuksia niitä tarvitseville? Juuri tästä syystä päädyimme tälle polulle. Kun en koodaa, vietän todennäköisesti aikaa tatamilla tai kesäisin golfkentällä. Kiva, että olet täällä!"];
+document.getElementById("ottospost").textContent = translations["Otto.Cerebrastyles@gmail.com"];
 document.getElementById("nikoh").textContent = translations["Co-Founder & Suunittelija"];
 
 document.getElementById("nikot").textContent = translations["Tietojenkäsittelytieteen opiskelija Oulun Yliopistosta. Aktiivinen ja positiivinen tyyppi, joka nauttii ongelmanratkaisusta, uuden oppimisesta ja netin tekemisestä entistä kiinnostavammaksi. Intohimona design ja ohjelmointi, aina pohtimassa uusia ideoita ja ratkaisuja."];
-
+document.getElementById("nikospost").textContent = translations["Niko.Cerebrastyles@gmail.com"];
 
 document.getElementById("contactHeading").textContent = translations["Tehdään verkkosivustostasi totta,"];
 
@@ -358,10 +363,12 @@ document.getElementById("Nimi").placeholder = translations["Nimi"];
                 document.getElementById("ottoh").textContent = originalTexts["CEO & Developer"];
 
                 document.getElementById("ottot").textContent = originalTexts["Ciao! I am Otto, a 22-year-old Computer Science student from Oulu, Finland. To keep it concise, Niko and I really enjoy creating clean, responsive, and unique websites, so why not turn that passion into something meaningful? That is exactly why we ended up on this path, to craft web experiences for those who need them. When I am not coding, you will probably find me rolling on the mat or hitting the golf course during the summer. Nice having you here!"];
-                
+                document.getElementById("ottospost").textContent = originalTexts["Otto.Cerebrastyles@gmail.com"];
+
                 document.getElementById("nikoh").textContent = originalTexts["Co-Founder & Developer"];
 
                 document.getElementById("nikot").textContent = originalTexts["Computer Science student at the University of Oulu. An active and positive dude who enjoys solving problems, learning new, and making the internet a more engaging environment pixel at a time. Fueled by design, driven by code, and always on the lookout for fresh ideas and better code."];
+                document.getElementById("nikospost").textContent = originalTexts["Niko.Cerebrastyles@gmail.com"];
 
                 
 
