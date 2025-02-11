@@ -6,7 +6,6 @@
   display: none;
 }
 /*bodyt/naytot/canvas*/
-
 * {
   margin: 0;
   padding: 0;
@@ -967,7 +966,7 @@ text-shadow:
 
     #revealButton {
         padding: 30px 100px;
-        font-size: 20px;
+        font-size: 30px;
         max-width: 80%;
     }
     
@@ -1032,6 +1031,11 @@ text-shadow:
         margin-right: 0;
         margin-bottom: 1rem;
     }
+  
+#klik, #klikn {
+  font-size: 13.8px;
+  
+}
 
    .Otto, .Niko {
         flex-direction: column; 
@@ -1085,6 +1089,11 @@ text-shadow:
   color: rgba(255, 238, 177, 0.93);
     font-size: 27.7px;
 
+}
+  
+#klik, #klikn {
+  font-size: 13.8px;
+  
 }
   .card-otto, .card1, .front-content1, .card-niko, .card2, .front-content2 { font-size: 14.2px }
 
@@ -1166,7 +1175,7 @@ visibility: hidden;
   
     #revealButton {
         padding: 40px 130px;
-        font-size: 24px;
+        font-size: 30px;
         max-width: 70%;
     }
 
