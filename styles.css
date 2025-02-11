@@ -100,22 +100,21 @@ canvas {
   flex-grow: 1;
  }
  h2 {
-  text-shadow: 
-  1px 1px 2px rgba(131, 200, 200, 0.5), 
-  -1px 1px 2px rgba(137, 204, 207, 0.5), 
-  1px -1px 2px rgba(103, 192, 173, 0.5), 
-  -1px -1px 2px rgba(119, 199, 185, 0.5);
-}
-
  
+text-shadow: 
+1px 1px 2px rgba(131, 200, 200, 0.87), 
+-1px 1px 2px rgba(137, 204, 207, 0.87), 
+1px -1px 2px rgba(103, 192, 173, 0.87), 
+-1px -1px 2px rgba(119, 199, 185, 0.87); }
 
 
  .section-content h2 {
-  font-size: 2.5rem;
-  font-family: 'Quicksand', sans-serif;
-   font-weight: bold; 
+  font-size: 2.92rem;
+  font-family: 'Playfair Display', serif;
+   font-weight: bolder; 
   margin-bottom: 1.1rem;
-  color: rgba(27, 33, 33, 0.9); } 
+  color: rgba(25, 30, 30, 0.9);  
+} 
  
   .tagline {
     font-size: 1.2rem;
@@ -243,9 +242,9 @@ canvas {
 
  }
 
-
- 
- 
+#translateButton {
+ position: fixed; top: 20px; right: 20px
+}
  #revealButton {
   background: rgba(168, 218, 220, 0);
   color: #4d8766;
@@ -254,7 +253,7 @@ canvas {
  border-radius: 70%;
   /*box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);*/
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 40px; /*32*/
+  font-size: 52px; /*32*/
     max-width: 408px;
   font-weight: bold;
   cursor: pointer; /*
@@ -311,9 +310,16 @@ canvas {
  .nav-links a {
   display: inline-block;
   background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
-  opacity: 0.75;
+  /*opacity: 0.45;*/
   box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
-  color: #4d8766;
+  /*color: #4d8766;*/
+  color: rgb(227, 252, 236);
+  font-weight: bold;
+  text-shadow: 
+  1px 1px 2px rgba(43, 228, 228, 0.5), 
+  -1px 1px 2px rgba(37, 196, 205, 0.5), 
+  1px -1px 2px rgba(41, 211, 174, 0.5), 
+  -1px -1px 2px rgba(39, 191, 166, 0.5);
   padding: 20px 57px;
   border-radius: 75px;
   text-decoration: none;
@@ -334,11 +340,10 @@ canvas {
 
  #revealButton:hover {
   background: radial-gradient(ellipse, rgba(57, 4, 57, 0), rgba(36, 40, 42, 0));
-  transform: scale(1.34);
-  /*box-shadow: 0 0 2000px rgba(41, 4, 37, 0.8);*/
- transition: box-shadow 1.5s linear, transform 2.5s linear;
+  transform: scale(1.38);
+ transition: box-shadow 9.5s linear, transform 9.5s linear;
 
- transition: background 0.6s linear, transform 1s linear, box-shadow 0.9s linear;
+ transition: background 6.6s linear, transform 4s linear, box-shadow 6.9s linear;
 
  
  
@@ -353,7 +358,7 @@ canvas {
  
  #contactForm button:hover{
   background: rgba(168, 218, 220, 0.9);
-  transform: scale(1.1);
+  transform: scale(1.06);
  }
  
  
@@ -493,36 +498,37 @@ canvas {
  
  
  .slowed{
-  animation: fadeIn 3.5s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
  }
+ /*
  #revealButton {
-  animation: fadeIn 1s ease-in-out;
- }
+  animation: fadeIn 0.9s ease-in-out;
+ } */
  
  
  
  p {
-  animation: fadeIn 3.8s ease-in-out;
+  animation: fadeIn 1.8s ease-in-out;
  }
  
  
         h2 {
-  animation: fadeIn 3.3s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
  }
  
  
  
  
  h1 {
-  animation: fadeIn 3.4s ease-in-out;
+  animation: fadeIn 1.8s ease-in-out;
  }
         button {
-  animation: fadeIn 3.4s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
  
  
  }
  .nav-links a {
-  animation: fadeIn 4.8s ease-in-out;
+  animation: fadeIn 2.6s ease-in-out;
  
  
  }
@@ -543,7 +549,7 @@ canvas {
  
  
  p {
-  transition: color 0.6s ease, transform 0.6s ease;
+  transition: color 0.4s ease, transform 0.4s ease;
  }
  p:hover {
   color:  #f7e3e3;
@@ -552,7 +558,7 @@ canvas {
  
  
  h1 {
-    transition: color 0.6s ease, transform 0.6s ease;
+    transition: color 0.4s ease, transform 0.4s ease;
  }
  
  
@@ -664,8 +670,8 @@ canvas {
  */
  
  .kuva-niko img {
-  width: 37vw;
-  height: 58.3vh;
+  width: 37.3vw;
+  height: 59vh;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 2rem;
@@ -875,6 +881,9 @@ canvas {
     max-width: 100%;
 }
 
+#translateButton {
+  position: fixed; bottom: 17px; right: 17px
+ }
   
 
   #ottot, #nikot {
@@ -907,6 +916,12 @@ canvas {
 
 
 
+#gitotto, #gitniko {
+  display: block; 
+  visibility: visible; 
+  text-align: center; 
+  margin-top: 10px;
+}
 
 
   
@@ -1044,6 +1059,9 @@ canvas {
     max-width: 100%;
 }
 
+#translateButton {
+  position: fixed; bottom: 17px; right: 17px
+ }
 
 #ottopuh, #nikopuh {
 visibility: hidden;
@@ -1186,8 +1204,25 @@ margin-right: 0;
         align-items: center; 
     }
 
-
-
-    
+    #gitotto, #gitniko {
+      display: block; 
+      visibility: visible; 
+      text-align: center; 
+      margin-top: 10px;
+    }
 
 }
+
+
+
+
+#gitotto {
+  display: none;
+  visibility: hidden;
+}
+
+#gitniko {
+  display: none;
+  visibility: hidden;
+}
+
