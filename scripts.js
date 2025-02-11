@@ -396,7 +396,7 @@ document.getElementById("Nimi").placeholder = translations["Nimi"];
 
 
 
-
+/*
 
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 768) { 
@@ -415,7 +415,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
+*/
 
 
 
