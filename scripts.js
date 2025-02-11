@@ -398,24 +398,6 @@ document.getElementById("Nimi").placeholder = translations["Nimi"];
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth <= 768) { 
-        let textBoxes = document.querySelectorAll(".content-kortti1, .content-kortti2");
-
-        textBoxes.forEach(box => {
-            let texts = box.querySelectorAll(".toggle-text"); 
-            let index = 0;
-
-            box.addEventListener("click", function () {
-                texts.forEach(text => text.style.display = "none");
-
-                index = (index + 1) % texts.length; 
-                texts[index].style.display = "block";
-            });
-        });
-    }
-});
-
 
 
 
