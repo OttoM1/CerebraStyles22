@@ -3,6 +3,16 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+ emailjs.init({
+   publicKey: "f83myWnHa8CJyFiQg",
+ });
+})();
+</script>
    <title>CerebraStyles - Digitaalinen visiosi, räätälöity todellisuuteen</title>
    <link rel="stylesheet" href="styles.css">
 </head>
@@ -226,7 +236,7 @@
                        <input class="slowed" type="text" id="Nimi" placeholder="Nimi" required>
                        <input class="slowed" type="email" id="Sähköposti" placeholder="Sähköposti" required>
                        <textarea class="slowed" id="Viestisi" placeholder="Viestisi" rows="4" required></textarea>
-                       <button type="submit" id="poks" placeholder="Lähetä">Lähetä</button>
+                       <button type="submit" id="poks" placeholder="Lähetä" onclick="sendMail()">Lähetä</button>
                    </form>
                    <p class="different-font">
                     <br>
@@ -248,6 +258,22 @@
    </div>
 
    <button id="translateButton">FI/EN</button>
+
+   <div id="successMessage" class="popup-message">
+    <div class="popup-content">
+        <h3>✅ Viesti lähetetty!</h3>
+        <p>Message sent successfully.</p>
+        <p>Sinut ohjataan aloitussivulle... Redirecting to start page...</p>
+    </div>
+</div>
+
+<div id="errorMessage" class="popup-message">
+    <div class="popup-content">
+        <h3>❌ Viestin lähetys epäonnistui</h3>
+        <p>Message failed to send. Please try again or contact:</p>
+        <p><a href="mailto:cerebrastyles@gmail.com">cerebrastyles@gmail.com</a></p>
+    </div>
+</div>
    
      <script src="scripts.js"></script>
 
