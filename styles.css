@@ -886,7 +886,7 @@ text-shadow:
 #translateButton {
   position: fixed; top: 12px; right: 12px
  }
-  
+  .card-otto, .card1, .front-content1, .card-niko, .card2, .front-content2 { font-size: 14.2px }
 
   #ottot, #nikot {
   visibility: hidden;
@@ -1086,6 +1086,7 @@ text-shadow:
     font-size: 27.7px;
 
 }
+  .card-otto, .card1, .front-content1, .card-niko, .card2, .front-content2 { font-size: 14.2px }
 
 #ottolink {
   color: rgba(180, 180, 180, 0.93);
