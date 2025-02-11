@@ -882,6 +882,8 @@ text-shadow:
     max-width: 100%;
 }
 
+  .card-otto, .card1, .card1, .front-content1, .card1, .front-content1 p, .card1, .content-kortti1, .card1, .content-kortti1, .heading-kortti1, .card-niko, .card2, .card2, .front-content2, .card2, .front-content2 p, .card2, .content-kortti2, .card2, .content-kortti2, .heading-kortti2 { pointer-events: none;}
+
 #translateButton {
   position: fixed; top: 12px; right: 12px
  }
@@ -1078,6 +1080,7 @@ text-shadow:
 /* (768px) */
 @media (max-width: 768px) {
 
+  .card-otto, .card1, .card1, .front-content1, .card1, .front-content1 p, .card1, .content-kortti1, .card1, .content-kortti1, .heading-kortti1, .card-niko, .card2, .card2, .front-content2, .card2, .front-content2 p, .card2, .content-kortti2, .card2, .content-kortti2, .heading-kortti2 { pointer-events: none;}
   
 #nikolink {
   color: rgba(255, 238, 177, 0.93);
