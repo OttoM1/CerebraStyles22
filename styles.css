@@ -1028,7 +1028,7 @@ text-shadow:
     }
     
    .kuva-niko img {
-        width: 60vw;
+        width: 55vw;
         height: auto;
         margin-right: 0;
         margin-bottom: 1rem;
@@ -1045,21 +1045,21 @@ text-shadow:
  animation: fadeIn 3.9s ease-in-out;
  margin-right: 0;
         margin-bottom: 1rem;
-   width: 47vw;
-    height: 47vw; 
+   width: 55vw;
+    height: 55vw; 
     object-fit: cover; 
    
     }
   
 #nikolink {
   color: rgba(255, 238, 177, 0.93);
-    font-size: 22px;
+    font-size: 27.7px;
 
 }
 
 #ottolink {
   color: rgba(180, 180, 180, 0.93);
-  font-size: 22px;
+  font-size: 27.7px;
 
 }
   .content-kortti1 {
@@ -1084,13 +1084,13 @@ text-shadow:
   
 #nikolink {
   color: rgba(255, 238, 177, 0.93);
-    font-size: 22px;
+    font-size: 27.7px;
 
 }
 
 #ottolink {
   color: rgba(180, 180, 180, 0.93);
-  font-size: 22px;
+  font-size: 27.7px;
 
 }
   .container {
@@ -1231,8 +1231,8 @@ visibility: hidden;
  animation: fadeIn 3.9s ease-in-out;
 margin-right: 0;
         margin-bottom: 1rem;
-   width: 47vw;
-    height: 47vw; 
+   width: 55vw;
+    height: 55vw; 
     object-fit: cover; 
    
     }
@@ -1243,7 +1243,7 @@ margin-right: 0;
 }
   
   .kuva-niko img {
-        width: 50vw;
+        width: 55vw;
         height: auto;
         margin-right: 0;
         margin-bottom: 1rem;
