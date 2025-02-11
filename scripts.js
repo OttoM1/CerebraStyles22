@@ -425,3 +425,34 @@ document.addEventListener("DOMContentLoaded", function () {
         this.style.height = this.scrollHeight + "px"; 
     });
 });
+
+
+
+
+
+
+function sendMail() {
+    let parms = {
+        name: document.getElementById("Nimi").value,
+        email: document.getElementById("Sähköposti").value,
+        message: document.getElementById("Viestisi").value
+    };
+
+    emailjs.send("service_i1244mo", "template_ffu9jtk", parms)
+    .then(function(response) {
+        console.log("✅ Viesti lähetetty - Message sent", response);
+
+        document.getElementById("successMessage").style.display = "flex";
+        document.getElementById("contactForm").reset(); // Clear
+
+        setTimeout(function() {
+            window.location.href = "index.html"; 
+        }, 3000);
+    })
+    .catch(function(error) {
+        console.error("❌ Virhe! Error!", error);
+
+        document.getElementById("errorMessage").style.display = "flex";
+    });
+}
+
