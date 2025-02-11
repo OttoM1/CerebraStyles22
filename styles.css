@@ -882,7 +882,7 @@ text-shadow:
 }
 
 #translateButton {
-  position: fixed; top: 15px; right: 15px
+  position: fixed; top: 12px; right: 12px
  }
   
 
@@ -901,10 +901,10 @@ text-shadow:
   opacity: 0.98;
   box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 9px 18px;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 9px;
   border: none;
       font-weight: bold;
   cursor: pointer;
@@ -913,7 +913,10 @@ text-shadow:
 }
   
 
-
+.content-kortti2 {
+  display: none;
+  visibility: hidden;
+}
 
 
 #gitotto, #gitniko {
@@ -1062,7 +1065,7 @@ text-shadow:
 }
 
 #translateButton {
-  position: fixed; top: 15px; right: 15px
+  position: fixed; top: 12px; right: 12px
  }
 
 #ottopuh, #nikopuh {
@@ -1089,15 +1092,20 @@ visibility: hidden;
   opacity: 0.98;
   box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 9px 18px;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 9px;
   border: none;
       font-weight: bold;
   cursor: pointer;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
+  
+.content-kortti2 {
+  display: none;
+  visibility: hidden;
 }
 
 #ottot, #nikot {
