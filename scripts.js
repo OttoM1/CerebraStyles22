@@ -135,7 +135,9 @@ const translations = {
     "• During our partnership, our team will work closely with you in a relaxed yet focused manner, delivering thoughtful designs that meet your needs and reflect your vision.",
     "• Jos teillä ei ole selkeää visiota verkkosivustosi ulkoasusta tai teemasta, tässä on muutama linkki, jotka voivat antaa inspiraatiota tai ideoita. Tarkoitus ei ole käyttää niitä sellaisenaan, vaan esitellä erilaisia tyylejä ja konsepteja, hyvin yksinkertaistetuilla esimerkeillä. Käy vapaasti tutustumassa:":
     "• If you don't have a clear vision for your website layout or theme, here are some links that might give you some inspiration or ideas. The point is not to use them as they are, but rather to explore different styles and concepts for you, in very simplified examples. Feel free to check them out:",
-        "Räätälöidyt Verkkosivut-": "Custom Website Development-",
+        "Ludique": "Ludique", "Noctis": "Noctis", "Aristo": "Aristo",
+    
+    "Räätälöidyt Verkkosivut-": "Custom Website Development-",
     "Portfoliot, laskeutumissivut sekä yritys- ja henkilöbrändit käyttäen HTML, CSS ja JavaScript. Emme tarjoa täyttä backend-kehitystä, mutta takaamme sujuvan ja käyttäjäystävällisen etusivukokemuksen.":
     "Portfolios, landing pages, and business websites, developed with HTML, CSS, and JavaScript. While we don't offer full backend development, we ensure enjoyable front-end experiences.",
 "Edullinen ja Tehokas-": "Affordable & Efficient-",
@@ -203,7 +205,9 @@ const originalTexts = {
     "• Kumppanuutemme aikana tiimimme työskentelee rennolla mutta määrätietoisella otteella, tehden tiivistä yhteistyötä kanssasi ja tarjoten harkittuja suunnitteluratkaisuja, jotka vastaavat tarpeitasi ja heijastavat visiotasi.",
 "• If you don't have a clear vision for your website layout or theme, here are some links that might give you some inspiration or ideas. The point is not to use them as they are, but rather to explore different styles and concepts for you, in very simplified examples. Feel free to check them out:": 
     "• Jos teillä ei ole selkeää visiota verkkosivustosi ulkoasusta tai teemasta, tässä on muutama linkki, jotka voivat antaa inspiraatiota tai ideoita. Tarkoitus ei ole käyttää niitä sellaisenaan, vaan esitellä erilaisia tyylejä ja konsepteja, hyvin yksinkertaistetuilla esimerkeillä. Käy vapaasti tutustumassa:",
-"Custom Website Development-": "Räätälöidyt Verkkosivut-",
+        "Ludique": "Ludique", "Noctis": "Noctis", "Aristo": "Aristo",
+
+    "Custom Website Development-": "Räätälöidyt Verkkosivut-",
 "Portfolios, landing pages, and business websites, developed with HTML, CSS, and JavaScript. While we don't offer full backend development, we ensure enjoyable front-end experiences.":
 "Portfoliot, laskeutumissivut sekä yritys- ja henkilöbrändit käyttäen HTML, CSS ja JavaScript. Emme tarjoa täyttä backend-kehitystä, mutta takaamme sujuvan ja käyttäjäystävällisen etusivukokemuksen.",
 "Affordable & Efficient-": "Edullinen ja Tehokas-",
@@ -270,6 +274,10 @@ let isTranslated = false;
                 document.getElementById("aboutText5").textContent = translations["• Jokainen projekti on mahdollisuus meille ylittää rajamme ja toimittaa jotain parempaa kuin koskaan aiemmin."];
                 document.getElementById("aboutText6").textContent = translations["• Kumppanuutemme aikana tiimimme työskentelee rennolla, mutta määrätietoisella otteella, tehden tiivistä yhteistyötä kanssasi, tarjoten huolellisesti suunniteltuja ratkaisuja."];
                                 document.getElementById("ex").textContent = translations["• Jos teillä ei ole selkeää visiota verkkosivustosi ulkoasusta tai teemasta, tässä on muutama linkki, jotka voivat antaa inspiraatiota tai ideoita. Tarkoitus ei ole käyttää niitä sellaisenaan, vaan esitellä erilaisia tyylejä ja konsepteja, hyvin yksinkertaistetuilla esimerkeillä. Käy vapaasti tutustumassa:"];
+                document.getElementById("exlinks1").textContent = translations["Ludique"];
+                document.getElementById("exlinks2").textContent = translations["Noctis"];
+                                document.getElementById("exlinks3").textContent = translations["Aristo"];
+
 
                
 
@@ -348,7 +356,9 @@ document.getElementById("Nimi").placeholder = translations["Nimi"];
                 document.getElementById("aboutText5").textContent = originalTexts["• Every project is an opportunity for us to push our limits and ensure we deliver something better than ever before."];
                 document.getElementById("aboutText6").textContent = originalTexts["• During our partnership, our team will work closely with you in a relaxed yet focused manner, delivering thoughtful designs that meet your needs and reflect your vision."];
                                 document.getElementById("ex").textContent = originalTexts["• If you don't have a clear vision for your website layout or theme, here are some links that might give you some inspiration or ideas. The point is not to use them as they are, but rather to explore different styles and concepts for you, in very simplified examples. Feel free to check them out:"];
-
+ document.getElementById("exlinks1").textContent = originalTexts["Ludique"];
+                document.getElementById("exlinks2").textContent = originalTexts["Noctis"];
+                                document.getElementById("exlinks3").textContent = originalTexts["Aristo"];
                 
             document.getElementById("servicesHeading").textContent = originalTexts["Services"];
             document.getElementById("servicehead1").textContent = originalTexts["Custom Website Development-"];
