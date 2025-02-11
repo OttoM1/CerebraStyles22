@@ -1046,6 +1046,18 @@ text-shadow:
     object-fit: cover; 
    
     }
+  
+#nikolink {
+  color: rgba(255, 238, 177, 0.93);
+    font-size: 22px;
+
+}
+
+#ottolink {
+  color: rgba(180, 180, 180, 0.93);
+  font-size: 22px;
+
+}
 
 
  
@@ -1059,6 +1071,18 @@ text-shadow:
 /* (768px) */
 @media (max-width: 768px) {
 
+  
+#nikolink {
+  color: rgba(255, 238, 177, 0.93);
+    font-size: 22px;
+
+}
+
+#ottolink {
+  color: rgba(180, 180, 180, 0.93);
+  font-size: 22px;
+
+}
   .container {
     width: 100vw; 
     max-width: 100%;
@@ -1226,6 +1250,7 @@ margin-right: 0;
 
 #nikolink {
   color: rgba(255, 238, 177, 0.93);
+
 }
 
 #ottolink {
