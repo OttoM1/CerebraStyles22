@@ -152,6 +152,7 @@ const translations = {
     "Miksi CerebraStyles?":
     "Why CerebraStyles?",
 "Elegantti ja Yksilöllinen-": "Elegant & Distinctive-",
+    "Käyttäjäkokemus (UX) on ratkaiseva tekijä verkkosivustojen suunnittelussa. Meillä on selkeä käsitys ja kokemus siitä, mistä nykypäivän käyttäjät sekä uusi sukupolvi pitävät. Suunnittelumme perustuu periaatteisiin, jotka yhdistävät stimuloivan, ammattimaisen ja erottuvan sisällön, varmistaen niin intuitiivisen navigoinnin kuin helpon saavutettavuuden.": "User experience (UX) is a critical factor in website design. We have a clear understanding and experience of what today’s users and the new generation appreciate. Our design principles combine stimulating, professional, and distinctive content, ensuring intuitive navigation and easy accessibility.",
     "Jokaisen verkkosivun tulisi heijastaa sen omistajaa, joten keskitymme ainutlaatuiseen tyyliin ja pieniin yksityiskohtiin. Yksikään projekti ei tule näyttämään samanlaiselta.":
     "Goal for every website should be a reflection of its owner, which is why we focus on unique styling and attention to detail. Our approach ensures that no two projects look the same.",
 "Miten?": "How?",
@@ -218,6 +219,7 @@ const originalTexts = {
 "Why CerebraStyles?":
 "Miksi CerebraStyles?",
 "Elegant & Distinctive-": "Elegantti ja Yksilöllinen-",
+    "User experience (UX) is a critical factor in website design. We have a clear understanding and experience of what today’s users and the new generation appreciate. Our design principles combine stimulating, professional, and distinctive content, ensuring intuitive navigation and easy accessibility.": "Käyttäjäkokemus (UX) on ratkaiseva tekijä verkkosivustojen suunnittelussa. Meillä on selkeä käsitys ja kokemus siitä, mistä nykypäivän käyttäjät sekä uusi sukupolvi pitävät. Suunnittelumme perustuu periaatteisiin, jotka yhdistävät stimuloivan, ammattimaisen ja erottuvan sisällön, varmistaen niin intuitiivisen navigoinnin kuin helpon saavutettavuuden.",
 "Goal for every website should be a reflection of its owner, which is why we focus on unique styling and attention to detail. Our approach ensures that no two projects look the same.":
 "Jokaisen verkkosivun tulisi heijastaa sen omistajaa, joten keskitymme ainutlaatuiseen tyyliin ja pieniin yksityiskohtiin. Yksikään projekti ei tule näyttämään samanlaiselta.",
 "How?": "Miten?",
@@ -286,6 +288,8 @@ document.getElementById("servicehead5").textContent = translations["Verkkosivun 
 document.getElementById("serviceText5").textContent = translations["Jos koet henkilökohtaisen verkkotunnuksen olevan tarpeeton portfoliosi kannalta, tarjoamme oppaan verkkotunnuksesi julkaisemiseen sekä päivittämiseen GitHubin kautta täysin ilmaiseksi. Julkaisuprosessi itsessään on maksuton käyttäjälle, mutta oppaamme on saatavilla hintaan 20€."];
 document.getElementById("serviceText6").textContent = translations["Miksi CerebraStyles?"];
 document.getElementById("servicehead7").textContent = translations["Elegantti ja Yksilöllinen-"];
+                
+document.getElementById("joo").textContent = translations["Käyttäjäkokemus (UX) on ratkaiseva tekijä verkkosivustojen suunnittelussa. Meillä on selkeä käsitys ja kokemus siitä, mistä nykypäivän käyttäjät sekä uusi sukupolvi pitävät. Suunnittelumme perustuu periaatteisiin, jotka yhdistävät stimuloivan, ammattimaisen ja erottuvan sisällön, varmistaen niin intuitiivisen navigoinnin kuin helpon saavutettavuuden."];
 
 document.getElementById("serviceText7").textContent = translations["Jokaisen verkkosivun tulisi heijastaa sen omistajaa, joten keskitymme ainutlaatuiseen tyyliin ja pieniin yksityiskohtiin. Yksikään projekti ei tule näyttämään samanlaiselta."];
 document.getElementById("servicehead8").textContent = translations["Miten?"];
@@ -361,6 +365,7 @@ document.getElementById("Nimi").placeholder = translations["Nimi"];
                  document.getElementById("serviceText5").textContent = originalTexts["Additionally, if you feel that a custom domain is unnecessary for your portfolio for example, we offer a guide on how to publish and update your domain through GitHub, which is completely free. However, while the publishing process itself is free, our guide is available for a fee of 20€."];
                 document.getElementById("serviceText6").textContent = originalTexts["Why CerebraStyles?"]
                 document.getElementById("servicehead7").textContent = originalTexts["Elegant & Distinctive-"];
+                document.getElementById("joo").textContent = originalTexts["User experience (UX) is a critical factor in website design. We have a clear understanding and experience of what today’s users and the new generation appreciate. Our design principles combine stimulating, professional, and distinctive content, ensuring intuitive navigation and easy accessibility."];
 
                 document.getElementById("serviceText7").textContent = originalTexts["Goal for every website should be a reflection of its owner, which is why we focus on unique styling and attention to detail. Our approach ensures that no two projects look the same."];
                 document.getElementById("servicehead8").textContent = originalTexts["How?"];
