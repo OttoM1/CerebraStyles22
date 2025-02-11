@@ -882,7 +882,7 @@ text-shadow:
 }
 
 #translateButton {
-  position: fixed; top: 13px; right: 11px
+  position: fixed; top: 15px; right: 15px
  }
   
 
@@ -901,10 +901,10 @@ text-shadow:
   opacity: 0.98;
   box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
   color: #ffffff;
-  padding: 12px 23px;
+  padding: 10px 20px;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 8px;
+  font-size: 10px;
   border: none;
       font-weight: bold;
   cursor: pointer;
@@ -917,8 +917,8 @@ text-shadow:
 
 
 #gitotto, #gitniko {
-  display: block !important; 
-  visibility: visible !important; 
+  display: block; 
+  visibility: visible; 
   text-align: center; 
   margin-top: 10px;
   font-size: 14px;
@@ -961,7 +961,7 @@ text-shadow:
 
     #revealButton {
         padding: 30px 100px;
-        font-size: 26px;
+        font-size: 20px;
         max-width: 80%;
     }
     
@@ -1062,7 +1062,7 @@ text-shadow:
 }
 
 #translateButton {
-  position: fixed; top: 12px; right: 11px
+  position: fixed; top: 15px; right: 15px
  }
 
 #ottopuh, #nikopuh {
@@ -1089,10 +1089,10 @@ visibility: hidden;
   opacity: 0.98;
   box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
   color: #ffffff;
-  padding: 12px 23px;
+  padding: 10px 20px;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 8px;
+  font-size: 10px;
   border: none;
       font-weight: bold;
   cursor: pointer;
@@ -1123,7 +1123,7 @@ visibility: hidden;
   
     #revealButton {
         padding: 40px 130px;
-        font-size: 29px;
+        font-size: 24px;
         max-width: 70%;
     }
 
@@ -1207,25 +1207,23 @@ margin-right: 0;
     }
 
     #gitotto, #gitniko {
-      display: block !important; 
+      display: block; 
       font-size: 14px;
-      visibility: visible !important; 
+      visibility: visible; 
       text-align: center; 
       margin-top: 10px;
     }
 
 }
 
-
-
-
-#gitotto {
-  display: none;
-  visibility: hidden;
+#nikolink {
+  color: rgba(255, 238, 177, 0.93);
 }
 
-#gitniko {
-  display: none;
-  visibility: hidden;
+#ottolink {
+  color: rgba(180, 180, 180, 0.93);
+
 }
+
+
 
