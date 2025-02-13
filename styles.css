@@ -1130,7 +1130,7 @@ pointer-events: none;
 }
 .popup-content {
 width: 95vw;
-font-size: 4vw;
+font-size: 4.8vw;
 padding: 5vw;
 }
 
@@ -1200,9 +1200,9 @@ font-size: 27.7px;
 
 }
 .popup-content {
-width: 90vw; /* Adjust width for mobile */
+width: 90vw; 
 max-width: 90vw;
-font-size: 3.8vw; /* Slightly larger font size for readability */
+font-size: 4.8vw; 
 padding: 4vw;
 }
 
@@ -1427,7 +1427,7 @@ z-index: 9999;
 }
 
 .popup-content {
-background: #414342;
+background: rgba(26, 26, 26, 0.16);
 padding: 2vw;
 border-radius: 1vw; 
 text-align: center;
