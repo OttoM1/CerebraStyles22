@@ -1433,17 +1433,17 @@ border-radius: 1vw;
 text-align: center;
 width: 80vw; 
 max-width: 32vw;
-box-shadow: 0px 0.4vw 1vw rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0.4vw 1vw rgba(0, 0, 0, 0);
 font-size: 1.5vw;
 }
 
 #successMessage .popup-content {
-border: 0.3vw solid #54cda0;
+/*border: 0.3vw solid #54cda0; */
 color: #4bd0a2;
 }
 
 #errorMessage .popup-content {
-border: 0.3vw solid #e83e2b; 
+/*border: 0.3vw solid #e83e2b; */
 color: #e74c3c;
 }
 @keyframes fadeIn {
