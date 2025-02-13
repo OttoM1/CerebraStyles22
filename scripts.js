@@ -118,7 +118,7 @@ const translations = {
     "Meistä": "Us",
     "Palvelut": "Services",
     "Tiimi": "Crew",
-    "Yhteystiedot": "Contact",
+    "Kysy": "Contact",
     "Vaatimukset kohtaavat intohimon": "Requirements Meet Passion",
     "• CerebraStyles suunnittelee räätälöityjä UI/UX-verkkosivustoja, joissa luovuus kohtaa intohimon ja asiakkaan vaatimukset.": 
     "• At CerebraStyles, we deliver tailored websites (UI/UX) to help you stand out and make lasting impressions on others.",
@@ -189,7 +189,7 @@ const originalTexts = {
     "Us": "Meistä",
     "Services": "Palvelut",
     "Crew": "Tiimi",
-    "Contact": "Yhteystiedot",
+    "Contact": "Kysy",
     "Requirements Meet Passion": "Vaatimukset kohtaavat intohimon",
     "• At CerebraStyles, we deliver tailored websites (UI/UX) to help you stand out and make lasting impressions on others.": 
     "• CerebraStyles suunnittelee räätälöityjä UI/UX-verkkosivustoja, joissa luovuus kohtaa intohimon ja asiakkaan vaatimukset.",
@@ -264,7 +264,7 @@ let isTranslated = false;
                 document.getElementById("navServices").textContent = translations["Palvelut"];
                 document.getElementById("navCrew").textContent = translations["Tiimi"];
         
-                document.getElementById("navContact").textContent = translations["Yhteystiedot"];
+                document.getElementById("navContact").textContent = translations["Kysy"];
                 document.getElementById("aboutHeading").textContent = translations["Vaatimukset kohtaavat intohimon"];
                 document.getElementById("aboutText1").textContent = translations["• CerebraStyles suunnittelee räätälöityjä UI/UX-verkkosivustoja, joissa luovuus kohtaa intohimon ja asiakkaan vaatimukset."];
                
@@ -274,13 +274,11 @@ let isTranslated = false;
                 document.getElementById("aboutText5").textContent = translations["• Jokainen projekti on mahdollisuus meille ylittää rajamme ja toimittaa jotain parempaa kuin koskaan aiemmin."];
                 document.getElementById("aboutText6").textContent = translations["• Kumppanuutemme aikana tiimimme työskentelee rennolla, mutta määrätietoisella otteella, tehden tiivistä yhteistyötä kanssasi, tarjoten huolellisesti suunniteltuja ratkaisuja."];
                                 document.getElementById("ex").textContent = translations["• Jos teillä ei ole selkeää visiota verkkosivustosi ulkoasusta tai teemasta, tässä on muutama linkki, jotka voivat antaa inspiraatiota tai ideoita. Tarkoitus ei ole käyttää niitä sellaisenaan, vaan esitellä erilaisia tyylejä ja konsepteja, hyvin yksinkertaistetuilla esimerkeillä. Käy vapaasti tutustumassa:"];
-                               document.getElementById("exlinks0").textContent = translations["Cremsalis"];
-
-                document.getElementById("exlinks1").textContent = translations["Ludique"];
-                document.getElementById("exlinks2").textContent = translations["Noctis"];
-                                document.getElementById("exlinks3").textContent = translations["Aristo"];
-
-
+                                document.getElementById("exlinks0").querySelector("a").textContent = translations["Cremsalis"];
+                                document.getElementById("exlinks1").querySelector("a").textContent = translations["Ludique"];
+                                document.getElementById("exlinks2").querySelector("a").textContent = translations["Noctis"];
+                                document.getElementById("exlinks3").querySelector("a").textContent = translations["Aristo"];
+                                
                
 
                 document.getElementById("servicesHeading").textContent = translations["Palvelut"];
@@ -358,12 +356,12 @@ document.getElementById("Nimi").placeholder = translations["Nimi"];
                 document.getElementById("aboutText5").textContent = originalTexts["• Every project is an opportunity for us to push our limits and ensure we deliver something better than ever before."];
                 document.getElementById("aboutText6").textContent = originalTexts["• During our partnership, our team will work closely with you in a relaxed yet focused manner, delivering thoughtful designs that meet your needs and reflect your vision."];
                                 document.getElementById("ex").textContent = originalTexts["• If you don't have a clear vision for your website layout or theme, here are some links that might give you some inspiration or ideas. The point is not to use them as they are, but rather to explore different styles and concepts for you, in very simplified examples. Feel free to check them out:"];
-                                document.getElementById("exlinks0").textContent = originalTexts["Cremsalis"];
+                               
+document.getElementById("exlinks0").querySelector("a").textContent = originalTexts["Cremsalis"];
+document.getElementById("exlinks1").querySelector("a").textContent = originalTexts["Ludique"];
+document.getElementById("exlinks2").querySelector("a").textContent = originalTexts["Noctis"];
+document.getElementById("exlinks3").querySelector("a").textContent = originalTexts["Aristo"];
 
-                document.getElementById("exlinks1").textContent = originalTexts["Ludique"];
-                document.getElementById("exlinks2").textContent = originalTexts["Noctis"];
-                                document.getElementById("exlinks3").textContent = originalTexts["Aristo"];
-                
             document.getElementById("servicesHeading").textContent = originalTexts["Services"];
             document.getElementById("servicehead1").textContent = originalTexts["Custom Website Development-"];
                 document.getElementById("serviceText1").textContent = originalTexts["Portfolios, landing pages, and business websites, developed with HTML, CSS, and JavaScript. While we don't offer full backend development, we ensure enjoyable front-end experiences."];
@@ -479,4 +477,5 @@ function sendMail() {
         document.getElementById("errorMessage").style.display = "flex";
     });
 }
+
 
