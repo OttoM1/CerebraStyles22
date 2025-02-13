@@ -483,41 +483,40 @@ function redirectOnTap() {
 
 
 
+(function() {
+    emailjs.init("f83myWnHa8CJyFiQg"); 
+})();
 
-        (function() {
-            emailjs.init("f83myWnHa8CJyFiQg"); 
-        })();
-        
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            
-            let nimiInput = document.getElementById("Nimi");
-            let sähköpostiInput = document.getElementById("Sähköposti");
-            let viestisiInput = document.getElementById("Viestisi");
-        
-            let templateParams = {
-                Nimi: nimiInput.value,
-                Sähköposti: sähköpostiInput.value,
-                Viestisi: viestisiInput.value
-            };
-            
-            emailjs.send("service_i1244mo", "template_ffu9jtk", templateParams)
-                .then(function(response) {
-                    showPopup("successMessage");
-        
-                    nimiInput.value = "";
-                    sähköpostiInput.value = "";
-                    viestisiInput.value = "";
-                }, function(error) {
-                    showPopup("errorMessage");
-                });
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    let nimiInput = document.getElementById("Nimi");
+    let sähköpostiInput = document.getElementById("Sähköposti");
+    let viestisiInput = document.getElementById("Viestisi");
+
+    let templateParams = {
+        name: nimiInput.value,        // Fixed
+        email: sähköpostiInput.value, 
+        message: viestisiInput.value  
+    };
+    
+    emailjs.send("service_i1244mo", "template_ffu9jtk", templateParams)
+        .then(function(response) {
+            showPopup("successMessage");
+
+            nimiInput.value = "";
+            sähköpostiInput.value = "";
+            viestisiInput.value = "";
+        }, function(error) {
+            showPopup("errorMessage");
         });
-        
-        function showPopup(id) {
-            let popup = document.getElementById(id);
-            popup.style.display = "flex";
-            
-            popup.addEventListener("click", function() {
-                popup.style.display = "none";
-            });
-        }
+});
+
+function showPopup(id) {
+    let popup = document.getElementById(id);
+    popup.style.display = "flex";
+    
+    popup.addEventListener("click", function() {
+        popup.style.display = "none";
+    });
+}
