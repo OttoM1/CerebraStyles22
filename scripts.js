@@ -462,20 +462,20 @@ function sendMail() {
 
     emailjs.send("service_i1244mo", "template_ffu9jtk", parms)
     .then(function(response) {
-        console.log("✅ Viesti lähetetty - Message sent", response);
+        console.log("Kiitos yhteydenotosta - Thank you for reaching out", response);
 
         document.getElementById("successMessage").style.display = "flex";
-        document.getElementById("contactForm").reset(); // Clear
+        document.getElementById("contactForm").reset(); 
 
-        setTimeout(function() {
-            window.location.href = "index.html"; 
-        }, 3000);
+        document.addEventListener("click", redirectOnTap, { once: true });
     })
     .catch(function(error) {
-        console.error("❌ Virhe! Error!", error);
+        console.error("Virhe! Error!", error);
 
         document.getElementById("errorMessage").style.display = "flex";
     });
 }
 
-
+function redirectOnTap() {
+    window.location.href = "index.html"; 
+}
