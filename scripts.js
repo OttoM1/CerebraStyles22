@@ -482,22 +482,32 @@ function redirectOnTap() {
 */
 
 
-(function() {
+
+
+        (function() {
             emailjs.init("f83myWnHa8CJyFiQg"); 
         })();
-    
+        
         document.getElementById("contactForm").addEventListener("submit", function(event) {
             event.preventDefault();
             
+            let nimiInput = document.getElementById("Nimi");
+            let sähköpostiInput = document.getElementById("Sähköposti");
+            let viestisiInput = document.getElementById("Viestisi");
+        
             let templateParams = {
-                Nimi: document.getElementById("Nimi").value,
-                Sähköposti: document.getElementById("Sähköposti").value,
-                Viestisi: document.getElementById("Viestisi").value
+                Nimi: nimiInput.value,
+                Sähköposti: sähköpostiInput.value,
+                Viestisi: viestisiInput.value
             };
             
             emailjs.send("service_i1244mo", "template_ffu9jtk", templateParams)
                 .then(function(response) {
                     showPopup("successMessage");
+        
+                    nimiInput.value = "";
+                    sähköpostiInput.value = "";
+                    viestisiInput.value = "";
                 }, function(error) {
                     showPopup("errorMessage");
                 });
