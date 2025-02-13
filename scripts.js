@@ -451,7 +451,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+/*
 
 function sendMail() {
     let parms = {
@@ -479,3 +479,35 @@ function sendMail() {
 function redirectOnTap() {
     window.location.href = "index.html"; 
 }
+*/
+
+
+(function() {
+            emailjs.init("f83myWnHa8CJyFiQg"); 
+        })();
+    
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let templateParams = {
+                Nimi: document.getElementById("Nimi").value,
+                Sähköposti: document.getElementById("Sähköposti").value,
+                Viestisi: document.getElementById("Viestisi").value
+            };
+            
+            emailjs.send("service_i1244mo", "template_ffu9jtk", templateParams)
+                .then(function(response) {
+                    showPopup("successMessage");
+                }, function(error) {
+                    showPopup("errorMessage");
+                });
+        });
+        
+        function showPopup(id) {
+            let popup = document.getElementById(id);
+            popup.style.display = "flex";
+            
+            popup.addEventListener("click", function() {
+                popup.style.display = "none";
+            });
+        }
