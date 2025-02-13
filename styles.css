@@ -1419,8 +1419,9 @@ top: 0;
 left: 0;
 width: 100vw; 
 height: 100vh; 
-background: rgba(0, 0, 0, 0.65);
-justify-content: center;
+background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
+
+  justify-content: center;
 align-items: center;
 z-index: 9999;
 }
