@@ -316,7 +316,7 @@ cursor: pointer;
 .nav-links a {
 display: inline-block;
 /* background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313); */
-background: rgba(0, 0, 0, 0)
+background: rgba(0, 0, 0, 0);
   box-shadow: 0 4px 10px rgba(30, 94, 92, 0.7);
 /*color: #4d8766;*/
 color: rgb(227, 252, 236);
