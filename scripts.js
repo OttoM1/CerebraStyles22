@@ -141,7 +141,7 @@ const translations = {
     "Portfoliot, laskeutumissivut sekä yritys- ja henkilöbrändit käyttäen HTML, CSS ja JavaScript. Emme tarjoa täyttä backend-kehitystä, mutta takaamme sujuvan ja käyttäjäystävällisen etusivukokemuksen.":
     "Portfolios, landing pages, and business websites, developed with HTML, CSS, and JavaScript. While we don't offer full backend development, we ensure enjoyable front-end experiences.",
 "Edullinen ja Tehokas-": "Affordable & Efficient-",
-    "Palvelumme sopivat erityisesti opiskelijoille, nuorille ammattilaisille ja aloitteleville yrittäjille, jotka haluavat tehdä vahvan digitaalisen vaikutuksen. Hinnat alk. 90€ yksinkertaisille sivustoille ja voivat nousta 150€ riippuen monimutkaisuudesta. Portfolio valmistuu noin viikossa, kun taas yrityssivusto vie kahdesta kolmeen viikkoa.":
+    "Palvelumme sopivat erityisesti opiskelijoille, nuorille ammattilaisille ja aloitteleville yrittäjille, jotka haluavat tehdä vahvan digitaalisen vaikutuksen. Hinnat alkaen 90 euroa yksinkertaisille sivustoille, voi nousta 150 euroon riippuen monimutkaisuudesta. Portfolio valmistuu noin viikossa, kun taas yrityssivusto vie kahdesta kolmeen viikkoa.":
     "Our services are accessible, especially for young professionals, students, and new entrepreneurs looking to establish a strong online presence. Pricing starts at 90€ for simple websites and can go up to 150€ depending on the complexity. Portfolios are typically delivered in one week, while business websites take around two/three weeks.",
 "Rento ja Tarkka-": "Scrum-Inspired Collaboration-",
     "Työskentelemme iteraatioissa, varmistaen, että lopputulos vastaa odotuksia ja jopa ylittää ne. Pidämme yhteyttä asiakkaisiin projektin aikana ja teemme tarvittavia hienosäätöjä.":
@@ -212,7 +212,7 @@ const originalTexts = {
 "Portfoliot, laskeutumissivut sekä yritys- ja henkilöbrändit käyttäen HTML, CSS ja JavaScript. Emme tarjoa täyttä backend-kehitystä, mutta takaamme sujuvan ja käyttäjäystävällisen etusivukokemuksen.",
 "Affordable & Efficient-": "Edullinen ja Tehokas-",
 "Our services are accessible, especially for young professionals, students, and new entrepreneurs looking to establish a strong online presence. Pricing starts at 90€ for simple websites and can go up to 150€ depending on the complexity. Portfolios are typically delivered in one week, while business websites take around two/three weeks.":
-"Palvelumme sopivat erityisesti opiskelijoille, nuorille ammattilaisille ja aloitteleville yrittäjille, jotka haluavat tehdä vahvan digitaalisen vaikutuksen. Hinnat alk. 90€ yksinkertaisille sivustoille ja voivat nousta 150€ riippuen monimutkaisuudesta. Portfolio valmistuu noin viikossa, kun taas yrityssivusto vie kahdesta kolmeen viikkoa.",
+"Palvelumme sopivat erityisesti opiskelijoille, nuorille ammattilaisille ja aloitteleville yrittäjille, jotka haluavat tehdä vahvan digitaalisen vaikutuksen. Hinnat alkaen 90 euroa yksinkertaisille sivustoille, voi nousta 150 euroon riippuen monimutkaisuudesta. Portfolio valmistuu noin viikossa, kun taas yrityssivusto vie kahdesta kolmeen viikkoa.",
 "Scrum-Inspired Collaboration-": "Rento ja Tarkka",
 "Our workflow is dynamic yet relaxed, following an iterative approach to ensure our work meets and exceeds expectations. We maintain close communication with our clients throughout the process, ensuring all the adjustments needed.":
 "Työskentelemme iteraatioissa, varmistaen, että lopputulos vastaa odotuksia ja jopa ylittää ne. Pidämme yhteyttä asiakkaisiin projektin aikana ja teemme tarvittavia hienosäätöjä.",
@@ -287,7 +287,7 @@ let isTranslated = false;
                 document.getElementById("serviceText1").textContent = translations["Portfoliot, laskeutumissivut sekä yritys- ja henkilöbrändit käyttäen HTML, CSS ja JavaScript. Emme tarjoa täyttä backend-kehitystä, mutta takaamme sujuvan ja käyttäjäystävällisen etusivukokemuksen."];
                 document.getElementById("servicehead2").textContent = translations["Edullinen ja Tehokas-"];
 
-                document.getElementById("serviceText2").textContent = translations["Palvelumme sopivat erityisesti opiskelijoille, nuorille ammattilaisille ja aloitteleville yrittäjille, jotka haluavat tehdä vahvan digitaalisen vaikutuksen. Hinnat alk. 90€ yksinkertaisille sivustoille ja voivat nousta 150€ riippuen monimutkaisuudesta. Portfolio valmistuu noin viikossa, kun taas yrityssivusto vie kahdesta kolmeen viikkoa."]; 
+                document.getElementById("serviceText2").textContent = translations["Palvelumme sopivat erityisesti opiskelijoille, nuorille ammattilaisille ja aloitteleville yrittäjille, jotka haluavat tehdä vahvan digitaalisen vaikutuksen. Hinnat alkaen 90 euroa yksinkertaisille sivustoille, voi nousta 150 euroon riippuen monimutkaisuudesta. Portfolio valmistuu noin viikossa, kun taas yrityssivusto vie kahdesta kolmeen viikkoa."]; 
 
                 document.getElementById("servicehead3").textContent = translations["Rento ja Tarkka-"];
 
