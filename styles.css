@@ -1142,9 +1142,18 @@ pointer-events: none;
 }
 .popup-content {
 width: 95vw;
-font-size: 4.8vw;
+  max-width: 100vw;
 padding: 5vw;
 }
+
+  .popup-content h3 {
+  font-size: 23px;
+  }
+
+  .popup-content p {
+    font-size: 18px; 
+
+  }
 
 
 }
@@ -1214,9 +1223,17 @@ font-size: 27.7px;
 .popup-content {
 width: 90vw; 
 max-width: 90vw;
-font-size: 4.8vw; 
 padding: 4vw;
 }
+  .popup-content h3 {
+  font-size: 23px;
+  }
+
+  .popup-content p {
+    font-size: 18px; 
+
+  }
+
 
 #klik, #klikn {
 font-size: 15.6px;
