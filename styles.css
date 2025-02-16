@@ -7,6 +7,9 @@ display: none;
 html {
   overflow-y: scroll;
 }
+html, body {
+  overflow-x: hidden;
+}
 #nikopuh {
 display: none;
 }
