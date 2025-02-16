@@ -4,7 +4,9 @@
 #ottopuh {
 display: none;
 }
-
+html {
+  overflow-y: scroll;
+}
 #nikopuh {
 display: none;
 }
