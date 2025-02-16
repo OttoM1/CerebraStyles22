@@ -63,6 +63,7 @@ top: 0;
 left: 0;
 z-index: -1;
 background: radial-gradient(ellipse, #0d0d0d, #131c23, #141414, #131314, #131313);
+will-change: transform;
 
 }
 
