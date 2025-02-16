@@ -45,7 +45,8 @@ min-height: 100vh;
 height: -webkit-fill-available; 
 margin: 0;
 overscroll-behavior: none;
-
+background-size: cover;
+    background-attachment: fixed;
 
 }
 
